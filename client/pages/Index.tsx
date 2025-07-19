@@ -221,15 +221,15 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[799px] bg-gray-800 flex items-center justify-center overflow-hidden">
+      <section className="relative h-[400px] sm:h-[600px] lg:h-[799px] bg-gray-800 flex items-center justify-center overflow-hidden">
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-center text-white">
+        <div className="relative z-10 text-center text-white px-4">
           {/* Warning Icon and Text */}
-          <div className="mb-8 flex flex-col items-center">
-            <div className="w-24 h-24 mb-4 flex items-center justify-center">
+          <div className="mb-4 sm:mb-8 flex flex-col items-center">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-4 flex items-center justify-center">
               <svg
                 width="96"
                 height="96"
