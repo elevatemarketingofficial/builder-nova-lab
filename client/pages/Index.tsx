@@ -165,7 +165,7 @@ export default function Index() {
           </Link>
 
           {/* Navigation */}
-          <nav className="flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             <div className="flex items-center space-x-2 cursor-pointer">
               <span className="text-black text-[15px] font-normal uppercase">
                 About
@@ -195,11 +195,28 @@ export default function Index() {
           {/* View Listings Button */}
           <Link
             to="/listings"
-            className="flex items-center gap-2 bg-brand-gold text-white px-5 py-3 rounded-sm text-[14px] font-medium hover:bg-opacity-90 transition-colors"
+            className="hidden md:flex items-center gap-2 bg-brand-gold text-white px-3 sm:px-5 py-2 sm:py-3 rounded-sm text-[12px] sm:text-[14px] font-medium hover:bg-opacity-90 transition-colors"
           >
             <Home className="w-4 h-4" />
-            View Listings
+            <span className="hidden sm:inline">View Listings</span>
           </Link>
+
+          {/* Mobile Menu Button */}
+          <button className="lg:hidden p-2">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </header>
 
