@@ -27,6 +27,7 @@ const App = () => (
             path="/homeowner-service-request"
             element={<HomeownerServiceRequest />}
           />
+          <Route path="/homes" element={<Homes />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
