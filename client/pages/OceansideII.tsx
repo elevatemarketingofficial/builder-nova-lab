@@ -184,8 +184,7 @@ const OceansideII = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://api.builder.io/api/v1/image/assets/TEMP/6c4faa50d4d67adc4eb72365ea6e11ac0216d6cd?width=3840')",
+            backgroundImage: "url('Images/110-Montage-Front-Photo-.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -221,7 +220,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/42281ce993f1e1d75b1bbcbfde16635c2700cc1c?width=2540"
+            src="Images/Oceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +240,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/66b2d5716368bc7fd96214912b7542ce5f224f0b?width=2540"
+              src="Images/DSC09101.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,14 +265,14 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/578c10842441107afa3e8a68758dea56089ad584?width=2540"
+                src="Images/DSC09127.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/b8da54bbd73aae808eb62644052537c3565f4338?width=80"
+                    src="Images/cropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -311,11 +310,7 @@ const OceansideII = () => {
             {/* Watch on YouTube button */}
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/bf07feb0c4a6b66e23a7cab04e295fa58e31aec4?width=144"
-                alt="YouTube"
-                className="h-4"
-              />
+              <img src="Images/CVH-icon-2.svg" alt="YouTube" className="h-4" />
             </div>
           </div>
         </div>
