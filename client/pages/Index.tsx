@@ -281,9 +281,9 @@ export default function Index() {
       </section>
 
       {/* Home Models Section */}
-      <section className="bg-brand-light-gray py-16">
+      <section className="bg-brand-light-gray py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
             {/* Oceanside II */}
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
