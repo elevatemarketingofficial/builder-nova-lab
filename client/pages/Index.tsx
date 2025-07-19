@@ -380,9 +380,9 @@ export default function Index() {
       </section>
 
       {/* A Place You Will Call Home Section */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1140px] mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-6">
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/a7541dcdebc1ed25b10290c963079e8b0f8f0eba?width=1328"
@@ -390,13 +390,13 @@ export default function Index() {
                 className="w-full h-auto rounded-lg"
               />
             </div>
-            <div className="lg:w-1/2 bg-white p-10">
-              <h2 className="text-[35px] font-bold text-brand-dark-blue leading-[35px] mb-6">
+            <div className="lg:w-1/2 bg-white p-6 sm:p-8 lg:p-10">
+              <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
                 A place you will call
                 <br />
                 home
               </h2>
-              <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
+              <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed">
                 Choice Valley Homes presents the Paseo Collection in Bellevue
                 Ranch, located in North Merced. Paseo is adjacent to the highly
                 acclaimed El Captain high school with charming rural
