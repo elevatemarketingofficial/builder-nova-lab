@@ -413,9 +413,9 @@ export default function Index() {
       </section>
 
       {/* Designed for Modern Living Section */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1140px] mx-auto px-4">
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-6">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/28538dc69d3d297d5e20c8094586798176f1f575?width=1100"
@@ -423,13 +423,13 @@ export default function Index() {
                 className="w-full h-auto rounded-lg"
               />
             </div>
-            <div className="lg:w-1/2 bg-white p-10">
-              <h2 className="text-[34px] font-bold text-brand-dark-blue leading-[35px] mb-6">
+            <div className="lg:w-1/2 bg-white p-6 sm:p-8 lg:p-10">
+              <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
                 Designed for Modern
                 <br />
                 Living
               </h2>
-              <p className="text-[16px] text-brand-medium-blue leading-[26.4px] mb-8">
+              <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed mb-6 lg:mb-8">
                 Paseo is a{" "}
                 <span className="font-bold">private gated community</span> built
                 mindfully and artfully to deliver the necessities and importance
