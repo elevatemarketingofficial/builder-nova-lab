@@ -646,7 +646,7 @@ export default function Index() {
                 viewBox="0 0 634 94"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[632px] h-[93px]"
+                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px]"
               >
                 <g clipPath="url(#clip0_1_122)">
                   <mask
