@@ -765,16 +765,16 @@ export default function Index() {
               </svg>
             </div>
 
-            <h3 className="text-[30px] text-brand-medium-blue font-normal">
+            <h3 className="text-[20px] sm:text-[24px] lg:text-[30px] text-brand-medium-blue font-normal px-4">
               Building communities throughout the Central Valley
             </h3>
 
-            <p className="text-[16px] text-brand-medium-blue">
+            <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue">
               For More Information about PASEO, Please Call or Text
             </p>
 
             <div className="text-center">
-              <p className="text-[18px] text-brand-medium-blue leading-[29.7px]">
+              <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue leading-relaxed">
                 Stephanie Stine
                 <br />
                 Community Sales Manager
@@ -786,7 +786,7 @@ export default function Index() {
             </div>
 
             <div className="text-center">
-              <p className="text-[18px] text-brand-medium-blue leading-[29.7px]">
+              <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue leading-relaxed">
                 Hours
                 <br />
                 Monday – Closed
@@ -797,25 +797,25 @@ export default function Index() {
               </p>
             </div>
 
-            <p className="text-[18px] text-brand-medium-blue">
+            <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue">
               154 Montage Drive, Merced, CA 95348
             </p>
 
             {/* Contact Links */}
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
               <a
                 href="tel:209-308-9000"
-                className="flex items-center gap-2 text-black font-bold text-[18px]"
+                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[18px]"
               >
-                <Phone className="w-5 h-5 text-brand-gold" />
+                <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
                 209-308-9000
               </a>
-              <span className="text-gray-300">|</span>
+              <span className="hidden sm:inline text-gray-300">|</span>
               <a
                 href="#"
-                className="flex items-center gap-2 text-black font-bold text-[21px]"
+                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[21px]"
               >
-                <MessageSquare className="w-5 h-5 text-brand-gold" />
+                <MessageSquare className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
                 Send Message
               </a>
             </div>
