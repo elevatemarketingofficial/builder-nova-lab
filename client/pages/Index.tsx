@@ -245,10 +245,10 @@ export default function Index() {
               </svg>
             </div>
             <div className="text-center">
-              <p className="text-[22px] font-medium mb-2">
+              <p className="text-[16px] sm:text-[20px] lg:text-[22px] font-medium mb-2">
                 Sign in to confirm you're not a bot
               </p>
-              <p className="text-[18px] font-normal opacity-90">
+              <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-normal opacity-90">
                 This helps protect our community.{" "}
                 <span className="underline cursor-pointer">Learn more</span>
               </p>
@@ -256,11 +256,11 @@ export default function Index() {
           </div>
 
           {/* Main Title */}
-          <div className="flex items-end justify-center gap-2 mb-8">
-            <h1 className="text-[78px] font-bold leading-[84px] text-white drop-shadow-lg">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-4 sm:mb-8">
+            <h1 className="text-[32px] sm:text-[50px] lg:text-[78px] font-bold leading-tight text-white drop-shadow-lg">
               CHOICE VALLEY
             </h1>
-            <h1 className="text-[84px] font-normal leading-[84px] text-white drop-shadow-lg">
+            <h1 className="text-[36px] sm:text-[54px] lg:text-[84px] font-normal leading-tight text-white drop-shadow-lg">
               HOMES
             </h1>
           </div>
@@ -268,12 +268,14 @@ export default function Index() {
           {/* Subtitle */}
           <div className="text-center">
             <p
-              className="text-[35px] font-normal mb-4"
+              className="text-[20px] sm:text-[28px] lg:text-[35px] font-normal mb-2 sm:mb-4"
               style={{ fontFamily: "Aguafina Script, cursive" }}
             >
               Presents
             </p>
-            <h2 className="text-[53px] font-bold leading-[58px]">PASEO</h2>
+            <h2 className="text-[28px] sm:text-[40px] lg:text-[53px] font-bold leading-tight">
+              PASEO
+            </h2>
           </div>
         </div>
       </section>
