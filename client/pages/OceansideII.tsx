@@ -328,66 +328,66 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f6b341594e984f9e5297022cf663ced7085020de?width=620"
+              src="Images/DSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c37aca6f67129184b9d057fdddfb5d1a19e54441?width=620"
+              src="Images/DSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/59878bea2d9e359bf91738e994dc8e2632aa4c12?width=620"
+              src="Images/DSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/40300a320e13c6e8e508d04afba141d84d61fbae?width=620"
+              src="Images/DSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b40c74a8bfbeacc3cfe26380b45c270d927bf61a?width=620"
+              src="Images/DSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/53f851b6e4b909cfde91a32ffd18df5c6d5fdd52?width=620"
+              src="Images/Master-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d9bbdda79689ea71cbd24d7c866ca894395bb522?width=620"
+              src="Images/Master-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c3f4dfa244a889fb84091a71280f5f9a8c935041?width=620"
+              src="Images/Kitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 3 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0fb46eb4792ea44d12f733bf7ded67c1ed1cbf37?width=620"
+              src="Images/Dining.jpg"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b9ccaf171fd71f936d6fa76e944c70baf898d40d?width=620"
+              src="Images/DSC09123.jpg"
               alt="Living space"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/92a5047de684b48afadad6ca69b6ce76dccf2721?width=620"
+              src="Images/DSC09147.jpg"
               alt="Master bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8ae8b55ab268c0099310594d2da963b773cbf73a?width=620"
+              src="Images/DSC09054.jpg"
               alt="Bathroom vanity"
               className="w-full h-[207px] object-cover"
             />
