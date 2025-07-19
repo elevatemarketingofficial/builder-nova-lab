@@ -231,15 +231,14 @@ export default function About() {
             "url('https://api.builder.io/api/v1/image/assets/TEMP/62776ffec6d5fa46299c179da0aa376652a1bfc6?width=3840') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-
         {/* Content */}
-        <div className="relative z-10 text-center text-white px-4">
+        <div className="relative z-10 text-center text-white">
           <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight text-white">
             About Paseo
           </h1>
         </div>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </section>
 
       {/* Main Content Section */}
