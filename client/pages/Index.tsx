@@ -635,11 +635,11 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-brand-medium-gray py-16">
+      <footer className="bg-brand-medium-gray py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="text-center space-y-8">
+          <div className="text-center space-y-6 lg:space-y-8">
             {/* Logo */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-6 lg:mb-8">
               <svg
                 width="632"
                 height="93"
