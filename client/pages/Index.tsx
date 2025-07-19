@@ -446,14 +446,14 @@ export default function Index() {
       </section>
 
       {/* How it Works Section */}
-      <section className="bg-brand-light-gray py-16">
+      <section className="bg-brand-light-gray py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1140px] mx-auto px-4">
-          <div className="bg-white p-10 rounded-lg">
-            <h2 className="text-[33px] font-bold text-brand-dark-blue text-center mb-12">
+          <div className="bg-white p-6 sm:p-8 lg:p-10 rounded-lg">
+            <h2 className="text-[24px] sm:text-[28px] lg:text-[33px] font-bold text-brand-dark-blue text-center mb-8 lg:mb-12">
               How it Works
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
               {/* Step 1 */}
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
