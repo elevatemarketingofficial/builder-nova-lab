@@ -513,17 +513,17 @@ export default function Index() {
       </section>
 
       {/* Get in Touch Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-12 sm:py-16 lg:py-24">
         <div className="max-w-[730px] mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="mb-6 flex justify-center">
+          <div className="text-center mb-8 lg:mb-12">
+            <div className="mb-4 lg:mb-6 flex justify-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/6bc541956d87e433b12bb5413b6748e772883a6a?width=216"
                 alt="Contact"
-                className="w-[108px] h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
+                className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
             </div>
-            <h2 className="text-[34px] font-bold text-brand-dark-blue">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-brand-dark-blue">
               Get in Touch
             </h2>
           </div>
