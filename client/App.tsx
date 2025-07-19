@@ -11,6 +11,7 @@ import About from "./pages/About";
 import HomeownerServiceRequest from "./pages/HomeownerServiceRequest";
 import Homes from "./pages/Homes";
 import Home1691A from "./pages/Home1691A";
+import OceansideII from "./pages/OceansideII";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
