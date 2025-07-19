@@ -840,9 +840,9 @@ export default function Index() {
             </div>
 
             {/* Footer Bottom */}
-            <div className="flex justify-center items-center gap-2 text-[16px] text-black">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-[14px] lg:text-[16px] text-black">
               <span>® All Rights Reserved</span>
-              <span className="text-gray-300">|</span>
+              <span className="hidden sm:inline text-gray-300">|</span>
               <a href="#" className="hover:text-brand-gold transition-colors">
                 Privacy Policy
               </a>
