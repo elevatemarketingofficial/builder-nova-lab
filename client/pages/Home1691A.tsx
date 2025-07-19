@@ -215,7 +215,7 @@ const Home1691A = () => {
             </div>
             <div className="lg:w-2/3 relative">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/76f9c3fd500ee73f06ddd4227855a027e34c2bf8?width=1548"
+                src="Images/1691A-1.jpg"
                 alt="Oceanside home exterior"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
@@ -403,17 +403,17 @@ const Home1691A = () => {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a7c18238a38012e597bcb0f8468781e8fbcf1124?width=1251"
+                src="Images/95348_1_elevation-A_12-Photo.jpg"
                 alt="Home interior 1"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2b68217bfac923056d85765c07809089170104f3?width=1251"
+                src="Images/95348_1_A_Photo-10.jpg"
                 alt="Home interior 2"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a5a33a2534deb9730fa6daa110dedbc662be19d1?width=1251"
+                src="Images/95348_1_elevation-A_i.02_31-KITCHEN.jpg"
                 alt="Home interior 3"
                 className="w-full h-[417px] object-cover"
               />
@@ -451,7 +451,7 @@ const Home1691A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2e015ea2dc2de580b8367c387e5c5e9b7e03a786?width=2160"
+              src="Images/PLAN-1691A-scaled.jpg"
               alt="Floor plan for 1691 home"
               className="max-w-full h-auto"
             />
@@ -492,7 +492,7 @@ const Home1691A = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
+              src="Images/AdobeStock_275971688.jpeg"
               alt="Contact representative"
               className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-brand-gold/30"
             />
@@ -825,7 +825,7 @@ const Home1691A = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9782cd38729bec66687ac16776959526386ea393?width=203"
+              src="Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
