@@ -241,30 +241,7 @@ export default function Index() {
         <div className="relative z-20 text-center text-white px-4">
           {/* Warning Icon and Text */}
           <div className="mb-4 sm:mb-8 flex flex-col items-center">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-4 flex items-center justify-center">
-              <svg
-                width="96"
-                height="96"
-                viewBox="0 0 97 97"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M44.14 60.5H52.14V68.5H44.14V60.5ZM44.14 28.5H52.14V52.5H44.14V28.5ZM48.12 8.5C26.02 8.5 8.14001 26.4 8.14001 48.5C8.14001 70.6 26.02 88.5 48.12 88.5C70.22 88.5 88.14 70.6 88.14 48.5C88.14 26.4 70.22 8.5 48.12 8.5ZM48.14 80.5C30.46 80.5 16.14 66.18 16.14 48.5C16.14 30.82 30.46 16.5 48.14 16.5C65.82 16.5 80.14 30.82 80.14 48.5C80.14 66.18 65.82 80.5 48.14 80.5Z"
-                  fill="white"
-                  fillOpacity="0.7"
-                />
-              </svg>
-            </div>
-            <div className="text-center">
-              <p className="text-[16px] sm:text-[20px] lg:text-[22px] font-medium mb-2">
-                Sign in to confirm you're not a bot
-              </p>
-              <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-normal opacity-90">
-                This helps protect our community.{" "}
-                <span className="underline cursor-pointer">Learn more</span>
-              </p>
-            </div>
+            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-4 flex items-center justify-center"></div>
           </div>
 
           {/* Main Title */}
