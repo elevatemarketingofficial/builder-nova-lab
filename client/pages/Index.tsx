@@ -41,7 +41,7 @@ export default function Index() {
         <div className="max-w-[1290px] mx-auto px-4 h-[87px] flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="w-[359px] h-[53px] flex items-center justify-center">
+            <div className="w-[200px] sm:w-[300px] lg:w-[359px] h-[30px] sm:h-[40px] lg:h-[53px] flex items-center justify-center">
               <svg
                 width="359"
                 height="53"
