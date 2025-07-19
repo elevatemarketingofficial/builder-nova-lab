@@ -238,7 +238,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70 z-10"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-center text-white px-4">
+        <div className="relative z-20 text-center text-white px-4">
           {/* Warning Icon and Text */}
           <div className="mb-4 sm:mb-8 flex flex-col items-center">
             <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-4 flex items-center justify-center">
