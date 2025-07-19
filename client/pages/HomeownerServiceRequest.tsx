@@ -213,7 +213,7 @@ export default function HomeownerServiceRequest() {
             {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/1d4063fe2970ba1b98fdba23429e6058176b2832?width=800"
+                src="Images/cropped-CVH-icon-2.png"
                 alt="RBG Construction Logo"
                 className="w-full max-w-[400px] h-auto"
               />
@@ -478,7 +478,7 @@ export default function HomeownerServiceRequest() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/144e7b711b353094050efb7df8d127e73c6bb257?width=203"
+                src="Images/equal-housing-opportunity-logo-1200w.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px] lg:w-[102px] lg:h-[109px]"
               />
