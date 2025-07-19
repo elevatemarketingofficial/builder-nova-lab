@@ -222,8 +222,20 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative h-[400px] sm:h-[600px] lg:h-[799px] bg-gray-800 flex items-center justify-center overflow-hidden">
+        {/* YouTube Video Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <iframe
+            className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/sbkUilXuGwI?autoplay=1&mute=1&loop=1&playlist=sbkUilXuGwI&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=1"
+            title="Choice Valley Homes Video"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         {/* Background overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70 z-10"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
