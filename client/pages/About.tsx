@@ -291,6 +291,9 @@ export default function About() {
         </div>
       </section>
 
+      {/* Spacing */}
+      <div className="h-32 lg:h-64"></div>
+
       {/* About Choice Valley Homes Section */}
       <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-[1140px] mx-auto px-4">
@@ -305,7 +308,7 @@ export default function About() {
             </div>
 
             {/* Right Content */}
-            <div className="lg:w-[456px] bg-white p-6 sm:p-8 lg:p-10">
+            <div className="lg:w-[456px] bg-white p-6 sm:p-8 lg:p-10 shadow-lg">
               {/* CVH Icon */}
               <div className="flex justify-center mb-6 lg:mb-8">
                 <svg
