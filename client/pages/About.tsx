@@ -243,14 +243,11 @@ export default function About() {
       </section>
 
       {/* Main Content Section */}
-      <section className="py-8 sm:py-12 lg:py-16">
-        <div className="max-w-[1140px] mx-auto px-4">
+      <section className="relative">
+        <div className="max-w-[1140px] mx-auto px-4 relative">
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
-            {/* Left Content Box */}
-            <div
-              className="lg:w-[570px] bg-white p-6 sm:p-8 lg:p-10 order-2 lg:order-1"
-              style={{ marginTop: "-150px" }}
-            >
+            {/* Left Content Box - Positioned over hero */}
+            <div className="lg:w-[570px] bg-white p-6 sm:p-8 lg:p-10 shadow-lg relative -mt-32 lg:-mt-40 z-10">
               <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
                 Homes built with
                 <br />
@@ -282,11 +279,8 @@ export default function About() {
               </p>
             </div>
 
-            {/* Right Image */}
-            <div
-              className="lg:w-[550px] order-1 lg:order-2"
-              style={{ marginTop: "110px" }}
-            >
+            {/* Right Image - positioned appropriately */}
+            <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b9f340eb288561138087a6d48ad68e5dc3a9cb75?width=1100"
                 alt="Choice Valley Homes"
