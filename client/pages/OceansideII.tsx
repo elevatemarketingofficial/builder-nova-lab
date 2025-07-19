@@ -394,66 +394,66 @@ const OceansideII = () => {
 
             {/* Row 4 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/58196f92acb668e1726013ef81bd089d7c801051?width=620"
+              src="Images/Bedroom-2.jpg"
               alt="Bedroom 2"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/20a70d7ac0b3566d5a71ac4bfe461af0789af11a?width=620"
+              src="Images/Bedroom-3.jpg"
               alt="Bedroom 3"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/939884a8cb9599c87faca3303afdc9ec995e82a4?width=620"
+              src="Images/Stairs.jpg"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/69617302a3097a168324d95444ba7397340b4df1?width=620"
+              src="Images/DSC09058.jpg"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/bab2f591fc51647aa2caff84cec00f231bfe1733?width=620"
+              src="Images/DSC09077.jpg"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/bdee15402ac66417837ae3974324269b83803b00?width=620"
+              src="Images/Master-Bath.jpg"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/af60c85cdc45aa18d4c1ba4b205c76b80ced503a?width=620"
+              src="Images/Kitchen-Breakfast-Bar.jpg"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/cb3d527140771ef06822856430590e8770eab137?width=620"
+              src="Images/DSC09128.jpg"
               alt="Kitchen island"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 6 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e65b580b6114f17fea74098a9977ea5e04b81b5e?width=620"
+              src="Images/DSC09089.jpg"
               alt="Living room view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3fb75950732acb21984635ff68595335f1d2513c?width=620"
+              src="Images/DSC09150.jpg"
               alt="Family room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c0fc1483065f0df6393b209f1f78b78001022d1a?width=620"
+              src="Images/DSC09073.jpg"
               alt="Dining room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/01701d7dc7088c0dcfe5b708da382cada1746aee?width=620"
+              src="Images/DSC09131.jpg"
               alt="Entry foyer"
               className="w-full h-[207px] object-cover"
             />
@@ -657,7 +657,7 @@ const OceansideII = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
+              src="Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
