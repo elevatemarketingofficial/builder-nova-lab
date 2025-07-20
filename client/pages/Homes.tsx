@@ -467,15 +467,19 @@ export default function Homes() {
         <div className="max-w-[1120px] mx-auto px-4">
           <div className="text-center space-y-6 lg:space-y-8">
             {/* Logo */}
-            <div className="flex justify-center mb-6 lg:mb-8">
-              <svg
-                width="632"
-                height="93"
-                viewBox="0 0 634 94"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px]"
-              >
+                        <div className="flex justify-center mb-6 lg:mb-8">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px] object-cover object-center"
+                style={{
+                  aspectRatio: "6.76",
+                  minHeight: "20px",
+                  minWidth: "20px",
+                  overflow: "hidden",
+                }}
+              />
                 <g clipPath="url(#clip0_1_122)">
                   <mask
                     id="mask0_1_122"
