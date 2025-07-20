@@ -273,7 +273,7 @@ const OceansideII = () => {
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/cropped-CVH-icon-2.png"
+                    src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fcropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -312,7 +312,7 @@ const OceansideII = () => {
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/CVH-icon-2.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FCVH-icon-2.svg"
                 alt="YouTube"
                 className="h-4"
               />
@@ -333,17 +333,17 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09064.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09097.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09068.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
