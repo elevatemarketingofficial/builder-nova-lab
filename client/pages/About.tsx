@@ -462,7 +462,7 @@ export default function About() {
             {/* Flexibility */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09151.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff80bc851f09d40579641e193f7151629"
                 alt="Flexibility"
                 className="w-full h-[280px] object-cover"
               />
