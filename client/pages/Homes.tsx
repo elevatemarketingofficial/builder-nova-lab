@@ -273,7 +273,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fffeb4fb889304cf2806957e0e6786131') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
