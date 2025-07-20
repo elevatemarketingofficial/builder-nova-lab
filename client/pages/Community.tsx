@@ -244,6 +244,29 @@ export default function Community() {
           </div>
         </section>
 
+        {/* Lightbox Modal */}
+        {lightboxOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4"
+            onClick={() => setLightboxOpen(false)}
+          >
+            <div className="relative max-w-7xl max-h-full">
+              <button
+                onClick={() => setLightboxOpen(false)}
+                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1db2ee28cecf4642a00d7b44c40c245c"
+                alt="Community Map - Enlarged"
+                className="max-w-full max-h-full object-contain bg-white rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
+          </div>
+        )}
+
         {/* UC Merced Section */}
         <section className="py-[100px] lg:py-[200px] bg-[#FAFBFC]">
           <div className="max-w-[1140px] mx-auto px-4">
