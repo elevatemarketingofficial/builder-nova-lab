@@ -374,7 +374,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="/Images/110-Montage-Front-Photo-.png"
+                src="https://via.placeholder.com/1328x800/8B7355/FFFFFF?text=Choice+Valley+Homes"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +407,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="/Images/DSC09101.jpg"
+                src="https://via.placeholder.com/1100x600/8B7355/FFFFFF?text=Modern+Interior"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
@@ -447,7 +447,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="/Images/Image-home-01.png"
+                    src="https://via.placeholder.com/200x200/D4AF37/FFFFFF?text=Step+1"
                     alt="Step 1"
                     className="w-[100px] h-[107px]"
                   />
@@ -465,7 +465,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="/Images/Image-home-02.png"
+                    src="https://via.placeholder.com/200x200/D4AF37/FFFFFF?text=Step+2"
                     alt="Step 2"
                     className="w-[100px] h-[107px]"
                   />
@@ -483,7 +483,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="/Images/community-02.png"
+                    src="https://via.placeholder.com/200x200/D4AF37/FFFFFF?text=Step+3"
                     alt="Step 3"
                     className="w-[100px] h-[107px]"
                   />
@@ -507,7 +507,7 @@ export default function Index() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="/Images/AdobeStock_275971688.jpeg"
+                src="https://via.placeholder.com/216x216/D4AF37/FFFFFF?text=Contact"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -822,7 +822,7 @@ export default function Index() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
