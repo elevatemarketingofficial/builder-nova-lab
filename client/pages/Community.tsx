@@ -20,6 +20,8 @@ export default function Community() {
     termsAccepted: false,
   });
 
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
