@@ -228,7 +228,7 @@ export default function About() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('/Images/110-Montage-Front-Photo-.jpg') lightgray 0px 0px / 100% 156.522% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F110-Montage-Front-Photo-.jpg') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
         {/* Content */}
@@ -281,7 +281,7 @@ export default function About() {
             {/* Right Image - positioned appropriately */}
             <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
-                src="/Images/Livingroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FLivingroom.jpg"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -300,7 +300,7 @@ export default function About() {
             {/* Left Image */}
             <div className="lg:w-[664px]">
               <img
-                src="/Images/110-Montage-Front-Photo-.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F110-Montage-Front-Photo-.jpg"
                 alt="Choice Valley Homes Building"
                 className="w-full h-auto rounded-lg"
               />
@@ -400,7 +400,7 @@ export default function About() {
             {/* Professionalism */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09064.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09064.jpg"
                 alt="Professionalism"
                 className="w-full h-[280px] object-cover"
               />
@@ -420,7 +420,7 @@ export default function About() {
             {/* Convenience */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09097.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09097.jpg"
                 alt="Convenience"
                 className="w-full h-[280px] object-cover"
               />
@@ -763,7 +763,7 @@ export default function About() {
                 <br />
                 Tuesday – Saturday 10am – 5pm
                 <br />
-                Sunday – 11am – 4pm
+                Sunday �� 11am – 4pm
               </p>
             </div>
 
