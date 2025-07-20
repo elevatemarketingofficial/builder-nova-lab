@@ -136,36 +136,7 @@ const OceansideII = () => {
             </div>
 
             {/* Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              <div className="relative group">
-                <button className="text-black uppercase text-sm font-normal flex items-center space-x-2">
-                  <span>About</span>
-                  <svg width="8" height="8" viewBox="0 0 9 9" fill="none">
-                    <path
-                      d="M1.39998 2.68666L4.27998 5.56666L7.15998 2.68666L8.27998 3.27333L4.27998 7.27333L0.279984 3.27333L1.39998 2.68666Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="text-brand-gold uppercase text-sm font-normal flex items-center space-x-2 border-b-2 border-brand-gold">
-                  <span>Floor Plans</span>
-                  <svg width="8" height="8" viewBox="0 0 9 9" fill="none">
-                    <path
-                      d="M1.25 2.68666L4.13001 5.56666L7.01001 2.68666L8.13001 3.27333L4.13001 7.27333L0.130005 3.27333L1.25 2.68666Z"
-                      fill="#D29A3A"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <button className="text-black uppercase text-sm font-normal">
-                Community
-              </button>
-              <button className="text-black uppercase text-sm font-normal">
-                Contact
-              </button>
-            </nav>
+            <Navigation />
 
             {/* View Listings Button */}
             <button className="bg-brand-gold text-white px-5 py-3 rounded text-sm font-medium flex items-center space-x-2">
