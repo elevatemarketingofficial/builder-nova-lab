@@ -277,7 +277,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="/Images/1691A-1.jpg"
+                  src="https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Oceanside+II"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="/Images/1724A-1.jpg"
+                  src="https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Skyview+II"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="/Images/1791A-1.jpg"
+                  src="https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Mountain+Top+II"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -345,7 +345,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="/Images/1874A-5.jpeg"
+                  src="https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Windridge"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
