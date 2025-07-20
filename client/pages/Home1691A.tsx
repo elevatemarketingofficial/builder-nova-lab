@@ -215,7 +215,7 @@ const Home1691A = () => {
             </div>
             <div className="lg:w-2/3 relative">
               <img
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=774&h=600&fit=crop&crop=house"
+                src="/Images/1691A-1.jpg"
                 alt="Oceanside home exterior"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
@@ -403,17 +403,17 @@ const Home1691A = () => {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb4?w=625&h=417&fit=crop&crop=interior"
+                src="/Images/Livingroom.jpg"
                 alt="Home interior 1"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=625&h=417&fit=crop&crop=interior"
+                src="/Images/Master-Bedroom.jpg"
                 alt="Home interior 2"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=625&h=417&fit=crop&crop=kitchen"
+                src="/Images/Kitchen.jpg"
                 alt="Home interior 3"
                 className="w-full h-[417px] object-cover"
               />
@@ -451,7 +451,7 @@ const Home1691A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1080&h=1080&fit=crop&crop=plan"
+              src="/Images/PLAN-1691A-scaled.jpg"
               alt="Floor plan for 1691 home"
               className="max-w-full h-auto"
             />
@@ -492,7 +492,7 @@ const Home1691A = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=216&h=216&fit=crop&crop=face"
+              src="/Images/anthony.jpg"
               alt="Contact representative"
               className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-brand-gold/30"
             />
