@@ -231,7 +231,7 @@ const Home1724A = () => {
             <div
               className="w-[774px] h-[700px] flex items-center justify-center"
               style={{
-                background: `url('/Images/1724A-1.jpg') lightgray center / cover`,
+                background: `url('https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1724A-1.jpg') lightgray center / cover`,
               }}
             ></div>
           </div>
@@ -332,17 +332,17 @@ const Home1724A = () => {
         <section className="w-full py-[50px] relative">
           <div className="flex space-x-[12px] px-[10px]">
             <img
-              src="/Images/Livingroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FLivingroom.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
             <img
-              src="/Images/Master-Bedroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
             <img
-              src="/Images/Kitchen.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
@@ -388,7 +388,7 @@ const Home1724A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="/Images/floor-plan-1724.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Ffloor-plan-1724.jpg"
               alt="Floor plan 1724"
               className="w-[1080px] h-[1080px] object-contain"
             />
@@ -421,7 +421,7 @@ const Home1724A = () => {
         <section className="max-w-[1290px] mx-auto px-[280px] py-[130px] bg-white">
           <div className="text-center">
             <img
-              src="/Images/anthony.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fanthony.jpg"
               alt="Contact representative"
               className="w-[108px] h-[108px] rounded-full border-[3px] border-brand-gold border-opacity-34 mx-auto mb-[20px]"
             />
