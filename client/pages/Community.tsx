@@ -193,7 +193,7 @@ export default function Community() {
           </div>
         </section>
 
-        {/* Community Map Section */}
+                {/* Community Map Section */}
         <section className="py-10 bg-[#FAFBFC]">
           <div className="max-w-[1120px] mx-auto px-4">
             <div className="relative">
@@ -221,12 +221,12 @@ export default function Community() {
                   UC Merced
                 </h2>
                 <p className="text-[#3A4F66] text-base leading-[26.4px]">
-                  UC Merced is the first American research university
-                  established in the 21st century. UC Merced has upheld their
-                  legacy for innovative, interdisciplinary research. From
-                  Quantitative and Systems Biology to Mechanical Engineering,
-                  Dynamic curriculums and commitment to diversity, and
-                  leadership programs are bounded by student success.
+                  UC Merced is the first American research university established
+                  in the 21st century. UC Merced has upheld their legacy for
+                  innovative, interdisciplinary research. From Quantitative and
+                  Systems Biology to Mechanical Engineering, Dynamic curriculums
+                  and commitment to diversity, and leadership programs are bounded
+                  by student success.
                 </p>
               </div>
               <img
@@ -290,7 +290,7 @@ export default function Community() {
           </div>
         </section>
 
-        {/* Get in Touch Section */}
+                {/* Get in Touch Section */}
         <section className="py-24 bg-white">
           <div className="max-w-[730px] mx-auto px-4">
             <div className="text-center mb-12">
@@ -306,7 +306,7 @@ export default function Community() {
               </h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[#3A4F66] text-[15px] mb-2">
@@ -374,7 +374,7 @@ export default function Community() {
                 />
               </div>
 
-              <div className="space-y-4">
+                            <div className="space-y-4">
                 <label className="block text-[#3A4F66] text-[15px]">
                   Accept Terms of Contacting
                 </label>
@@ -413,11 +413,12 @@ export default function Community() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-[#F2F4F7] py-[60px]">
+                {/* Footer */}
+        <footer className="bg-[#F2F4F7] py-16">
           <div className="max-w-[1120px] mx-auto px-4">
-            {/* Logo */}
-            <div className="text-center mb-8">
+            <div className="text-center">
+              {/* Logo */}
+              <div className="flex justify-center mb-8">
               <svg
                 width="632"
                 height="93"
