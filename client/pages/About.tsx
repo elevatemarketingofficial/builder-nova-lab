@@ -281,7 +281,7 @@ export default function About() {
             {/* Right Image - positioned appropriately */}
             <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2efbe6f749384e439fa1711aa37738c4"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
