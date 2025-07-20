@@ -213,7 +213,7 @@ export default function HomeownerServiceRequest() {
             {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop&crop=logo"
+                src="/Images/RBG-Logo.webp"
                 alt="RBG Construction Logo"
                 className="w-full max-w-[400px] h-auto"
               />
