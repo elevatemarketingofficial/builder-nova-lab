@@ -405,87 +405,14 @@ export default function Homes() {
               </div>
             </div>
 
-            {/* Map Content */}
-            <div className="relative h-[515px] bg-white border-t">
-              {/* Left Control Panel */}
-              <div className="absolute left-0 top-0 w-[46px] h-full bg-gray-300 flex flex-col items-center py-4 gap-4">
-                <button className="w-5 h-5 flex items-center justify-center">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                    <path
-                      d="M16.25 8.25V3.94922C16.25 3.69922 16.1523 3.46094 15.9766 3.28516L13.7109 1.02344C13.5352 0.847656 13.2969 0.75 13.0469 0.75H4.6875C4.17188 0.75 3.75 1.17188 3.75 1.6875V8.25C1.67969 8.25 0 9.92969 0 12V17.3125C0 17.8281 0.421875 18.25 0.9375 18.25H3.75V19.8125C3.75 20.3281 4.17188 20.75 4.6875 20.75H15.3125C15.8281 20.75 16.25 20.3281 16.25 19.8125V18.25H19.0625C19.5781 18.25 20 17.8281 20 17.3125V12C20 9.92969 18.3203 8.25 16.25 8.25ZM5 2H12.9219L15 4.07812V10.75H5V2ZM15 19.5H5V15.75H15V19.5ZM18.75 17H16.25V15.4375C16.25 14.9219 15.8281 14.5 15.3125 14.5H4.6875C4.17188 14.5 3.75 14.9219 3.75 15.4375V17H1.25V12C1.25 10.6211 2.37109 9.5 3.75 9.5V11.0625C3.75 11.5781 4.17188 12 4.6875 12H15.3125C15.8281 12 16.25 11.5781 16.25 11.0625V9.5C17.6289 9.5 18.75 10.6211 18.75 12V17ZM17.6562 12.625C17.6562 13.0547 17.3047 13.4062 16.875 13.4062C16.4453 13.4062 16.0938 13.0547 16.0938 12.625C16.0938 12.1953 16.4453 11.8438 16.875 11.8438C17.3047 11.8438 17.6562 12.1953 17.6562 12.625Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <button className="w-5 h-6 flex items-center justify-center">
-                  <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path
-                      d="M19.5908 8.87715H14.0191C13.4215 8.87715 12.9407 8.39637 12.9407 7.79876V2.22706C12.9407 1.9305 13.1834 1.68787 13.4799 1.68787H13.8394C14.1359 1.68787 14.3786 1.9305 14.3786 2.22706V7.43929H19.5908C19.8874 7.43929 20.13 7.68193 20.13 7.97849V8.33795C20.13 8.63451 19.8874 8.87715 19.5908 8.87715Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <div className="flex flex-col items-center">
-                  <div className="w-0.5 h-[100px] bg-gray-400 relative">
-                    <div className="w-7 h-7 bg-gray-400 rounded-sm absolute left-1/2 transform -translate-x-1/2 top-20 flex items-center justify-center">
-                      <span className="text-gray-700 text-xs">⊞</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Area */}
-              <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FNeighborhood_Map_Render-scaled.jpg"
-                  alt="Paseo Community Map"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-
-              {/* Right Sidebar - Legend */}
-              <div className="absolute right-0 top-0 w-[234px] h-full bg-gray-200">
-                <div className="h-[42px] bg-brand-gold flex items-center justify-between px-3 border-t border-gray-300 border-opacity-25">
-                  <span className="text-gray-200 text-[14px] font-normal">
-                    Legend
-                  </span>
-                  <span className="text-white text-[14px]">⊞</span>
-                </div>
-                <div className="bg-gray-300 p-4 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-blue-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Available</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-gray-500 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Future Available
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-green-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Quick Move-In
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-red-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Sold</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Location Pin */}
-              <div className="absolute top-3 left-3">
-                <div className="w-6 h-8 bg-red-600 rounded-t-full flex items-start justify-center pt-1">
-                  <span className="text-white text-sm">📍</span>
-                </div>
-              </div>
-
-              {/* Zoom Controls */}
-              <div className="absolute right-[234px] top-[140px] w-[26px] h-[36px] bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-700 text-xl">⊞</span>
-              </div>
+            {/* Interactive Map */}
+            <div className="flex flex-col relative mt-5">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html:
+                    '<iframe src="https://contradovip.com/choice-valley-homes/paseo/site/" height="600"></iframe>',
+                }}
+              />
             </div>
           </div>
         </div>
