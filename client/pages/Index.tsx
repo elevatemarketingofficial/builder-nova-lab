@@ -277,7 +277,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1691A-1.jpg"
+                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&h=400&fit=crop&crop=house"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1724A-1.jpg"
+                  src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&h=400&fit=crop&crop=house"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1791A-1.jpg"
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=400&fit=crop&crop=house"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -345,7 +345,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1874A-5.jpeg"
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=400&fit=crop&crop=house"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
