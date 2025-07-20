@@ -213,7 +213,7 @@ export default function HomeownerServiceRequest() {
             {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="/Images/cropped-CVH-icon-2.png"
+                src="https://via.placeholder.com/800x400/D4AF37/FFFFFF?text=Choice+Valley+Homes"
                 alt="RBG Construction Logo"
                 className="w-full max-w-[400px] h-auto"
               />
@@ -478,7 +478,7 @@ export default function HomeownerServiceRequest() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px] lg:w-[102px] lg:h-[109px]"
               />
