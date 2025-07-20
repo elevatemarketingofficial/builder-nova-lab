@@ -228,7 +228,7 @@ export default function About() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png') lightgray 0px 0px / 100% 156.522% no-repeat",
+            "url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1920&h=800&fit=crop&crop=building') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
         {/* Content */}
@@ -281,7 +281,7 @@ export default function About() {
             {/* Right Image - positioned appropriately */}
             <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09101.jpg"
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb4?w=1100&h=600&fit=crop&crop=interior"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -300,7 +300,7 @@ export default function About() {
             {/* Left Image */}
             <div className="lg:w-[664px]">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png"
+                src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1328&h=800&fit=crop&crop=building"
                 alt="Choice Valley Homes Building"
                 className="w-full h-auto rounded-lg"
               />
@@ -488,7 +488,7 @@ export default function About() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/AdobeStock_275971688.jpeg"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=216&h=216&fit=crop&crop=face"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -803,7 +803,7 @@ export default function About() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
