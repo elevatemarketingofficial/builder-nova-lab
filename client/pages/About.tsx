@@ -291,7 +291,7 @@ export default function About() {
       </section>
 
       {/* Spacing */}
-      <div className="h-32 lg:h-64"></div>
+      <div className="h-12"></div>
 
       {/* About Choice Valley Homes Section */}
       <section className="py-8 sm:py-12 lg:py-16">
