@@ -84,12 +84,21 @@ export default function Navigation() {
       </div>
 
       {/* Community */}
-      <Link
-        to="/community"
-        className="text-black text-[16px] font-normal uppercase hover:text-brand-gold transition-colors"
-      >
-        Community
-      </Link>
+      <div className="relative">
+        <Link
+          to="/community"
+          className={`text-[16px] font-normal uppercase transition-colors ${
+            location.pathname === "/community"
+              ? "text-[#D29A3A]"
+              : "text-black hover:text-[#D29A3A]"
+          }`}
+        >
+          Community
+        </Link>
+        {location.pathname === "/community" && (
+          <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-[#D29A3A]"></div>
+        )}
+      </div>
 
       {/* Contact */}
       <div className="relative">
