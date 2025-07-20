@@ -333,44 +333,44 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Exterior+View"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Front+View"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Home+Front"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Living+Room"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Family+Room"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Master+Bedroom"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Master-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Master+Bath"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Master-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/620x400/8B7355/FFFFFF?text=Kitchen"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Kitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
@@ -662,7 +662,7 @@ const OceansideII = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
