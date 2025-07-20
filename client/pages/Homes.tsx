@@ -37,44 +37,37 @@ export default function Homes() {
   const homeModels = [
     {
       name: "Oceanside",
-      image:
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/1691A-1.jpg",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
-      image:
-        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/Skyview-B.jpg",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/1791A-1.jpg",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
-      image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/Mountain-Top-A.jpg",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
-      image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/1691A-2.jpg",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
-      image:
-        "https://images.unsplash.com/photo-1600563438938-a42abaa0a78c?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/Skyview-B1.jpg",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
-      image:
-        "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=500&h=400&fit=crop&crop=house",
+      image: "/Images/1874A-3.jpg",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
@@ -273,7 +266,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1920&h=800&fit=crop&crop=building') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('/Images/110-Montage-Front-Photo-.jpg') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -437,7 +430,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1476&h=800&fit=crop&crop=development"
+                  src="/Images/Neighborhood_Map_Render-scaled.jpg"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -497,7 +490,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=216&h=216&fit=crop&crop=face"
+                src="/Images/anthony.jpg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
