@@ -277,7 +277,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-1.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FSkyview-B.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMountain-Top-A.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -345,7 +345,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1791A-1.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
@@ -374,7 +374,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b43864218d3427b87d8535f26c560e0"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +407,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7903484f28194fc6b6723d0e5763fe2a"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
@@ -447,7 +447,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStep-01.png"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd2598d1cddbf405eacc7ffffda3b49ee"
                     alt="Step 1"
                     className="w-[100px] h-[107px]"
                   />
@@ -465,7 +465,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStep-02.png"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa2990c8790314a83aed8d4b29f833b7c"
                     alt="Step 2"
                     className="w-[100px] h-[107px]"
                   />
@@ -483,7 +483,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStep-03.png"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd6137a0350c340e5a8227ab838f778de"
                     alt="Step 3"
                     className="w-[100px] h-[107px]"
                   />
@@ -507,7 +507,7 @@ export default function Index() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fanthony.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
