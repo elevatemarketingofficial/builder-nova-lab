@@ -92,12 +92,21 @@ export default function Navigation() {
       </Link>
 
       {/* Contact */}
-      <Link
-        to="/contact"
-        className="text-black text-[16px] font-normal uppercase hover:text-brand-gold transition-colors"
-      >
-        Contact
-      </Link>
+      <div className="relative">
+        <Link
+          to="/contact"
+          className={`text-[16px] font-normal uppercase transition-colors ${
+            location.pathname === "/contact"
+              ? "text-[#D29A3A]"
+              : "text-black hover:text-[#D29A3A]"
+          }`}
+        >
+          Contact
+        </Link>
+        {location.pathname === "/contact" && (
+          <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-[#D29A3A]"></div>
+        )}
+      </div>
     </nav>
   );
 }
