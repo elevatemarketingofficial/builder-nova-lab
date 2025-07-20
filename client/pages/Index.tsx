@@ -374,7 +374,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png"
+                src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1328&h=800&fit=crop&crop=building"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +407,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09101.jpg"
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb4?w=1100&h=600&fit=crop&crop=interior"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
@@ -447,7 +447,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Image-home-01.png"
+                    src="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?w=200&h=200&fit=crop&crop=home"
                     alt="Step 1"
                     className="w-[100px] h-[107px]"
                   />
@@ -465,7 +465,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Image-home-02.png"
+                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=200&fit=crop&crop=home"
                     alt="Step 2"
                     className="w-[100px] h-[107px]"
                   />
@@ -483,7 +483,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/community-02.png"
+                    src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=200&h=200&fit=crop&crop=community"
                     alt="Step 3"
                     className="w-[100px] h-[107px]"
                   />
@@ -507,7 +507,7 @@ export default function Index() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/AdobeStock_275971688.jpeg"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=216&h=216&fit=crop&crop=face"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -822,7 +822,7 @@ export default function Index() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
