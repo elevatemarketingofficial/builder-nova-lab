@@ -184,7 +184,8 @@ const OceansideII = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/Images/110-Montage-Front-Photo-.jpg')",
+            backgroundImage:
+              "url('https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F110-Montage-Front-Photo-.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -220,7 +221,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="/Images/Oceanside-II-Floor-Plan-1.png"
+            src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FOceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -240,7 +241,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="/Images/Livingroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FLivingroom.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -265,7 +266,7 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="/Images/Master-Bedroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
@@ -376,7 +377,7 @@ const OceansideII = () => {
 
             {/* Row 3 */}
             <img
-              src="/Images/Dining.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDining.jpg"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
