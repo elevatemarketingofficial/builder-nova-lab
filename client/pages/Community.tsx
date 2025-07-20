@@ -218,13 +218,24 @@ export default function Community() {
         <section className="py-10 bg-[#FAFBFC]">
           <div className="max-w-[1120px] mx-auto px-4">
             <div className="relative">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1db2ee28cecf4642a00d7b44c40c245c"
-                alt="Community Map"
-                className="w-full h-[487px] object-cover"
-              />
-              <div className="flex items-center gap-2 mt-4">
-                <span className="text-[#3A4F66] text-base">📍</span>
+              <div
+                className="relative cursor-pointer group"
+                onClick={() => setLightboxOpen(true)}
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1db2ee28cecf4642a00d7b44c40c245c"
+                  alt="Community Map"
+                  className="w-full h-[487px] object-cover transition-opacity group-hover:opacity-90"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <ZoomIn className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+              <div
+                className="flex items-center gap-2 mt-4 cursor-pointer hover:text-[#D29A3A] transition-colors"
+                onClick={() => setLightboxOpen(true)}
+              >
+                <ZoomIn className="w-5 h-5 text-[#3A4F66]" />
                 <span className="text-[#3A4F66] text-base">
                   Click to enlarge
                 </span>
