@@ -271,7 +271,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('/Images/110-Montage-Front-Photo-.png') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://via.placeholder.com/1920x800/8B7355/FFFFFF?text=Community+View') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -435,7 +435,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="/Images/GetMedia.jpg"
+                  src="https://via.placeholder.com/1476x800/8B7355/FFFFFF?text=Community+Map"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -495,7 +495,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="/Images/AdobeStock_275971688.jpeg"
+                src="https://via.placeholder.com/216x216/D4AF37/FFFFFF?text=Contact"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -810,7 +810,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
