@@ -180,11 +180,14 @@ export default function Community() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative h-[690px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+          className="relative h-[690px] flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
           style={{
             backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fea115177b4a7470595ac9b3a35fb6278)`,
+            backgroundSize: "110%",
+            animation: "heroZoom 20s ease-in-out infinite alternate",
           }}
         >
+          <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="relative z-10">
             <h1 className="text-white text-[64px] font-bold leading-[68px] text-center">
               COMMUNITY
