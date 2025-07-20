@@ -62,19 +62,19 @@ export default function Homes() {
     {
       name: "Oceanside II",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-2.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FSkyview-B1.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1874A-3.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
