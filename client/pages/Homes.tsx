@@ -355,16 +355,14 @@ export default function Homes() {
       {/* Interactive Map Section */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="bg-gray-200 overflow-hidden min-h-[600px] relative flex flex-col justify-start items-start">
+          <div className="bg-gray-200 overflow-hidden min-h-[600px] relative">
             {/* Interactive Map */}
-            <div className="flex flex-col relative mt-5">
-              <iframe
-                src="https://contradovip.com/choice-valley-homes/paseo/site/"
-                height="600"
-                width="100%"
-                style={{ border: "none" }}
-              />
-            </div>
+            <iframe
+              src="https://contradovip.com/choice-valley-homes/paseo/site/"
+              width="100%"
+              height="600"
+              style={{ border: "none", display: "block" }}
+            />
           </div>
         </div>
       </section>
