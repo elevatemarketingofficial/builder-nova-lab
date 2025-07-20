@@ -155,51 +155,7 @@ const Home1724A = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="flex items-center space-x-8">
-            <div className="flex items-center space-x-2">
-              <span className="text-black text-[15px] font-normal uppercase">
-                About
-              </span>
-              <svg
-                width="9"
-                height="9"
-                viewBox="0 0 9 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.39998 2.68666L4.27998 5.56666L7.15998 2.68666L8.27998 3.27333L4.27998 7.27333L0.279984 3.27333L1.39998 2.68666Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <span className="text-brand-gold text-[15px] font-normal uppercase">
-                  Floor Plans
-                </span>
-                <svg
-                  width="9"
-                  height="9"
-                  viewBox="0 0 9 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.25 2.68666L4.13001 5.56666L7.01001 2.68666L8.13001 3.27333L4.13001 7.27333L0.130005 3.27333L1.25 2.68666Z"
-                    fill="#D29A3A"
-                  />
-                </svg>
-              </div>
-              <div className="w-[125px] h-[2px] bg-brand-gold"></div>
-            </div>
-            <span className="text-black text-[16px] font-normal uppercase">
-              Community
-            </span>
-            <span className="text-black text-[16px] font-normal uppercase">
-              Contact
-            </span>
-          </nav>
+          <Navigation />
 
           {/* View Listings Button */}
           <button className="flex items-center space-x-2 bg-brand-gold text-white px-5 py-3 rounded-[3px]">
