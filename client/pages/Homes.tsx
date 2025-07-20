@@ -37,37 +37,42 @@ export default function Homes() {
   const homeModels = [
     {
       name: "Oceanside",
-      image: "/Images/1691A-1.jpg",
+      image:
+        "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Oceanside+II",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
-      image: "/Images/1724A-1.jpg",
+      image:
+        "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Skyview+II",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
-      image: "/Images/1791A-1.jpg",
+      image:
+        "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Mountain+Top+II",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
-      image: "/Images/1874A-5.jpeg",
+      image: "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Windridge",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
-      image: "/Images/Oceanside-II-Floor-Plan-1.png",
+      image:
+        "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Oceanside+II",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
-      image: "/Images/1724B-1-Remove-Sold.jpg",
+      image: "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Skyview+B",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
-      image: "/Images/1791B-1.jpg",
+      image:
+        "https://via.placeholder.com/500x400/D4AF37/FFFFFF?text=Mountain+Top+A",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
