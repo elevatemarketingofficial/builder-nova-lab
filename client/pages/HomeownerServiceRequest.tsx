@@ -213,7 +213,7 @@ export default function HomeownerServiceRequest() {
             {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/cropped-CVH-icon-2.png"
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop&crop=logo"
                 alt="RBG Construction Logo"
                 className="w-full max-w-[400px] h-auto"
               />
@@ -478,7 +478,7 @@ export default function HomeownerServiceRequest() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px] lg:w-[102px] lg:h-[109px]"
               />
