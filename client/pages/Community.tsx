@@ -40,14 +40,10 @@ export default function Community() {
 
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
-      <style jsx>{`
+      <style>{`
         @keyframes heroZoom {
-          0% {
-            background-size: 110%;
-          }
-          100% {
-            background-size: 115%;
-          }
+          0% { background-size: 110%; }
+          100% { background-size: 115%; }
         }
       `}</style>
       {/* Header */}
