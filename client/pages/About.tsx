@@ -443,7 +443,7 @@ export default function About() {
             {/* People First */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09068.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F999450ede1c54c2987e79c784fb7c33e"
                 alt="People First"
                 className="w-full h-[280px] object-cover"
               />
