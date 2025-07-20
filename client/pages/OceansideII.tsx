@@ -185,7 +185,7 @@ const OceansideII = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://via.placeholder.com/1920x450/8B7355/FFFFFF?text=Oceanside+II+Hero')",
+              "url('https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -210,7 +210,7 @@ const OceansideII = () => {
               <span className="text-black font-bold">2.5 BATHS</span>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-brand-gold text-lg">����</span>
+              <span className="text-brand-gold text-lg">📐</span>
               <span className="text-black font-bold">1,746 SQ. FT.</span>
             </div>
           </div>
@@ -221,7 +221,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://via.placeholder.com/1270x800/F5F5F5/333333?text=Oceanside+II+Floor+Plan"
+            src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Oceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +241,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://via.placeholder.com/1270x714/8B7355/FFFFFF?text=Virtual+Tour"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09101.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,14 +266,14 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://via.placeholder.com/1270x714/8B7355/FFFFFF?text=Video+Preview"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09127.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="https://via.placeholder.com/80x80/D4AF37/FFFFFF?text=CVH"
+                    src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/cropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -312,7 +312,7 @@ const OceansideII = () => {
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
               <img
-                src="https://via.placeholder.com/144x144/FF0000/FFFFFF?text=YouTube"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/CVH-icon-2.svg"
                 alt="YouTube"
                 className="h-4"
               />
