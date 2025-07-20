@@ -228,7 +228,7 @@ export default function About() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('/Images/110-Montage-Front-Photo-.png') lightgray 0px 0px / 100% 156.522% no-repeat",
+            "url('https://via.placeholder.com/1920x800/8B7355/FFFFFF?text=About+Hero') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
         {/* Content */}
@@ -281,7 +281,7 @@ export default function About() {
             {/* Right Image - positioned appropriately */}
             <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
-                src="/Images/DSC09101.jpg"
+                src="https://via.placeholder.com/1100x600/8B7355/FFFFFF?text=Interior+View"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -300,7 +300,7 @@ export default function About() {
             {/* Left Image */}
             <div className="lg:w-[664px]">
               <img
-                src="/Images/110-Montage-Front-Photo-.png"
+                src="https://via.placeholder.com/1328x800/8B7355/FFFFFF?text=Building+Exterior"
                 alt="Choice Valley Homes Building"
                 className="w-full h-auto rounded-lg"
               />
@@ -400,7 +400,7 @@ export default function About() {
             {/* Professionalism */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="/Images/DSC09064.jpg"
+                src="https://via.placeholder.com/1160x600/8B7355/FFFFFF?text=Professionalism"
                 alt="Professionalism"
                 className="w-full h-[280px] object-cover"
               />
@@ -420,7 +420,7 @@ export default function About() {
             {/* Convenience */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="/Images/DSC09097.jpg"
+                src="https://via.placeholder.com/1160x600/8B7355/FFFFFF?text=Convenience"
                 alt="Convenience"
                 className="w-full h-[280px] object-cover"
               />
@@ -443,7 +443,7 @@ export default function About() {
             {/* People First */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="/Images/DSC09068.jpg"
+                src="https://via.placeholder.com/1160x600/8B7355/FFFFFF?text=People+First"
                 alt="People First"
                 className="w-full h-[280px] object-cover"
               />
@@ -462,7 +462,7 @@ export default function About() {
             {/* Flexibility */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="/Images/DSC09151.jpg"
+                src="https://via.placeholder.com/1160x600/8B7355/FFFFFF?text=Flexibility"
                 alt="Flexibility"
                 className="w-full h-[280px] object-cover"
               />
@@ -488,7 +488,7 @@ export default function About() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="/Images/AdobeStock_275971688.jpeg"
+                src="https://via.placeholder.com/216x216/D4AF37/FFFFFF?text=Contact"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -803,7 +803,7 @@ export default function About() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
