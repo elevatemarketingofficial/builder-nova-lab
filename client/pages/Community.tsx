@@ -384,9 +384,9 @@ export default function Community() {
                     name="termsAccepted"
                     checked={formData.termsAccepted}
                     onChange={handleInputChange}
-                    className="w-[13px] h-[13px] bg-[#0075FF] rounded-[2.5px] mt-1 flex-shrink-0"
+                    className="w-3 h-3 bg-blue-600 rounded-sm mt-1 flex-shrink-0"
                   />
-                  <div className="text-[#3A4F66] text-[15px] leading-[24.75px]">
+                  <div className="text-[#3A4F66] text-[15px] leading-[25px]">
                     <p>
                       By pressing the Submit button, I agree to Choice Valley
                       contacting me by email and/or phone
@@ -405,7 +405,7 @@ export default function Community() {
 
               <button
                 type="submit"
-                className="bg-[#69727D] text-white px-16 py-3 rounded-[3px] text-[15px] font-medium hover:bg-opacity-90 transition-colors"
+                className="bg-[#69727D] text-white px-12 py-3 rounded text-[15px] font-medium hover:bg-opacity-90 transition-colors"
               >
                 Submit
               </button>
