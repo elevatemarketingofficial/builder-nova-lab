@@ -185,7 +185,7 @@ const OceansideII = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png')",
+              "url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1920&h=450&fit=crop&crop=building')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -221,7 +221,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Oceanside-II-Floor-Plan-1.png"
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1270&h=800&fit=crop&crop=plan"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +241,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09101.jpg"
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb4?w=1270&h=714&fit=crop&crop=interior"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,7 +266,7 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09127.jpg"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1270&h=714&fit=crop&crop=interior"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
@@ -662,7 +662,7 @@ const OceansideII = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
