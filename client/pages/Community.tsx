@@ -193,7 +193,7 @@ export default function Community() {
           </div>
         </section>
 
-                {/* Community Map Section */}
+        {/* Community Map Section */}
         <section className="py-10 bg-[#FAFBFC]">
           <div className="max-w-[1120px] mx-auto px-4">
             <div className="relative">
@@ -221,12 +221,12 @@ export default function Community() {
                   UC Merced
                 </h2>
                 <p className="text-[#3A4F66] text-base leading-[26.4px]">
-                  UC Merced is the first American research university established
-                  in the 21st century. UC Merced has upheld their legacy for
-                  innovative, interdisciplinary research. From Quantitative and
-                  Systems Biology to Mechanical Engineering, Dynamic curriculums
-                  and commitment to diversity, and leadership programs are bounded
-                  by student success.
+                  UC Merced is the first American research university
+                  established in the 21st century. UC Merced has upheld their
+                  legacy for innovative, interdisciplinary research. From
+                  Quantitative and Systems Biology to Mechanical Engineering,
+                  Dynamic curriculums and commitment to diversity, and
+                  leadership programs are bounded by student success.
                 </p>
               </div>
               <img
@@ -290,7 +290,7 @@ export default function Community() {
           </div>
         </section>
 
-                {/* Get in Touch Section */}
+        {/* Get in Touch Section */}
         <section className="py-24 bg-white">
           <div className="max-w-[730px] mx-auto px-4">
             <div className="text-center mb-12">
@@ -306,7 +306,7 @@ export default function Community() {
               </h2>
             </div>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[#3A4F66] text-[15px] mb-2">
@@ -374,7 +374,7 @@ export default function Community() {
                 />
               </div>
 
-                            <div className="space-y-4">
+              <div className="space-y-4">
                 <label className="block text-[#3A4F66] text-[15px]">
                   Accept Terms of Contacting
                 </label>
@@ -413,105 +413,120 @@ export default function Community() {
           </div>
         </section>
 
-                {/* Footer */}
+        {/* Footer */}
         <footer className="bg-[#F2F4F7] py-16">
           <div className="max-w-[1120px] mx-auto px-4">
             <div className="text-center">
               {/* Logo */}
               <div className="flex justify-center mb-8">
-              <svg
-                width="632"
-                height="93"
-                viewBox="0 0 634 94"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto"
-              >
-                <g clipPath="url(#clip0_34_1004)">
-                  <mask
-                    id="mask0_34_1004"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="634"
-                    height="94"
-                  >
-                    <path
-                      d="M633.1 0.418945H0.910004V93.8106H633.1V0.418945Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_34_1004)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M56.7932 0.418945L69.8371 10.426V5.02895H83.4688V21.2314L111.196 42.9208C108.234 42.9208 105.205 42.651 102.153 42.651H96.592L56.6914 11.2918L26.0258 35.2413H30.1854V51.4775C43.7492 44.0452 70.7979 40.0313 89.4935 43.0783C64.994 44.8475 41.4403 53.2159 21.3576 67.2863V43.9553H0.910004L56.7932 0.418945Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M71.4761 52.1184C86.2337 47.1899 101.736 44.8316 117.299 45.1471C108.037 46.2928 98.9094 48.3376 90.0474 51.2526C62.1735 60.4725 40.5391 76.6076 30.3211 93.822L15.3555 89.2456C26.6588 74.0439 46.5298 60.2252 71.4761 52.0171V52.1184Z"
-                      fill="#D29A3A"
-                    />
+                <svg
+                  width="632"
+                  height="93"
+                  viewBox="0 0 634 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mx-auto"
+                >
+                  <g clipPath="url(#clip0_34_1004)">
+                    <mask
+                      id="mask0_34_1004"
+                      style={{ maskType: "luminance" }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="634"
+                      height="94"
+                    >
+                      <path
+                        d="M633.1 0.418945H0.910004V93.8106H633.1V0.418945Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_34_1004)">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M56.7932 0.418945L69.8371 10.426V5.02895H83.4688V21.2314L111.196 42.9208C108.234 42.9208 105.205 42.651 102.153 42.651H96.592L56.6914 11.2918L26.0258 35.2413H30.1854V51.4775C43.7492 44.0452 70.7979 40.0313 89.4935 43.0783C64.994 44.8475 41.4403 53.2159 21.3576 67.2863V43.9553H0.910004L56.7932 0.418945Z"
+                        fill="#D29A3A"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M71.4761 52.1184C86.2337 47.1899 101.736 44.8316 117.299 45.1471C108.037 46.2928 98.9094 48.3376 90.0474 51.2526C62.1735 60.4725 40.5391 76.6076 30.3211 93.822L15.3555 89.2456C26.6588 74.0439 46.5298 60.2252 71.4761 52.0171V52.1184Z"
+                        fill="#D29A3A"
+                      />
+                    </g>
                   </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_34_1004">
-                    <rect
-                      width="632.19"
-                      height="93.3917"
-                      fill="white"
-                      transform="translate(0.910004 0.418945)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+                  <defs>
+                    <clipPath id="clip0_34_1004">
+                      <rect
+                        width="632.19"
+                        height="93.3917"
+                        fill="white"
+                        transform="translate(0.910004 0.418945)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
 
-            <div className="text-center space-y-4">
-              <p className="text-[#3A4F66] text-[30px] leading-[49.5px] capitalize">
+              <h3 className="text-[#3A4F66] text-[30px] leading-[45px] mt-8 px-4">
                 Building communities throughout the Central Valley
-              </p>
-              <p className="text-[#3A4F66] text-base">
+              </h3>
+              <p className="text-[#3A4F66] mt-8">
                 For More Information about PASEO, Please Call or Text
               </p>
-              <div className="text-[#3A4F66] text-lg leading-[29.7px]">
-                <p>Stephanie Stine</p>
-                <p>Community Sales Manager</p>
-                <p>209-308-9000</p>
-                <p>DRE# 02189834</p>
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-lg leading-[29px]">
+                  <span>Stephanie Stine</span>
+                  <br />
+                  <span>Community Sales Manager</span>
+                  <br />
+                  <span>209-308-9000</span>
+                  <br />
+                  <span>DRE# 02189834</span>
+                </p>
               </div>
-              <div className="text-[#3A4F66] text-lg leading-[29.7px]">
-                <p>Hours</p>
-                <p>Monday – Closed</p>
-                <p>Tuesday – Saturday 10am – 5pm</p>
-                <p>Sunday – 11am – 4pm</p>
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-lg leading-[29px]">
+                  <span>Hours</span>
+                  <br />
+                  <span>Monday – Closed</span>
+                  <br />
+                  <span>Tuesday – Saturday 10am – 5pm</span>
+                  <br />
+                  <span>Sunday – 11am – 4pm</span>
+                </p>
               </div>
-              <p className="text-[#3A4F66] text-lg">
+              <p className="text-[#3A4F66] text-lg leading-[27px] mt-8">
                 154 Montage Drive, Merced, CA 95348
               </p>
 
               <div className="flex justify-center items-center gap-4 mt-8">
-                <div className="flex items-center gap-2">
-                  <span className="text-[#D29A3A] text-xl">📞</span>
-                  <span className="text-black text-lg font-bold">
-                    209-308-9000
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-[#D29A3A] text-xl">✉️</span>
-                  <span className="text-black text-xl font-bold">
-                    Send Message
-                  </span>
-                </div>
+                <a
+                  href="tel:209-308-9000"
+                  className="flex items-center gap-2 text-black text-lg font-bold"
+                >
+                  <Phone className="w-5 h-5 text-[#D29A3A]" />
+                  <span>209-308-9000</span>
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-black text-xl font-bold"
+                >
+                  <MessageSquare className="w-5 h-5 text-[#D29A3A]" />
+                  <span>Send Message</span>
+                </a>
               </div>
 
-              <div className="mt-8">
-                <div className="w-[50px] h-[50px] bg-[#262626] rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-white text-xl">📘</span>
-                </div>
+              <div className="flex justify-center mt-8">
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
+                >
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </a>
               </div>
             </div>
 
