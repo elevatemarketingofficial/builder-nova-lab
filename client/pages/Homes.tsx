@@ -355,7 +355,7 @@ export default function Homes() {
       {/* Interactive Map Section */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="bg-gray-200 rounded-lg overflow-hidden min-h-[600px] relative">
+          <div className="bg-gray-200 overflow-hidden min-h-[600px] relative flex flex-col justify-start items-start">
             {/* Interactive Map */}
             <div className="flex flex-col relative mt-5">
               <iframe
