@@ -185,7 +185,7 @@ const OceansideII = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F110-Montage-Front-Photo-.jpg')",
+              "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -221,7 +221,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FOceanside-II-Floor-Plan-1.png"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FOceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +241,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FLivingroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,14 +266,14 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fcropped-CVH-icon-2.png"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fcropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -312,7 +312,7 @@ const OceansideII = () => {
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FCVH-icon-2.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FCVH-icon-2.svg"
                 alt="YouTube"
                 className="h-4"
               />
@@ -333,132 +333,132 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09064.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09097.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09068.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09151.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09048.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bathroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 3 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDining.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDining.jpg"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09123.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09123.jpg"
               alt="Living space"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09147.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09147.jpg"
               alt="Master bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09054.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09054.jpg"
               alt="Bathroom vanity"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 4 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FBedroom-2.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-2.jpg"
               alt="Bedroom 2"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FBedroom-3.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-3.jpg"
               alt="Bedroom 3"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FStairs.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStairs.jpg"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09058.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09058.jpg"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09077.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09077.jpg"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bath.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bath.jpg"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen-Breakfast-Bar.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen-Breakfast-Bar.jpg"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09128.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09128.jpg"
               alt="Kitchen island"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 6 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09089.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09089.jpg"
               alt="Living room view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09150.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09150.jpg"
               alt="Family room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09073.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09073.jpg"
               alt="Dining room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09131.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09131.jpg"
               alt="Entry foyer"
               className="w-full h-[207px] object-cover"
             />
