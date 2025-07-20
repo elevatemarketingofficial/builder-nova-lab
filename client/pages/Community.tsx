@@ -180,12 +180,11 @@ export default function Community() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative h-[690px] flex items-center justify-center bg-cover bg-center"
+          className="relative h-[690px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe8231d5baeb3454d8fa1d82ab6c52a56?format=webp&width=800')`,
+            backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fea115177b4a7470595ac9b3a35fb6278)`,
           }}
         >
-          <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="relative z-10">
             <h1 className="text-white text-[64px] font-bold leading-[68px] text-center">
               COMMUNITY
@@ -198,7 +197,7 @@ export default function Community() {
           <div className="max-w-[1120px] mx-auto px-4">
             <div className="relative">
               <img
-                src="https://cdn.builder.io/o/assets%2F0c5380d861a94486888626352de6a4fa%2F71a63913ec5e40d98812c39a61e8518f?alt=media&token=64578d00-8124-4495-b6d5-d1f468ccf895&apiKey=0c5380d861a94486888626352de6a4fa"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1db2ee28cecf4642a00d7b44c40c245c"
                 alt="Community Map"
                 className="w-full h-[487px] object-cover"
               />
@@ -230,7 +229,7 @@ export default function Community() {
                 </p>
               </div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/268a2ceae881cd1f24f4badd32a6094da9ca8a0a?width=1328"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3deed1448ba5498a8ccd42e894c804ec"
                 alt="UC Merced Campus"
                 className="w-full lg:w-[664px] h-[455px] object-cover"
               />
@@ -243,7 +242,7 @@ export default function Community() {
           <div className="max-w-[1140px] mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-5">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/1944c16512016dfb6501ca86467ac9074cde4ffc?width=1328"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb31d7c8068674e72940bd2944e9c5253"
                 alt="Outdoor Activities"
                 className="w-full lg:w-[664px] h-[455px] object-cover lg:order-first"
               />
@@ -282,7 +281,7 @@ export default function Community() {
                 </p>
               </div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/0b50a01a9c65b9fa165ac213ebd31c17f74facd3?width=1328"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5e1b5d4d91e74176b93746b6e062f354"
                 alt="Yosemite Landscape"
                 className="w-full lg:w-[664px] h-[443px] object-cover"
               />
