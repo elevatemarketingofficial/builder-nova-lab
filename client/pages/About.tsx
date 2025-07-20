@@ -443,7 +443,7 @@ export default function About() {
             {/* People First */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09068.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09068.jpg"
                 alt="People First"
                 className="w-full h-[280px] object-cover"
               />
@@ -462,7 +462,7 @@ export default function About() {
             {/* Flexibility */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09151.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09151.jpg"
                 alt="Flexibility"
                 className="w-full h-[280px] object-cover"
               />
@@ -488,7 +488,7 @@ export default function About() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="/Images/anthony.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fanthony.jpg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -763,7 +763,7 @@ export default function About() {
                 <br />
                 Tuesday – Saturday 10am – 5pm
                 <br />
-                Sunday �� 11am – 4pm
+                Sunday – 11am – 4pm
               </p>
             </div>
 
