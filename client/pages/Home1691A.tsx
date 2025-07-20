@@ -215,7 +215,7 @@ const Home1691A = () => {
             </div>
             <div className="lg:w-2/3 relative">
               <img
-                src="https://via.placeholder.com/774x600/8B7355/FFFFFF?text=Oceanside+Home"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1691A-1.jpg"
                 alt="Oceanside home exterior"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
@@ -403,17 +403,17 @@ const Home1691A = () => {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <img
-                src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Interior+1"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/95348_1_elevation-A_12-Photo.jpg"
                 alt="Home interior 1"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Interior+2"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/95348_1_A_Photo-10.jpg"
                 alt="Home interior 2"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Kitchen"
+                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/95348_1_elevation-A_i.02_31-KITCHEN.jpg"
                 alt="Home interior 3"
                 className="w-full h-[417px] object-cover"
               />
@@ -451,7 +451,7 @@ const Home1691A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://via.placeholder.com/1080x1080/F5F5F5/333333?text=Floor+Plan+1691"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/PLAN-1691A-scaled.jpg"
               alt="Floor plan for 1691 home"
               className="max-w-full h-auto"
             />
@@ -492,7 +492,7 @@ const Home1691A = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <img
-              src="https://via.placeholder.com/216x216/D4AF37/FFFFFF?text=Contact"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/AdobeStock_275971688.jpeg"
               alt="Contact representative"
               className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-brand-gold/30"
             />
@@ -825,7 +825,7 @@ const Home1691A = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
