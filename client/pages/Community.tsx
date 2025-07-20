@@ -31,6 +31,16 @@ export default function Community() {
 
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
+      <style jsx>{`
+        @keyframes heroZoom {
+          0% {
+            background-size: 110%;
+          }
+          100% {
+            background-size: 115%;
+          }
+        }
+      `}</style>
       {/* Header */}
       <header className="bg-white shadow-[0px_10px_20px_0px_rgba(44,62,80,0.05)] sticky top-0 z-50">
         <div className="max-w-[1290px] mx-auto px-4 h-[87px] flex items-center justify-between">
