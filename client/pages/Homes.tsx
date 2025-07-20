@@ -37,37 +37,44 @@ export default function Homes() {
   const homeModels = [
     {
       name: "Oceanside",
-      image: "/Images/1691A-1.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1691A-1.jpg",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
-      image: "/Images/Skyview-B.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FSkyview-B.jpg",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
-      image: "/Images/1791A-1.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1791A-1.jpg",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
-      image: "/Images/Mountain-Top-A.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMountain-Top-A.jpg",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
-      image: "/Images/1691A-2.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1691A-2.jpg",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
-      image: "/Images/Skyview-B1.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FSkyview-B1.jpg",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
-      image: "/Images/1874A-3.jpg",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1874A-3.jpg",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
