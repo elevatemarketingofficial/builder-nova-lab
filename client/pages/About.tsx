@@ -803,7 +803,7 @@ export default function About() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
