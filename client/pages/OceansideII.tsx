@@ -184,8 +184,7 @@ const OceansideII = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1920&h=450&fit=crop&crop=building')",
+            backgroundImage: "url('/Images/110-Montage-Front-Photo-.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -221,7 +220,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1270&h=800&fit=crop&crop=plan"
+            src="/Images/Oceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +240,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb4?w=1270&h=714&fit=crop&crop=interior"
+              src="/Images/Livingroom.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,7 +265,7 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1270&h=714&fit=crop&crop=interior"
+                src="/Images/Master-Bedroom.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
