@@ -356,62 +356,13 @@ export default function Homes() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-[1120px] mx-auto px-4">
           <div className="bg-gray-200 rounded-lg overflow-hidden min-h-[600px] relative">
-            {/* Map Header */}
-            <div className="bg-white h-[85px] flex items-center justify-between px-4 border-b">
-              <div className="flex items-center gap-4">
-                <div className="w-[90px] h-[72px] flex items-center">
-                  <svg
-                    width="90"
-                    height="73"
-                    viewBox="0 0 90 73"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_24_90)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M43.0781 0.380005L53.1331 8.09406V3.93367H63.6412V16.4236L85.0142 33.1426C82.7315 33.1426 80.3963 32.9348 78.0437 32.9348H73.757L42.9998 8.76155L19.3612 27.2229H22.5677V39.7386C33.0231 34.0096 53.8737 30.9152 68.2853 33.2642C49.3996 34.6279 31.2433 41.0787 15.7628 51.9249V33.94H0.000579834L43.0781 0.380005Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M54.3964 40.2329C65.7722 36.4335 77.722 34.6156 89.7194 34.8587C82.5793 35.742 75.5433 37.3183 68.7122 39.5654C47.2257 46.6723 30.5485 59.1102 22.6722 72.38L11.1358 68.8522C19.8489 57.1339 35.1668 46.482 54.3964 40.1546V40.2329Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M38.042 17.7666H42.6599V22.3517H38.042V17.7666ZM44.9426 24.51H49.5521V29.1038H44.9426V24.51ZM38.042 24.51H42.6599V29.1038H38.042V24.51ZM44.9426 17.7666H49.5521V22.3517H44.9426V17.7666Z"
-                        fill="#D19837"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_24_90">
-                        <rect
-                          width="89.7188"
-                          height="72"
-                          fill="white"
-                          transform="translate(0.000579834 0.380005)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <div className="text-[18px] font-normal text-gray-700 uppercase">
-                Paseo
-              </div>
-            </div>
-
             {/* Interactive Map */}
             <div className="flex flex-col relative mt-5">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html:
-                    '<iframe src="https://contradovip.com/choice-valley-homes/paseo/site/" height="600"></iframe>',
-                }}
+              <iframe
+                src="https://contradovip.com/choice-valley-homes/paseo/site/"
+                height="600"
+                width="100%"
+                style={{ border: "none" }}
               />
             </div>
           </div>
