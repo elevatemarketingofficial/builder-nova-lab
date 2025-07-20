@@ -203,7 +203,7 @@ export default function Community() {
                 className="w-full h-[487px] object-cover"
               />
               <div className="flex items-center gap-2 mt-4">
-                <span className="text-[#3A4F66] text-base">📍</span>
+                <span className="text-[#3A4F66] text-base">���</span>
                 <span className="text-[#3A4F66] text-base">
                   Click to enlarge
                 </span>
@@ -291,15 +291,17 @@ export default function Community() {
         </section>
 
         {/* Get in Touch Section */}
-        <section className="py-[80px] lg:py-[130px] bg-white">
+        <section className="py-24 bg-white">
           <div className="max-w-[730px] mx-auto px-4">
-            <div className="text-center mb-8">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
-                alt="Contact"
-                className="w-[108px] h-[108px] rounded-full border-3 border-[rgba(210,154,58,0.34)] mx-auto mb-6"
-              />
-              <h2 className="text-[#192A3D] text-[34px] font-bold leading-[35px]">
+            <div className="text-center mb-12">
+              <div className="flex justify-center mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
+                  alt="Contact"
+                  className="w-[108px] h-[108px] rounded-full"
+                />
+              </div>
+              <h2 className="text-[#192A3D] text-[34px] font-bold leading-[51px]">
                 Get in Touch
               </h2>
             </div>
