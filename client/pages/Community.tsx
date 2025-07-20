@@ -419,55 +419,18 @@ export default function Community() {
             <div className="text-center">
               {/* Logo */}
               <div className="flex justify-center mb-8">
-                <svg
-                  width="632"
-                  height="93"
-                  viewBox="0 0 634 94"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mx-auto"
-                >
-                  <g clipPath="url(#clip0_34_1004)">
-                    <mask
-                      id="mask0_34_1004"
-                      style={{ maskType: "luminance" }}
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="634"
-                      height="94"
-                    >
-                      <path
-                        d="M633.1 0.418945H0.910004V93.8106H633.1V0.418945Z"
-                        fill="white"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_34_1004)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M56.7932 0.418945L69.8371 10.426V5.02895H83.4688V21.2314L111.196 42.9208C108.234 42.9208 105.205 42.651 102.153 42.651H96.592L56.6914 11.2918L26.0258 35.2413H30.1854V51.4775C43.7492 44.0452 70.7979 40.0313 89.4935 43.0783C64.994 44.8475 41.4403 53.2159 21.3576 67.2863V43.9553H0.910004L56.7932 0.418945Z"
-                        fill="#D29A3A"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M71.4761 52.1184C86.2337 47.1899 101.736 44.8316 117.299 45.1471C108.037 46.2928 98.9094 48.3376 90.0474 51.2526C62.1735 60.4725 40.5391 76.6076 30.3211 93.822L15.3555 89.2456C26.6588 74.0439 46.5298 60.2252 71.4761 52.0171V52.1184Z"
-                        fill="#D29A3A"
-                      />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_34_1004">
-                      <rect
-                        width="632.19"
-                        height="93.3917"
-                        fill="white"
-                        transform="translate(0.910004 0.418945)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                  alt="Choice Valley Homes Logo"
+                  className="w-full max-w-[608px] object-cover object-center ml-5"
+                  style={{
+                    aspectRatio: "6.76",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                    overflow: "hidden",
+                  }}
+                />
               </div>
 
               <h3 className="text-[#3A4F66] text-[30px] leading-[45px] mt-8 px-4">
