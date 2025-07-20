@@ -273,7 +273,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('/Images/110-Montage-Front-Photo-.jpg') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F110-Montage-Front-Photo-.jpg') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -437,7 +437,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="/Images/Neighborhood_Map_Render-scaled.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FNeighborhood_Map_Render-scaled.jpg"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -497,7 +497,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="/Images/anthony.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fanthony.jpg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
