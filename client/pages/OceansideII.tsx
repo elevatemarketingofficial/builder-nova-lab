@@ -220,7 +220,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="Images/Oceanside-II-Floor-Plan-1.png"
+            src="/Images/Oceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -240,7 +240,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="Images/DSC09101.jpg"
+              src="/Images/DSC09101.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -265,14 +265,14 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="Images/DSC09127.jpg"
+                src="/Images/DSC09127.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="Images/cropped-CVH-icon-2.png"
+                    src="/Images/cropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -310,7 +310,7 @@ const OceansideII = () => {
             {/* Watch on YouTube button */}
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
-              <img src="Images/CVH-icon-2.svg" alt="YouTube" className="h-4" />
+              <img src="/Images/CVH-icon-2.svg" alt="YouTube" className="h-4" />
             </div>
           </div>
         </div>
@@ -328,132 +328,132 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="Images/DSC09064.jpg"
+              src="/Images/DSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09097.jpg"
+              src="/Images/DSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09068.jpg"
+              src="/Images/DSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09151.jpg"
+              src="/Images/DSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="Images/DSC09048.jpg"
+              src="/Images/DSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Master-Bedroom.jpg"
+              src="/Images/Master-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Master-Bathroom.jpg"
+              src="/Images/Master-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Kitchen.jpg"
+              src="/Images/Kitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 3 */}
             <img
-              src="Images/Dining.jpg"
+              src="/Images/Dining.jpg"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09123.jpg"
+              src="/Images/DSC09123.jpg"
               alt="Living space"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09147.jpg"
+              src="/Images/DSC09147.jpg"
               alt="Master bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09054.jpg"
+              src="/Images/DSC09054.jpg"
               alt="Bathroom vanity"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 4 */}
             <img
-              src="Images/Bedroom-2.jpg"
+              src="/Images/Bedroom-2.jpg"
               alt="Bedroom 2"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Bedroom-3.jpg"
+              src="/Images/Bedroom-3.jpg"
               alt="Bedroom 3"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Stairs.jpg"
+              src="/Images/Stairs.jpg"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09058.jpg"
+              src="/Images/DSC09058.jpg"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="Images/DSC09077.jpg"
+              src="/Images/DSC09077.jpg"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Master-Bath.jpg"
+              src="/Images/Master-Bath.jpg"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/Kitchen-Breakfast-Bar.jpg"
+              src="/Images/Kitchen-Breakfast-Bar.jpg"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09128.jpg"
+              src="/Images/DSC09128.jpg"
               alt="Kitchen island"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 6 */}
             <img
-              src="Images/DSC09089.jpg"
+              src="/Images/DSC09089.jpg"
               alt="Living room view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09150.jpg"
+              src="/Images/DSC09150.jpg"
               alt="Family room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09073.jpg"
+              src="/Images/DSC09073.jpg"
               alt="Dining room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="Images/DSC09131.jpg"
+              src="/Images/DSC09131.jpg"
               alt="Entry foyer"
               className="w-full h-[207px] object-cover"
             />
@@ -657,7 +657,7 @@ const OceansideII = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="Images/equal-housing-opportunity-logo-1200w.png"
+              src="/Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />
