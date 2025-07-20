@@ -273,7 +273,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/110-Montage-Front-Photo-.png') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=1920&h=800&fit=crop&crop=building') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -437,7 +437,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/GetMedia.jpg"
+                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1476&h=800&fit=crop&crop=development"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -497,7 +497,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/AdobeStock_275971688.jpeg"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=216&h=216&fit=crop&crop=face"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -812,7 +812,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
