@@ -38,43 +38,43 @@ export default function Homes() {
     {
       name: "Oceanside",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1691A-1.jpg",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&h=400&fit=crop&crop=house",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1724A-1.jpg",
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&h=400&fit=crop&crop=house",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1791A-1.jpg",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=400&fit=crop&crop=house",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1874A-5.jpeg",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=400&fit=crop&crop=house",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Oceanside-II-Floor-Plan-1.png",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&h=400&fit=crop&crop=house",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1724B-1-Remove-Sold.jpg",
+        "https://images.unsplash.com/photo-1600563438938-a42abaa0a78c?w=500&h=400&fit=crop&crop=house",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
       image:
-        "https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1791B-1.jpg",
+        "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=500&h=400&fit=crop&crop=house",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
