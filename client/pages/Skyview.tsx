@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ChevronDown, Phone, MessageSquare, Home } from "lucide-react";
+import Navigation from "../components/Navigation";
 
 export default function Skyview() {
   return (
@@ -52,32 +53,7 @@ export default function Skyview() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link
-              to="/about"
-              className="text-black text-[15px] font-normal uppercase"
-            >
-              About
-            </Link>
-            <Link
-              to="/homes"
-              className="text-black text-[15px] font-normal uppercase"
-            >
-              Floor Plans
-            </Link>
-            <Link
-              to="/community"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Community
-            </Link>
-            <Link
-              to="/contact"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Contact
-            </Link>
-          </nav>
+          <Navigation />
 
           {/* View Listings Button */}
           <Link
