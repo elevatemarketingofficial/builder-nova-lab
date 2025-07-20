@@ -300,7 +300,7 @@ export default function About() {
             {/* Left Image */}
             <div className="lg:w-[664px]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe4179810651a44a1be7d805befea5139"
                 alt="Choice Valley Homes Building"
                 className="w-full h-auto rounded-lg"
               />
