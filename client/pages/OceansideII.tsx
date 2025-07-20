@@ -409,29 +409,29 @@ const OceansideII = () => {
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="/Images/Stairs.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FStairs.jpg"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="/Images/DSC09058.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09058.jpg"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="/Images/DSC09077.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09077.jpg"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="/Images/Master-Bath.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bath.jpg"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="/Images/Kitchen-Breakfast-Bar.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen-Breakfast-Bar.jpg"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
