@@ -822,7 +822,7 @@ export default function Index() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fequal-housing-opportunity-logo-1200w.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
