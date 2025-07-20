@@ -203,7 +203,7 @@ export default function Community() {
                 className="w-full h-[487px] object-cover"
               />
               <div className="flex items-center gap-2 mt-4">
-                <span className="text-[#3A4F66] text-base">���</span>
+                <span className="text-[#3A4F66] text-base">📍</span>
                 <span className="text-[#3A4F66] text-base">
                   Click to enlarge
                 </span>
@@ -307,7 +307,7 @@ export default function Community() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[#3A4F66] text-[15px] mb-2">
                     First Name
@@ -317,7 +317,7 @@ export default function Community() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full h-10 bg-white border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                    className="w-full h-10 bg-white border-b border-[#69727D] rounded px-3 focus:outline-none focus:border-[#D29A3A]"
                   />
                 </div>
                 <div>
@@ -329,12 +329,12 @@ export default function Community() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full h-10 bg-white border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                    className="w-full h-10 bg-white border-b border-[#69727D] rounded px-3 focus:outline-none focus:border-[#D29A3A]"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[#3A4F66] text-[15px] mb-2">
                     Email
@@ -344,7 +344,7 @@ export default function Community() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full h-10 bg-white border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                    className="w-full h-10 bg-white border-b border-[#69727D] rounded px-3 focus:outline-none focus:border-[#D29A3A]"
                   />
                 </div>
                 <div>
@@ -356,7 +356,7 @@ export default function Community() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full h-10 bg-white border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                    className="w-full h-10 bg-white border-b border-[#69727D] rounded px-3 focus:outline-none focus:border-[#D29A3A]"
                   />
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function Community() {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full bg-white border-b border-[#69727D] rounded-[3px] px-3 py-2 focus:outline-none focus:border-[#D29A3A] resize-none"
+                  className="w-full bg-white border-b border-[#69727D] rounded px-3 py-2 focus:outline-none focus:border-[#D29A3A] resize-none"
                 />
               </div>
 
