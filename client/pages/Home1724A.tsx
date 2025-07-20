@@ -231,7 +231,7 @@ const Home1724A = () => {
             <div
               className="w-[774px] h-[700px] flex items-center justify-center"
               style={{
-                background: `url('https://via.placeholder.com/774x600/8B7355/FFFFFF?text=Skyview+Home') lightgray center / cover`,
+                background: `url('https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/1724A-1.jpg') lightgray center / cover`,
               }}
             ></div>
           </div>
@@ -332,17 +332,17 @@ const Home1724A = () => {
         <section className="w-full py-[50px] relative">
           <div className="flex space-x-[12px] px-[10px]">
             <img
-              src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Interior+1"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09099.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Interior+2"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09133.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
             <img
-              src="https://via.placeholder.com/625x417/8B7355/FFFFFF?text=Interior+3"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09052.jpg"
               alt="Home interior"
               className="w-[625px] h-[417px] object-cover"
             />
@@ -388,7 +388,7 @@ const Home1724A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://via.placeholder.com/1080x1080/F5F5F5/333333?text=Floor+Plan+1724"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/floor-plan-1724.jpg"
               alt="Floor plan 1724"
               className="w-[1080px] h-[1080px] object-contain"
             />
@@ -421,7 +421,7 @@ const Home1724A = () => {
         <section className="max-w-[1290px] mx-auto px-[280px] py-[130px] bg-white">
           <div className="text-center">
             <img
-              src="https://via.placeholder.com/216x216/D4AF37/FFFFFF?text=Contact"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/AdobeStock_275971688.jpeg"
               alt="Contact representative"
               className="w-[108px] h-[108px] rounded-full border-[3px] border-brand-gold border-opacity-34 mx-auto mb-[20px]"
             />
@@ -713,7 +713,7 @@ const Home1724A = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-[20px]">
             <img
-              src="https://via.placeholder.com/179x179/666666/FFFFFF?text=Equal+Housing"
+              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/equal-housing-opportunity-logo-1200w.png"
               alt="Equal Housing Opportunity"
               className="w-[102px] h-[109px]"
             />
