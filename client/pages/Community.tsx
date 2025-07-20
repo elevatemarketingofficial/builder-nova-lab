@@ -194,8 +194,8 @@ export default function Community() {
         </section>
 
         {/* Community Map Section */}
-        <section className="py-10 px-[390px] bg-[#FAFBFC]">
-          <div className="w-[1120px] mx-auto">
+        <section className="py-10 bg-[#FAFBFC]">
+          <div className="max-w-[1120px] mx-auto px-4">
             <div className="relative">
               <img
                 src="https://cdn.builder.io/o/assets%2F0c5380d861a94486888626352de6a4fa%2F71a63913ec5e40d98812c39a61e8518f?alt=media&token=64578d00-8124-4495-b6d5-d1f468ccf895&apiKey=0c5380d861a94486888626352de6a4fa"
@@ -213,80 +213,86 @@ export default function Community() {
         </section>
 
         {/* UC Merced Section */}
-        <section className="py-[200px] px-[390px] bg-[#FAFBFC]">
-          <div className="w-[1140px] mx-auto flex items-center gap-5">
-            <div className="w-[436px] bg-white p-10 flex flex-col gap-6">
-              <h2 className="text-[#192A3D] text-[35px] font-bold leading-[35px]">
-                UC Merced
-              </h2>
-              <p className="text-[#3A4F66] text-base leading-[26.4px]">
-                UC Merced is the first American research university established
-                in the 21st century. UC Merced has upheld their legacy for
-                innovative, interdisciplinary research. From Quantitative and
-                Systems Biology to Mechanical Engineering, Dynamic curriculums
-                and commitment to diversity, and leadership programs are bounded
-                by student success.
-              </p>
+        <section className="py-[100px] lg:py-[200px] bg-[#FAFBFC]">
+          <div className="max-w-[1140px] mx-auto px-4">
+            <div className="flex flex-col lg:flex-row items-center gap-5">
+              <div className="w-full lg:w-[436px] bg-white p-10 flex flex-col gap-6">
+                <h2 className="text-[#192A3D] text-[35px] font-bold leading-[35px]">
+                  UC Merced
+                </h2>
+                <p className="text-[#3A4F66] text-base leading-[26.4px]">
+                  UC Merced is the first American research university
+                  established in the 21st century. UC Merced has upheld their
+                  legacy for innovative, interdisciplinary research. From
+                  Quantitative and Systems Biology to Mechanical Engineering,
+                  Dynamic curriculums and commitment to diversity, and
+                  leadership programs are bounded by student success.
+                </p>
+              </div>
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/268a2ceae881cd1f24f4badd32a6094da9ca8a0a?width=1328"
+                alt="UC Merced Campus"
+                className="w-full lg:w-[664px] h-[455px] object-cover"
+              />
             </div>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/268a2ceae881cd1f24f4badd32a6094da9ca8a0a?width=1328"
-              alt="UC Merced Campus"
-              className="w-[664px] h-[455px] object-cover"
-            />
           </div>
         </section>
 
         {/* Outdoor Section */}
-        <section className="py-[100px] px-[390px] bg-[#FAFBFC]">
-          <div className="w-[1140px] mx-auto flex items-center gap-5">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1944c16512016dfb6501ca86467ac9074cde4ffc?width=1328"
-              alt="Outdoor Activities"
-              className="w-[664px] h-[455px] object-cover"
-            />
-            <div className="w-[456px] bg-white p-10">
-              <h2 className="text-[#192A3D] text-[34px] font-bold leading-[35px] mb-6">
-                Outdoor
-              </h2>
-              <p className="text-[#3A4F66] text-base leading-[26.4px] mb-6">
-                Explore the most popular biking paths, hiking trails, walking
-                paths, Parks and other attractions surrounding Merced
-              </p>
-              <p className="text-[#3A4F66] text-base leading-[26.4px]">
-                Merced is well known for the beautiful Yosemite Lake & Merced
-                River.
-              </p>
+        <section className="py-[100px] bg-[#FAFBFC]">
+          <div className="max-w-[1140px] mx-auto px-4">
+            <div className="flex flex-col lg:flex-row items-center gap-5">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/1944c16512016dfb6501ca86467ac9074cde4ffc?width=1328"
+                alt="Outdoor Activities"
+                className="w-full lg:w-[664px] h-[455px] object-cover lg:order-first"
+              />
+              <div className="w-full lg:w-[456px] bg-white p-10">
+                <h2 className="text-[#192A3D] text-[34px] font-bold leading-[35px] mb-6">
+                  Outdoor
+                </h2>
+                <p className="text-[#3A4F66] text-base leading-[26.4px] mb-6">
+                  Explore the most popular biking paths, hiking trails, walking
+                  paths, Parks and other attractions surrounding Merced
+                </p>
+                <p className="text-[#3A4F66] text-base leading-[26.4px]">
+                  Merced is well known for the beautiful Yosemite Lake & Merced
+                  River.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Explore Section */}
-        <section className="pt-[200px] pb-[100px] px-[390px] bg-[#FAFBFC]">
-          <div className="w-[1140px] mx-auto flex items-start gap-5">
-            <div className="w-[436px] bg-white p-10 flex flex-col gap-5">
-              <h2 className="text-[#192A3D] text-[35px] font-bold leading-[35px]">
-                Explore and enjoy these must-visit locations
-              </h2>
-              <p className="text-[#3A4F66] text-base leading-[26.4px]">
-                The popular & historic majesty of Yosemite National Park's
-                landscape living within our community puts numerous scenic
-                escapes within driving distance. The Merced County Courthouse
-                Museum gives an appreciation of our community's rich history,
-                while the Merced National Wildlife Refuge and Applegate Zoo
-                house some wonderful and exotic species.
-              </p>
+        <section className="py-[100px] lg:pt-[200px] lg:pb-[100px] bg-[#FAFBFC]">
+          <div className="max-w-[1140px] mx-auto px-4">
+            <div className="flex flex-col lg:flex-row items-start gap-5">
+              <div className="w-full lg:w-[436px] bg-white p-10 flex flex-col gap-5">
+                <h2 className="text-[#192A3D] text-[35px] font-bold leading-[35px]">
+                  Explore and enjoy these must-visit locations
+                </h2>
+                <p className="text-[#3A4F66] text-base leading-[26.4px]">
+                  The popular & historic majesty of Yosemite National Park's
+                  landscape living within our community puts numerous scenic
+                  escapes within driving distance. The Merced County Courthouse
+                  Museum gives an appreciation of our community's rich history,
+                  while the Merced National Wildlife Refuge and Applegate Zoo
+                  house some wonderful and exotic species.
+                </p>
+              </div>
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/0b50a01a9c65b9fa165ac213ebd31c17f74facd3?width=1328"
+                alt="Yosemite Landscape"
+                className="w-full lg:w-[664px] h-[443px] object-cover"
+              />
             </div>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0b50a01a9c65b9fa165ac213ebd31c17f74facd3?width=1328"
-              alt="Yosemite Landscape"
-              className="w-[664px] h-[443px] object-cover"
-            />
           </div>
         </section>
 
         {/* Get in Touch Section */}
-        <section className="py-[130px] px-[595px] bg-white">
-          <div className="w-[730px] mx-auto">
+        <section className="py-[80px] lg:py-[130px] bg-white">
+          <div className="max-w-[730px] mx-auto px-4">
             <div className="text-center mb-8">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
