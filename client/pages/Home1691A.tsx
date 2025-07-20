@@ -215,7 +215,7 @@ const Home1691A = () => {
             </div>
             <div className="lg:w-2/3 relative">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2F1691A-1.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-1.jpg"
                 alt="Oceanside home exterior"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
@@ -403,17 +403,17 @@ const Home1691A = () => {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FLivingroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
                 alt="Home interior 1"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
                 alt="Home interior 2"
                 className="w-full h-[417px] object-cover"
               />
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen.jpg"
                 alt="Home interior 3"
                 className="w-full h-[417px] object-cover"
               />
@@ -451,7 +451,7 @@ const Home1691A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FPLAN-1691A-scaled.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FPLAN-1691A-scaled.jpg"
               alt="Floor plan for 1691 home"
               className="max-w-full h-auto"
             />
@@ -492,7 +492,7 @@ const Home1691A = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2Fanthony.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fanthony.jpg"
               alt="Contact representative"
               className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-brand-gold/30"
             />
