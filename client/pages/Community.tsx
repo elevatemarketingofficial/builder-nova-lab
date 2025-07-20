@@ -530,22 +530,20 @@ export default function Community() {
               </div>
             </div>
 
-            <div className="flex justify-center items-center mt-8">
+            <div className="flex justify-center mt-8">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2fa4e6a981c2976850756be421a86ccab0534b40?width=179"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
             </div>
 
-            <div className="flex justify-center items-center gap-2 mt-8 text-center">
-              <span className="text-black text-base font-medium">
-                ® All Rights Reserved
-              </span>
-              <span className="text-[#DDD]">|</span>
+            <div className="flex justify-center items-center gap-2 mt-8 text-black">
+              <span>® All Rights Reserved</span>
+              <span className="text-gray-300">|</span>
               <Link
                 to="/privacy"
-                className="text-black text-base font-medium hover:text-[#D29A3A]"
+                className="hover:text-[#D29A3A] transition-colors"
               >
                 Privacy Policy
               </Link>
