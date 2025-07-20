@@ -420,7 +420,7 @@ export default function About() {
             {/* Convenience */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09097.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5b1c1af36a51452fb89ab36958f58be6"
                 alt="Convenience"
                 className="w-full h-[280px] object-cover"
               />
