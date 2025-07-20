@@ -277,7 +277,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="Images/1691A-1.jpg"
+                  src="/Images/1691A-1.jpg"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="Images/1724A-1.jpg"
+                  src="/Images/1724A-1.jpg"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="Images/1791A-1.jpg"
+                  src="/Images/1791A-1.jpg"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -345,7 +345,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="Images/1874A-5.jpeg"
+                  src="/Images/1874A-5.jpeg"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
@@ -374,7 +374,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="Images/110-Montage-Front-Photo-.png"
+                src="/Images/110-Montage-Front-Photo-.png"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +407,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="Images/DSC09101.jpg"
+                src="/Images/DSC09101.jpg"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
@@ -447,7 +447,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="Images/Image-home-01.png"
+                    src="/Images/Image-home-01.png"
                     alt="Step 1"
                     className="w-[100px] h-[107px]"
                   />
@@ -465,7 +465,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="Images/Image-home-02.png"
+                    src="/Images/Image-home-02.png"
                     alt="Step 2"
                     className="w-[100px] h-[107px]"
                   />
@@ -483,7 +483,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="Images/community-02.png"
+                    src="/Images/community-02.png"
                     alt="Step 3"
                     className="w-[100px] h-[107px]"
                   />
@@ -507,7 +507,7 @@ export default function Index() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="Images/AdobeStock_275971688.jpeg"
+                src="/Images/AdobeStock_275971688.jpeg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -822,7 +822,7 @@ export default function Index() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="Images/equal-housing-opportunity-logo-1200w.png"
+                src="/Images/equal-housing-opportunity-logo-1200w.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
