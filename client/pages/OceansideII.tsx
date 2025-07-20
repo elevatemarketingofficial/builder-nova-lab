@@ -184,7 +184,7 @@ const OceansideII = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('Images/110-Montage-Front-Photo-.png')",
+            backgroundImage: "url('/Images/110-Montage-Front-Photo-.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
