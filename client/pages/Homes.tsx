@@ -38,25 +38,25 @@ export default function Homes() {
     {
       name: "Oceanside",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-1.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa2654f12e33849a191edca4b383ac591",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FSkyview-B.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F23e3b0a4226c40e5a4e2306acbab1609",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1791A-1.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1fe5686cf79b4cd18e084a05011336cc",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMountain-Top-A.jpg",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa4c4154817a34741952a27e52cb3f2e7",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
