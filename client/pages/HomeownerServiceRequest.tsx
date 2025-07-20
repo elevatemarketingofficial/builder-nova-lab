@@ -6,6 +6,7 @@ import {
   Home,
   ExternalLink,
 } from "lucide-react";
+import Navigation from "../components/Navigation";
 
 export default function HomeownerServiceRequest() {
   return (
