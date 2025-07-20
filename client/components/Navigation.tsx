@@ -5,6 +5,7 @@ import { ChevronDown, Home } from "lucide-react";
 export default function Navigation() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isFloorPlansOpen, setIsFloorPlansOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="hidden lg:flex items-center space-x-8">
