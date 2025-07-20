@@ -211,35 +211,7 @@ export default function Homes() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-2 cursor-pointer">
-              <span className="text-black text-[15px] font-normal uppercase">
-                About
-              </span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
-            <div className="flex flex-col items-center cursor-pointer">
-              <div className="flex items-center space-x-2">
-                <span className="text-brand-gold text-[15px] font-normal uppercase">
-                  Floor Plans
-                </span>
-                <ChevronDown className="w-4 h-4 text-brand-gold" />
-              </div>
-              <div className="w-[125px] h-[2px] bg-brand-gold mt-1"></div>
-            </div>
-            <Link
-              to="/community"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Community
-            </Link>
-            <Link
-              to="/contact"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Contact
-            </Link>
-          </nav>
+          <Navigation />
 
           {/* View Listings Button */}
           <Link
