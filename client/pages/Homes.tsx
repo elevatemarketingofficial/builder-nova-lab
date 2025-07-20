@@ -37,37 +37,37 @@ export default function Homes() {
   const homeModels = [
     {
       name: "Oceanside",
-      image: "Images/1691A-1.jpg",
+      image: "/Images/1691A-1.jpg",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
-      image: "Images/1724A-1.jpg",
+      image: "/Images/1724A-1.jpg",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
-      image: "Images/1791A-1.jpg",
+      image: "/Images/1791A-1.jpg",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
-      image: "Images/1874A-5.jpeg",
+      image: "/Images/1874A-5.jpeg",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
-      image: "Images/Oceanside-II-Floor-Plan-1.png",
+      image: "/Images/Oceanside-II-Floor-Plan-1.png",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
-      image: "Images/1724B-1-Remove-Sold.jpg",
+      image: "/Images/1724B-1-Remove-Sold.jpg",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
-      image: "Images/1791B-1.jpg",
+      image: "/Images/1791B-1.jpg",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
@@ -266,7 +266,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('Images/110-Montage-Front-Photo-.png') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('/Images/110-Montage-Front-Photo-.png') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -430,7 +430,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="Images/GetMedia.jpg"
+                  src="/Images/GetMedia.jpg"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -490,7 +490,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="Images/AdobeStock_275971688.jpeg"
+                src="/Images/AdobeStock_275971688.jpeg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -805,7 +805,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="Images/equal-housing-opportunity-logo-1200w.png"
+                src="/Images/equal-housing-opportunity-logo-1200w.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
