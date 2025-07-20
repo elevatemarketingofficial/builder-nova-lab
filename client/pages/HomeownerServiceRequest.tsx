@@ -213,7 +213,7 @@ export default function HomeownerServiceRequest() {
             {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="/Images/RBG-Logo.webp"
+                src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FRBG-Logo.webp"
                 alt="RBG Construction Logo"
                 className="w-full max-w-[400px] h-auto"
               />
