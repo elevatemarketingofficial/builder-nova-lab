@@ -348,29 +348,29 @@ const OceansideII = () => {
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09151.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/DSC09048.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FDSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Master-Bedroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Master-Bathroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FMaster-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://raw.githubusercontent.com/elevatemarketingofficial/builder-nova-lab/main/Images/Kitchen.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2FMedia%20Folder%20for%20Choice%20Valley%20Homes%2FKitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
