@@ -122,9 +122,12 @@ export default function Navigation() {
             >
               Skyview II
             </Link>
-            <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed border-b border-gray-100">
+            <Link
+              to="/homes/windridge"
+              className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100"
+            >
               Windridge
-            </div>
+            </Link>
             <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed border-b border-gray-100">
               Mountain Top
             </div>
