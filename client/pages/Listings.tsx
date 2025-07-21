@@ -326,125 +326,20 @@ export default function Listings() {
 
         {/* Interactive Map Section */}
         <section className="py-0 bg-[#FAFBFC]">
-          <div className="max-w-[1270px] mx-auto">
-            <div className="bg-[#EEE] h-[600px] relative overflow-hidden">
-              {/* Map Header */}
-              <div className="bg-white h-[85px] flex items-center justify-between px-4">
-                <div className="w-[90px] h-[72px] flex items-center">
-                  <svg
-                    width="90"
-                    height="72"
-                    viewBox="0 0 90 73"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1_251)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M43.0781 0.560059L53.1331 8.27411V4.11373H63.6412V16.6036L85.0142 33.3227C82.7315 33.3227 80.3963 33.1148 78.0437 33.1148H73.757L42.9998 8.94161L19.3612 27.4029H22.5677V39.9186C33.0231 34.1896 53.8737 31.0953 68.2853 33.4442C49.3996 34.808 31.2433 41.2587 15.7628 52.105V34.1201H0.000579834L43.0781 0.560059Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M54.3964 40.4128C65.7722 36.6135 77.722 34.7955 89.7194 35.0386C82.5793 35.9219 75.5433 37.4982 68.7123 39.7453C47.2257 46.8523 30.5485 59.2901 22.6722 72.56L11.1358 69.0321C19.8489 57.3138 35.1668 46.6619 54.3964 40.3345V40.4128Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M38.042 17.9465H42.6599V22.5317H38.042V17.9465ZM44.9426 24.6899H49.5521V29.2838H44.9426V24.6899ZM38.042 24.6899H42.6599V29.2838H38.042V24.6899ZM44.9426 17.9465H49.5521V22.5317H44.9426V17.9465Z"
-                        fill="#D19837"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1_251">
-                        <rect
-                          width="89.7188"
-                          height="72"
-                          fill="white"
-                          transform="translate(0.000579834 0.560059)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <span className="text-[#333] text-[18px] font-normal uppercase">
-                  PASEO
-                </span>
-              </div>
+          <div className="max-w-[1270px] mx-auto"></div>
+        </section>
 
-              {/* Map Content Area */}
-              <div className="relative h-[515px] bg-white border-t border-black">
-                <div className="absolute inset-0 flex">
-                  {/* Sidebar Controls */}
-                  <div className="w-[46px] bg-[#D4D4D4] h-full flex flex-col items-center py-12 space-y-8">
-                    <div className="w-5 h-5 bg-[#333] rounded cursor-pointer"></div>
-                    <div className="w-5 h-5 bg-[#333] rounded cursor-pointer"></div>
-                    <div className="w-2 h-[100px] bg-black bg-opacity-15 relative">
-                      <div className="absolute top-[70px] left-[-13px] w-7 h-7 bg-[#BBB] rounded flex items-center justify-center cursor-pointer">
-                        <div className="w-4 h-4 text-[#333] text-center">⋮</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Map Display Area */}
-                  <div className="flex-1 bg-white relative">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1db2ee28cecf4642a00d7b44c40c245c"
-                      alt="PASEO Community Map"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-
-                  {/* Legend Panel */}
-                  <div className="w-[234px] bg-[#EEE] h-full">
-                    <div className="bg-[#D19837] h-[42px] flex items-center justify-between px-3 border-t border-gray-200 border-opacity-25">
-                      <span className="text-[#F0F0F0] text-[14px] font-normal">
-                        Legend
-                      </span>
-                      <div className="w-5 h-5 text-white text-[14px] text-center cursor-pointer">
-                        ×
-                      </div>
-                    </div>
-                    <div className="bg-[#D4D4D4] p-3.5 space-y-3.5">
-                      <div className="flex items-center gap-2">
-                        <div className="w-[18px] h-[18px] bg-[#69ADE0] border border-[#555] rounded-sm"></div>
-                        <span className="text-[#333] text-[14px] font-normal">
-                          Available
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-[18px] h-[18px] bg-[#8F8F8F] border border-[#555] rounded-sm"></div>
-                        <span className="text-[#333] text-[14px] font-normal">
-                          Future Available
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-[18px] h-[18px] bg-[#7CD684] border border-[#555] rounded-sm"></div>
-                        <span className="text-[#333] text-[14px] font-normal">
-                          Quick Move-In
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-[18px] h-[18px] bg-[#ED4747] border border-[#555] rounded-sm"></div>
-                        <span className="text-[#333] text-[14px] font-normal">
-                          Sold
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Map Controls */}
-                <div className="absolute top-2 left-2 bg-red-600 w-6 h-6 rounded flex items-center justify-center">
-                  <span className="text-white text-[12px]">📍</span>
-                </div>
-                <div className="absolute bottom-4 right-[260px] w-6 h-9 bg-[#D4D4D4] flex items-center justify-center cursor-pointer">
-                  <span className="text-[#333] text-[20px]">⤢</span>
-                </div>
-              </div>
+        {/* Map Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-[1120px] mx-auto px-4">
+            <div className="bg-gray-200 min-h-[600px] relative overflow-hidden">
+              <iframe
+                src="https://contradovip.com/choice-valley-homes/paseo/site/"
+                width="100%"
+                height="600"
+                className="w-full h-[600px]"
+                title="PASEO Community Map"
+              />
             </div>
           </div>
         </section>
