@@ -285,8 +285,6 @@ export default function Windridge() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Virtual Tour</h2>
           <div className="bg-black h-[500px] flex items-center justify-center relative">
             <div className="text-center text-white">
-              <h3 className="text-3xl font-bold mb-4">We couldn't verify the security of your connection.</h3>
-              <p className="text-sm">Access to this content has been restricted. Contact your internet service provider for help.</p>
             </div>
           </div>
           <div className="flex items-center justify-center mt-4 text-gray-600">
@@ -335,7 +333,7 @@ export default function Windridge() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Floor Plan</h2>
           <div className="flex justify-center">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/4df995c1fce91fb7a5ad494ceb5dd5ff3a6f8ad4?width=2160"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6f8ba2420d6c408c9983964736738fa7"
               alt="Windridge Floor Plan"
               className="max-w-4xl w-full h-auto"
             />
@@ -365,15 +363,17 @@ export default function Windridge() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
-              alt="Contact Representative"
-              className="w-28 h-28 rounded-full border-4 border-brand-gold/30 mx-auto mb-6"
-            />
-            <h2 className="text-3xl font-bold text-gray-800 mb-8">Get in Touch</h2>
+      <section className="py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
+                alt="Contact"
+                className="w-28 h-28 rounded-full"
+              />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           </div>
 
           <form className="space-y-6">
@@ -382,14 +382,16 @@ export default function Windridge() {
                 <label className="block text-sm text-gray-600 mb-2">First Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border-b border-gray-400 bg-white focus:border-brand-gold focus:outline-none"
+                  name="firstName"
+                  className="w-full h-10 px-3 border-b border-gray-500 rounded bg-white focus:border-brand-gold focus:outline-none"
                 />
               </div>
               <div>
                 <label className="block text-sm text-gray-600 mb-2">Last Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border-b border-gray-400 bg-white focus:border-brand-gold focus:outline-none"
+                  name="lastName"
+                  className="w-full h-10 px-3 border-b border-gray-500 rounded bg-white focus:border-brand-gold focus:outline-none"
                 />
               </div>
             </div>
@@ -399,14 +401,16 @@ export default function Windridge() {
                 <label className="block text-sm text-gray-600 mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border-b border-gray-400 bg-white focus:border-brand-gold focus:outline-none"
+                  name="email"
+                  className="w-full h-10 px-3 border-b border-gray-500 rounded bg-white focus:border-brand-gold focus:outline-none"
                 />
               </div>
               <div>
                 <label className="block text-sm text-gray-600 mb-2">Phone Number</label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-3 border-b border-gray-400 bg-white focus:border-brand-gold focus:outline-none"
+                  name="phone"
+                  className="w-full h-10 px-3 border-b border-gray-500 rounded bg-white focus:border-brand-gold focus:outline-none"
                 />
               </div>
             </div>
@@ -414,17 +418,18 @@ export default function Windridge() {
             <div>
               <label className="block text-sm text-gray-600 mb-2">How can we help you?</label>
               <textarea
+                name="message"
                 rows={6}
-                className="w-full px-4 py-3 border-b border-gray-400 bg-white focus:border-brand-gold focus:outline-none resize-none"
+                className="w-full px-3 py-2 border-b border-gray-500 rounded bg-white focus:border-brand-gold focus:outline-none resize-none"
               ></textarea>
             </div>
 
-            <div className="text-left">
+            <div>
               <label className="block text-sm text-gray-600 mb-4">Accept Terms of Contacting</label>
               <div className="flex items-start space-x-3">
                 <input
                   type="checkbox"
-                  className="w-4 h-4 text-brand-gold bg-brand-gold border-brand-gold rounded focus:ring-brand-gold mt-1"
+                  className="w-3 h-3 bg-blue-600 mt-1"
                 />
                 <div className="text-sm text-gray-600 leading-relaxed">
                   <p>By pressing the Submit button, I agree to Choice Valley contacting me by email and/or phone</p>
@@ -434,122 +439,99 @@ export default function Windridge() {
               </div>
             </div>
 
-            <div className="text-left">
-              <button
-                type="submit"
-                className="bg-gray-600 text-white px-8 py-3 rounded text-sm font-medium hover:bg-gray-700 transition-colors"
-              >
-                Submit
-              </button>
-            </div>
+            <button
+              type="submit"
+              className="bg-gray-500 text-white px-12 py-3 rounded text-sm font-medium hover:bg-gray-600 transition-colors"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-50 py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Logo */}
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="h-24 w-auto"
+              />
+            </div>
+
+            <h3 className="text-3xl text-gray-600 mb-8 px-4">
+              Building communities throughout the Central Valley
+            </h3>
+
+            <p className="text-gray-600 mb-8">
+              For More Information about PASEO, Please Call or Text
+            </p>
+
             <div className="mb-8">
-              <svg
-                width="719"
-                height="106"
-                viewBox="0 0 719 106"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-24 mx-auto"
-              >
-                <g clipPath="url(#clip0_footer)">
-                  <mask
-                    id="mask0_footer"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="720"
-                    height="107"
-                  >
-                    <path d="M719.6 0.183105H0.410004V106.427H719.6V0.183105Z" fill="white" />
-                  </mask>
-                  <g mask="url(#mask0_footer)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M63.9836 0.183105L78.8226 11.5673V5.42752H94.3303V23.8597L125.873 48.5339C122.504 48.5339 119.058 48.227 115.586 48.227H109.259L63.8679 12.5522L28.9821 39.7976H33.7142V58.2682C49.1446 49.8131 79.9156 45.2467 101.184 48.7131C73.313 50.7258 46.5179 60.2458 23.6715 76.2525V49.7108H0.410004L63.9836 0.183105Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M80.6871 58.9972C97.4756 53.3904 115.111 50.7075 132.817 51.0665C122.279 52.3698 111.896 54.6961 101.814 58.0122C70.1044 68.5009 45.4928 86.8565 33.8685 106.44L16.8435 101.234C29.7023 83.94 52.3079 68.2196 80.6871 58.8819V58.9972Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_footer">
-                    <rect
-                      width="719.19"
-                      height="106.244"
-                      fill="white"
-                      transform="translate(0.410004 0.183105)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                <span>Stephanie Stine</span><br />
+                <span>Community Sales Manager</span><br />
+                <span>209-308-9000</span><br />
+                <span>DRE# 02189834</span>
+              </p>
             </div>
 
-            <p className="text-2xl text-gray-600 mb-8">Building communities throughout the Central Valley</p>
-            
-            <div className="space-y-4 mb-8">
-              <p className="text-gray-600">For More Information about PASEO, Please Call or Text</p>
-              <div className="text-lg">
-                <p className="font-medium">Stephanie Stine</p>
-                <p>Community Sales Manager</p>
-                <p>209-308-9000</p>
-                <p>DRE# 02189834</p>
-              </div>
+            <div className="mb-8">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                <span>Hours</span><br />
+                <span>Monday – Closed</span><br />
+                <span>Tuesday – Saturday 10am – 5pm</span><br />
+                <span>Sunday – 11am – 4pm</span>
+              </p>
             </div>
 
-            <div className="space-y-2 mb-8">
-              <p className="font-medium">Hours</p>
-              <p>Monday – Closed</p>
-              <p>Tuesday – Saturday 10am – 5pm</p>
-              <p>Sunday – 11am – 4pm</p>
-            </div>
+            <p className="text-lg text-gray-600 mb-8">
+              154 Montage Drive, Merced, CA 95348
+            </p>
 
-            <p className="text-gray-600 mb-8">154 Montage Drive, Merced, CA 95348</p>
-
-            <div className="flex justify-center space-x-8 mb-8">
-              <a href="tel:209-308-9000" className="flex items-center space-x-2">
-                <span className="text-brand-gold">📞</span>
-                <span className="font-bold">209-308-9000</span>
+            <div className="flex justify-center items-center space-x-4 mb-8">
+              <a href="tel:209-308-9000" className="flex items-center text-lg font-bold space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>209-308-9000</span>
               </a>
-              <a href="/contact" className="flex items-center space-x-2">
-                <span className="text-brand-gold">💬</span>
-                <span className="font-bold">Send Message</span>
+              <span className="text-gray-300">|</span>
+              <a href="/contact" className="flex items-center text-xl font-bold space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <span>Send Message</span>
               </a>
             </div>
 
             <div className="flex justify-center mb-8">
-              <a href="#" className="bg-gray-800 text-white p-3 rounded-full">
-                <span className="text-xl">f</span>
+              <a href="#" className="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
               </a>
             </div>
 
-            <div className="flex justify-center items-center space-x-4">
+            <div className="flex justify-center mb-8">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
-                className="w-20 h-auto"
+                className="w-20 h-24"
               />
             </div>
 
-            <div className="flex justify-center items-center space-x-4 mt-8 text-sm text-gray-600">
+            <div className="flex justify-center items-center space-x-2 text-black">
               <span>® All Rights Reserved</span>
-              <span>|</span>
-              <Link to="/privacy" className="hover:text-brand-gold">Privacy Policy</Link>
+              <span className="text-gray-300">|</span>
+              <Link to="/privacy" className="hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
