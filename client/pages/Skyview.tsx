@@ -301,67 +301,7 @@ export default function Skyview() {
         </section>
 
         {/* Photo Gallery */}
-        <section className="py-16">
-          <div className="max-w-[1280px] mx-auto px-8">
-            <div className="relative">
-              <div className="grid grid-cols-3 gap-4">
-                <div className="relative">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5bb85330dae74c2bba136c7a6f69c8be?format=webp&width=800"
-                    alt="Skyview Property Photo 1"
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <div className="relative">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F327c51f784bf42298cc5f617f48ef412?format=webp&width=800"
-                    alt="Skyview Property Photo 2"
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <div className="relative">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F882bc128bba844de822ea465bdaa14e8?format=webp&width=800"
-                    alt="Skyview Property Photo 3"
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-              </div>
-              <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-6 h-6 text-gray-700"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-              </button>
-              <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-6 h-6 text-gray-700"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </section>
+        <PhotoCarouselSection />
 
         {/* Floor Plan */}
         <section className="py-12">
