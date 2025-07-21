@@ -54,12 +54,11 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Only create root if it doesn't exist
+// Create root only once to prevent duplicate createRoot warning
+let root: ReturnType<typeof createRoot> | null = null;
+
 const container = document.getElementById("root")!;
-if (!container._reactRoot) {
-  const root = createRoot(container);
-  container._reactRoot = root;
-  root.render(<App />);
-} else {
-  container._reactRoot.render(<App />);
+if (!root) {
+  root = createRoot(container);
 }
+root.render(<App />);
