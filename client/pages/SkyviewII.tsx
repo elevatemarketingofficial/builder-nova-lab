@@ -435,147 +435,114 @@ export default function SkyviewII() {
         )}
 
         {/* Footer */}
-        <footer className="bg-[#F2F4F7] py-16">
-          <div className="max-w-[1270px] mx-auto px-4 text-center">
-            {/* Logo */}
-            <div className="flex justify-center mb-8">
-              <svg
-                width="719"
-                height="106"
-                viewBox="0 0 720 107"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[400px] h-[59px] sm:w-[600px] sm:h-[88px] lg:w-[719px] lg:h-[106px]"
-              >
-                <g clipPath="url(#clip0_2_93)">
-                  <mask
-                    id="mask0_2_93"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="720"
-                    height="107"
-                  >
-                    <path d="M719.6 0.103027H0.410004V106.347H719.6V0.103027Z" fill="white"/>
-                  </mask>
-                  <g mask="url(#mask0_2_93)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M63.9836 0.103027L78.8226 11.4872V5.34744H94.3303V23.7796L125.873 48.4538C122.504 48.4538 119.058 48.1469 115.586 48.1469H109.259L63.8679 12.4722L28.9821 39.7175H33.7142V58.1881C49.1446 49.733 79.9156 45.1667 101.184 48.633C73.313 50.6457 46.5179 60.1657 23.6715 76.1724V49.6307H0.410004L63.9836 0.103027Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M80.6871 58.9171C97.4756 53.3103 115.111 50.6274 132.817 50.9864C122.279 52.2897 111.896 54.616 101.814 57.9321C70.1044 68.4209 45.4928 86.7764 33.8685 106.36L16.8435 101.154C29.7023 83.8599 52.3079 68.1395 80.6871 58.8018V58.9171Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      d="M179.944 41.4316L175.083 46.0493C173.694 44.4442 171.979 43.1496 170.051 42.2502C168.122 41.3508 166.025 40.867 163.897 40.8304C162.259 40.808 160.633 41.1124 159.116 41.7255C157.599 42.3384 156.221 43.2477 155.063 44.3997C153.905 45.5516 152.991 46.9226 152.374 48.4318C151.758 49.9411 151.452 51.558 151.475 53.1868C151.442 55.4198 151.991 57.6232 153.069 59.5823C154.117 61.452 155.678 62.9869 157.57 64.0081C159.537 65.089 161.752 65.6444 164 65.6197C165.907 65.6451 167.797 65.2613 169.541 64.4942C171.605 63.4587 173.472 62.0737 175.057 60.4009L179.776 65.3C177.564 67.5741 174.949 69.4215 172.061 70.749C169.451 71.8076 166.651 72.3255 163.832 72.2713C161.26 72.3646 158.695 71.9364 156.295 71.0127C153.894 70.0892 151.707 68.6895 149.867 66.8989C148.065 65.09 146.655 62.9336 145.722 60.5624C144.788 58.191 144.353 55.655 144.441 53.1101C144.377 49.7247 145.229 46.3844 146.91 43.4398C148.607 40.5736 151.056 38.2212 153.995 36.6349C157.028 34.9367 160.454 34.0548 163.934 34.0766C166.943 34.0746 169.918 34.7204 172.653 35.9697C175.456 37.2387 177.944 39.103 179.944 41.4316Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M185.961 35.0356H193.021V48.7735H205.25V35.0356H212.283V71.4268H205.25V55.4762H193.034V71.4268H185.961V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M56.5513 25.7622H63.3664V32.5288H56.5513V25.7622ZM66.7355 35.7138H73.5377V42.4932H66.7355V35.7138ZM56.5513 35.7138H63.3664V42.4932H56.5513V35.7138ZM66.7355 25.7622H73.5377V32.5288H66.7355V25.7622Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_2_93">
-                    <rect width="719.19" height="106.244" fill="white" transform="translate(0.410004 0.103027)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+        <footer className="bg-[#F9FAFB] py-16">
+          <div className="max-w-[1120px] mx-auto px-4">
+            <div className="text-center">
+              {/* Logo */}
+              <div className="flex justify-center mb-8">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                  alt="Choice Valley Homes Logo"
+                  className="w-[632px] h-[93px] object-cover"
+                  style={{
+                    aspectRatio: "6.76",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                    overflow: "hidden",
+                  }}
+                />
+              </div>
 
-            <p className="text-[#3A4F66] text-[30px] leading-[49.5px] mb-8 capitalize">
-              Building communities throughout the Central Valley
-            </p>
+              <h3 className="text-[#3A4F66] text-[30px] leading-[45px] mt-8 px-4">
+                Building communities throughout the Central Valley
+              </h3>
 
-            <p className="text-[#3A4F66] text-[16px] leading-[26.4px] mb-8">
-              For More Information about PASEO, Please Call or Text
-            </p>
-
-            <div className="mb-8">
-              <p className="text-[#3A4F66] text-[18px] leading-[29.7px]">
-                <span>Stephanie Stine</span>
-                <br />
-                <span>Community Sales Manager</span>
-                <br />
-                <span>209-308-9000</span>
-                <br />
-                <span>DRE# 02189834</span>
+              <p className="text-[#3A4F66] mt-8">
+                For More Information about PASEO, Please Call or Text
               </p>
-            </div>
 
-            <div className="mb-8">
-              <p className="text-[#3A4F66] text-[18px] leading-[29.7px]">
-                <span>Hours</span>
-                <br />
-                <span>Monday – Closed</span>
-                <br />
-                <span>Tuesday – Saturday 10am – 5pm</span>
-                <br />
-                <span>Sunday – 11am – 4pm</span>
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-[18px] leading-[29px]">
+                  <span>Stephanie Stine</span>
+                  <br />
+                  <span>Community Sales Manager</span>
+                  <br />
+                  <span>209-308-9000</span>
+                  <br />
+                  <span>DRE# 02189834</span>
+                </p>
+              </div>
+
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-[18px] leading-[29px]">
+                  <span>Hours</span>
+                  <br />
+                  <span>Monday – Closed</span>
+                  <br />
+                  <span>Tuesday – Saturday 10am – 5pm</span>
+                  <br />
+                  <span>Sunday – 11am – 4pm</span>
+                </p>
+              </div>
+
+              <p className="text-[#3A4F66] text-[18px] leading-[27px] mt-8">
+                154 Montage Drive, Merced, CA 95348
               </p>
-            </div>
 
-            <p className="text-[#3A4F66] text-[18px] leading-[29.7px] mb-8">
-              154 Montage Drive, Merced, CA 95348
-            </p>
+              <div className="flex justify-center items-center gap-4 mt-8">
+                <a
+                  href="tel:209-308-9000"
+                  className="flex items-center gap-2 text-black text-[18px] font-bold"
+                >
+                  <svg className="w-5 h-5 text-[#D29A3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <span>209-308-9000</span>
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-black text-[21px] font-bold"
+                >
+                  <svg className="w-5 h-5 text-[#D29A3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                  <span>Send Message</span>
+                </a>
+              </div>
 
-            <div className="flex justify-center items-center gap-4 mb-8">
-              <a
-                href="tel:209-308-9000"
-                className="flex items-center gap-2 text-black text-[18px] font-bold"
-              >
-                <span className="text-[#D29A3A]">📞</span>
-                <span>209-308-9000</span>
-              </a>
-              <span className="text-gray-300">|</span>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-black text-[21px] font-bold"
-              >
-                <span className="text-[#D29A3A]">💬</span>
-                <span>Send Message</span>
-              </a>
-            </div>
+              <div className="flex justify-center mt-8">
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
+                >
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 3h6v6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14 21 3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </a>
+              </div>
 
-            <div className="flex justify-center mb-8">
-              <a
-                href="#"
-                className="flex items-center justify-center w-12 h-12 bg-[#262626] rounded-full"
-              >
-                <span className="text-white text-[25px]">🔗</span>
-              </a>
-            </div>
+              <div className="flex justify-center mt-8">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                  alt="Equal Housing Opportunity"
+                  className="w-[90px] h-[96px]"
+                />
+              </div>
 
-            <div className="flex justify-center mb-8">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
-                alt="Equal Housing Opportunity"
-                className="w-[102px] h-[109px]"
-              />
-            </div>
-
-            <div className="flex justify-center items-center gap-2 text-black">
-              <span className="text-[16px] font-medium">® All Rights Reserved</span>
-              <span className="text-gray-300">|</span>
-              <Link
-                to="/privacy"
-                className="text-[16px] font-medium hover:text-[#D29A3A] transition-colors"
-              >
-                Privacy Policy
-              </Link>
+              <div className="flex justify-center items-center gap-2 mt-8 text-black">
+                <span>® All Rights Reserved</span>
+                <span className="text-gray-300">|</span>
+                <Link
+                  to="/privacy"
+                  className="hover:text-[#D29A3A] transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </div>
             </div>
           </div>
         </footer>
