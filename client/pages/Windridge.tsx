@@ -283,9 +283,12 @@ export default function Windridge() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Virtual Tour</h2>
-          <div className="bg-black h-[500px] flex items-center justify-center relative">
-            <div className="text-center text-white">
-            </div>
+          <div className="flex flex-col relative mt-5">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: '<iframe src="https://app.lapentor.com/sphere/1791-a" frameborder="0" width="100%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>'
+              }}
+            />
           </div>
           <div className="flex items-center justify-center mt-4 text-gray-600">
             <span className="mr-2">🖱️</span>
