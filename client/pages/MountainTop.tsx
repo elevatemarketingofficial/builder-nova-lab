@@ -7,9 +7,33 @@ const PhotoCarouselSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const carouselImages = [
-    { src: "https://api.builder.io/api/v1/image/assets/TEMP/ea4d8537e43569ba4fb774c50ea215439591532f?width=1251", alt: "Mountain Top Property Photo 1" },
-    { src: "https://api.builder.io/api/v1/image/assets/TEMP/0f814e7ed0bf417824d0557eae41cc2fc42076b3?width=1251", alt: "Mountain Top Property Photo 2" },
-    { src: "https://api.builder.io/api/v1/image/assets/TEMP/c66b955aa965f8279d22ecd8fdadd67dcffc03ec?width=1251", alt: "Mountain Top Property Photo 3" }
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbd78c7151fcc446b8c115111f9fcdcbf?format=webp&width=800", alt: "Mountain Top Property Photo 1" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2d919ddeaf084b68a209eec777ec65b7?format=webp&width=800", alt: "Mountain Top Property Photo 2" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2517353c548e4919a26112a2b4f30d44?format=webp&width=800", alt: "Mountain Top Property Photo 3" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F47e0c61d596c479c90a8bd567780633a?format=webp&width=800", alt: "Mountain Top Property Photo 4" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc9e494a60afc457180040420f0baa13e?format=webp&width=800", alt: "Mountain Top Property Photo 5" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc5df77972a6a406799ad8dbfeea47734?format=webp&width=800", alt: "Mountain Top Property Photo 6" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbdf13da033574467903dd806d975fc63?format=webp&width=800", alt: "Mountain Top Property Photo 7" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b127c59c0e7498bae82711c7bb0e67b?format=webp&width=800", alt: "Mountain Top Property Photo 8" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fee9ecb91054948849c357a6497a49485?format=webp&width=800", alt: "Mountain Top Property Photo 9" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe1bb0dfd52c64a63980e749341ebabe4?format=webp&width=800", alt: "Mountain Top Property Photo 10" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F65b1e6714de44f9f9a4f355db670c525?format=webp&width=800", alt: "Mountain Top Property Photo 11" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fce10db8337684bebac19135f1a5ea844?format=webp&width=800", alt: "Mountain Top Property Photo 12" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5ede63f918334b81b2649e2a5c402e02?format=webp&width=800", alt: "Mountain Top Property Photo 13" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F430340dc9c1b4a1399fda15f40f188da?format=webp&width=800", alt: "Mountain Top Property Photo 14" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fce72154715ed43b099746d2f6b861c27?format=webp&width=800", alt: "Mountain Top Property Photo 15" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F80d0ae544e1c443aa32c762b6532aab0?format=webp&width=800", alt: "Mountain Top Property Photo 16" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7e7fcca09acc4d4e8ef3cf1051494a7e?format=webp&width=800", alt: "Mountain Top Property Photo 17" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3a886fb0484840fbbe85fce329543a7e?format=webp&width=800", alt: "Mountain Top Property Photo 18" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd5855a0aee64910bec8f846454d6c09?format=webp&width=800", alt: "Mountain Top Property Photo 19" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2f0be1d7c37b4bc2a0d52090ee5efdf0?format=webp&width=800", alt: "Mountain Top Property Photo 20" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb9b90be38db04952ac598008c5cdfb0d?format=webp&width=800", alt: "Mountain Top Property Photo 21" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6dd36ea356274468ba79672764cf92ad?format=webp&width=800", alt: "Mountain Top Property Photo 22" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4b1c1708f81b469c94c7a1cf5166a706?format=webp&width=800", alt: "Mountain Top Property Photo 23" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4e6a62e535e649629cb3c169bcde4b13?format=webp&width=800", alt: "Mountain Top Property Photo 24" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F271c3cff02324ee8b61aab52feac00ae?format=webp&width=800", alt: "Mountain Top Property Photo 25" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0fa9fb0ed9f44c40bcff132d7c5d82a0?format=webp&width=800", alt: "Mountain Top Property Photo 26" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F888f9117757b4a73b486a06e6944b77a?format=webp&width=800", alt: "Mountain Top Property Photo 27" }
   ];
 
   // Auto-advance carousel every 5 seconds by 1 image
@@ -40,53 +64,41 @@ const PhotoCarouselSection = () => {
   const visibleImages = carouselImages.slice(currentImageIndex, currentImageIndex + 3);
 
   return (
-    <div className="w-full bg-white py-10">
-      <div className="container mx-auto px-4">
+    <section className="py-16">
+      <div className="container mx-auto px-8 max-w-[1280px]">
         <div className="relative">
-          {/* Images Grid */}
-          <div className="grid grid-cols-3 gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 gap-4">
             {visibleImages.map((image, index) => (
               <div key={currentImageIndex + index} className="relative group">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-[417px] object-cover rounded-none"
+                  className="w-full h-[320px] object-cover"
                 />
               </div>
             ))}
           </div>
 
-          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 w-[60px] h-[60px] bg-gray-200 bg-opacity-90 hover:bg-opacity-100 transition-all duration-200 rounded-none flex items-center justify-center group"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 z-10 transition-opacity duration-150"
           >
-            <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M38.76 8.38989C38.28 8.38989 37.81 8.48989 37.35 8.68989C36.89 8.88989 36.52 9.12989 36.24 9.40989L18.48 27.4099C17.84 28.0499 17.52 28.9599 17.52 30.1399C17.52 31.3199 17.84 32.2299 18.48 32.8699L36.24 52.1299C36.68 52.5699 37.09 52.8899 37.47 53.0899C37.85 53.2899 38.28 53.3899 38.76 53.3899C39.92 53.3899 40.84 53.0499 41.52 52.3699C41.88 52.0099 42.18 51.5799 42.42 51.0799C42.66 50.5799 42.78 50.0899 42.78 49.6099C42.78 48.4499 42.36 47.5499 41.52 46.9099L26.28 30.1099L41.52 14.3899C42.16 13.7499 42.48 12.9899 42.48 12.1099C42.48 10.9499 42.16 10.0499 41.52 9.40989C41 9.00989 40.54 8.73989 40.14 8.59989C39.74 8.45989 39.28 8.38989 38.76 8.38989Z" fill="#EDEDED" fillOpacity="0.9"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-700">
+              <path d="m15 18-6-6 6-6"/>
             </svg>
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 w-[60px] h-[60px] bg-gray-200 bg-opacity-90 hover:bg-opacity-100 transition-all duration-200 rounded-none flex items-center justify-center group"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 z-10 transition-opacity duration-150"
           >
-            <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M41.76 32.8699C42.44 32.1899 42.78 31.2699 42.78 30.1099C42.78 29.5899 42.7 29.1099 42.54 28.6699C42.38 28.2299 42.12 27.8899 41.76 27.6499L24 9.64989C23.6 9.24989 23.19 8.93989 22.77 8.71989C22.35 8.49989 21.84 8.38989 21.24 8.38989C20.24 8.38989 19.42 8.72989 18.78 9.40989C18.38 9.76989 18.07 10.1899 17.85 10.6699C17.63 11.1499 17.52 11.6299 17.52 12.1099C17.52 13.3099 17.84 14.2299 18.48 14.8699L33.78 30.4099L18.24 47.1499C17.6 47.7899 17.28 48.7099 17.28 49.9099C17.28 50.8699 17.68 51.7899 18.48 52.6699C19.28 53.1499 20.2 53.3899 21.24 53.3899C21.76 53.3899 22.26 53.2799 22.74 53.0599C23.22 52.8399 23.64 52.5299 24 52.1299L41.76 32.8699Z" fill="#EDEDED" fillOpacity="0.9"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-700">
+              <path d="m9 18 6-6-6-6"/>
             </svg>
           </button>
         </div>
-
-        {/* Navigation Instructions */}
-        <div className="text-center mt-4">
-          <p className="text-gray-600 text-base flex items-center justify-center gap-2">
-            <svg className="w-3 h-4" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 0L0 14H11L5.5 0Z" fill="#3A4F66"/>
-            </svg>
-            Use mouse to drag and scroll to zoom
-          </p>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -155,7 +167,7 @@ export default function MountainTop() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto flex items-center">
             {/* Title */}
-            <div className="flex-1">
+            <div className="flex-1" style={{ paddingLeft: "-3px" }}>
               <h1 className="text-[66px] font-bold text-black leading-tight">
                 Mountain Top
               </h1>
@@ -163,10 +175,11 @@ export default function MountainTop() {
             
             {/* House Image */}
             <div className="flex-1 flex justify-center">
-              <div 
+              <div
                 className="w-[774px] h-[600px] bg-cover bg-center rounded-none"
-                style={{ 
-                  backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/e4f515ff3aa0e84791c221128f9dce5f38f66fb4?width=1548')"
+                style={{
+                  backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb14cedd44f3a4aabbca5f88de8950019)",
+                  backgroundRepeat: "no-repeat"
                 }}
               />
             </div>
@@ -240,28 +253,31 @@ export default function MountainTop() {
       </section>
 
       {/* Virtual Tour Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-[32px] font-bold text-[#192A3D] mb-8">Virtual Tour</h2>
-            
-            {/* Virtual Tour Frame */}
-            <div className="bg-black h-[714px] flex items-center justify-center mb-4">
-              <div className="text-center text-white">
-                <h3 className="text-[28px] font-bold mb-3">We couldn't verify the security of your connection.</h3>
-                <p className="text-[13px]">Access to this content has been restricted. Contact your internet service provider for help.</p>
-              </div>
-            </div>
+      <section className="bg-[#F9FAFB] py-16">
+        <div className="container mx-auto px-8 max-w-[1280px]">
+          <h2 className="text-[30px] font-bold text-gray-800 mb-8">Virtual Tour</h2>
 
-            {/* Instructions */}
-            <div className="text-center">
-              <p className="text-[#3A4F66] text-base flex items-center justify-center gap-2">
-                <svg className="w-3 h-4" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 14H11L5.5 0Z" fill="#3A4F66"/>
-                </svg>
-                Use mouse to drag and scroll to zoom
-              </p>
+          <div className="flex flex-col relative mt-5">
+            <div>
+              <iframe
+                src="https://app.lapentor.com/sphere/1791-a"
+                frameBorder="0"
+                width="100%"
+                height="500px"
+                scrolling="no"
+                allow="vr,gyroscope,accelerometer"
+                allowFullScreen={true}
+                className="w-full h-[500px]"
+              />
             </div>
+          </div>
+
+          <div className="flex items-center justify-center mt-4 text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 mr-2">
+              <rect x="5" y="2" width="14" height="20" rx="7"/>
+              <path d="M12 6v4"/>
+            </svg>
+            <span>Use mouse to drag and scroll to zoom</span>
           </div>
         </div>
       </section>
@@ -278,7 +294,7 @@ export default function MountainTop() {
             <div className="flex justify-center">
               <Link to="#" className="block">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f74d88015b1405e75c8e22bb4e33ea77766d5f19?width=2160"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5aa07476966d47a1ac0f904850b7b099"
                   alt="Mountain Top Floor Plan"
                   className="w-[1080px] h-[1080px] object-contain"
                 />
@@ -289,220 +305,196 @@ export default function MountainTop() {
       </section>
 
       {/* Interest List Section */}
-      <section className="bg-brand-gold py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto flex items-center justify-between">
-            <div>
-              <h2 className="text-white text-[32px] font-bold leading-tight mb-4">
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-[1290px]">
+          <div className="bg-brand-gold rounded-lg p-8 flex items-center justify-between gap-6">
+            <div className="text-left">
+              <h2 className="text-white text-[32px] font-bold leading-[35px] mb-4">
                 Join the<br />Interested List
               </h2>
-            </div>
-            <div className="flex-1 mx-8">
-              <p className="text-white text-base leading-relaxed">
-                Sign-up to stay in the loop with new home releases, builder incentives,<br />
-                special events & more!
+              <p className="text-white leading-[26.4px] max-w-[540px]">
+                Sign-up to stay in the loop with new home releases, builder incentives, special events & more!
               </p>
             </div>
-            <div>
-              <Link 
-                to="/contact"
-                className="bg-white text-black px-10 py-5 text-lg font-normal hover:bg-gray-100 transition-colors"
-              >
-                Register
-              </Link>
-            </div>
+            <Link
+              to="/contact"
+              className="bg-white text-black text-lg leading-[27px] px-10 py-4 hover:bg-gray-100 transition-colors"
+            >
+              Register
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="bg-white py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            {/* Profile Image */}
-            <div className="mb-8">
+      <section className="bg-white py-24">
+        <div className="container mx-auto px-8 max-w-3xl">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-6">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
-                alt="Contact Representative"
-                className="w-[108px] h-[108px] rounded-full border-3 border-brand-gold border-opacity-34 mx-auto"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
+                alt="Contact"
+                className="w-28 h-28 rounded-full"
+              />
+            </div>
+            <h2 className="text-[30px] font-bold text-gray-800">Get in Touch</h2>
+          </div>
+
+          <form>
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <label className="block text-gray-600 text-sm mb-2">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  className="w-full h-10 border-b border-gray-500 rounded px-3"
+                />
+              </div>
+              <div>
+                <label className="block text-gray-600 text-sm mb-2">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  className="w-full h-10 border-b border-gray-500 rounded px-3"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6 mt-6">
+              <div>
+                <label className="block text-gray-600 text-sm mb-2">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full h-10 border-b border-gray-500 rounded px-3"
+                />
+              </div>
+              <div>
+                <label className="block text-gray-600 text-sm mb-2">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="w-full h-10 border-b border-gray-500 rounded px-3"
+                />
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <label className="block text-gray-600 text-sm mb-2">How can we help you?</label>
+              <textarea
+                name="message"
+                rows={6}
+                className="w-full border-b border-gray-500 rounded px-3 py-2 resize-none"
               />
             </div>
 
-            <h2 className="text-[34px] font-bold text-[#192A3D] mb-8">Get in Touch</h2>
-
-            {/* Contact Form */}
-            <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-[#3A4F66] text-sm mb-2">First Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full h-10 border-b border-[#69727D] bg-white focus:outline-none focus:border-brand-gold"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#3A4F66] text-sm mb-2">Last Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full h-10 border-b border-[#69727D] bg-white focus:outline-none focus:border-brand-gold"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-[#3A4F66] text-sm mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full h-10 border-b border-[#69727D] bg-white focus:outline-none focus:border-brand-gold"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#3A4F66] text-sm mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    className="w-full h-10 border-b border-[#69727D] bg-white focus:outline-none focus:border-brand-gold"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-[#3A4F66] text-sm mb-2">How can we help you?</label>
-                <textarea 
-                  rows={6}
-                  className="w-full border-b border-[#69727D] bg-white focus:outline-none focus:border-brand-gold resize-none"
+            <div className="mt-6">
+              <label className="block text-gray-600 text-sm mb-4">Accept Terms of Contacting</label>
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  className="w-3 h-3 bg-blue-600 mt-1"
                 />
-              </div>
-
-              <div className="text-left">
-                <label className="block text-[#3A4F66] text-sm mb-2">Accept Terms of Contacting</label>
-                <div className="flex items-start gap-3">
-                  <input 
-                    type="checkbox" 
-                    className="w-3 h-3 bg-blue-500 mt-1"
-                  />
-                  <div className="text-[#3A4F66] text-sm leading-relaxed">
-                    <p>By pressing the Submit button, I agree to Choice Valley contacting me by email and/or phone</p>
-                    <p>to share home availability information or related opportunities. I also understand that any</p>
-                    <p>information I've shared in this form is subject to Choice Valley Homes' Privacy Policy.</p>
-                  </div>
+                <div className="text-gray-600 text-sm leading-relaxed ml-3">
+                  <p>By pressing the Submit button, I agree to Choice Valley contacting me by email and/or phone</p>
+                  <p>to share home availability information or related opportunities. I also understand that any</p>
+                  <p>information I've shared in this form is subject to Choice Valley Homes' Privacy Policy.</p>
                 </div>
               </div>
+            </div>
 
-              <div className="text-left">
-                <button 
-                  type="submit"
-                  className="bg-[#69727D] text-white px-8 py-3 text-sm font-medium hover:bg-opacity-90 transition-colors"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+            <button
+              type="submit"
+              className="bg-gray-500 text-white rounded px-12 py-3 text-sm font-medium mt-6 hover:bg-gray-600 transition-colors"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F2F4F7] py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            {/* Logo */}
-            <div className="mb-8">
-              <svg width="720" height="108" viewBox="0 0 720 108" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
-                <g clipPath="url(#clip0_4_534)">
-                  <mask id="mask0_4_534" style={{maskType: "luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="720" height="108">
-                    <path d="M719.6 0.823242H0.410004V107.067H719.6V0.823242Z" fill="white"/>
-                  </mask>
-                  <g mask="url(#mask0_4_534)">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M63.9836 0.823242L78.8226 12.2074V6.06766H94.3303V24.4998L125.873 49.1741C122.504 49.1741 119.058 48.8671 115.586 48.8671H109.259L63.8679 13.1924L28.9821 40.4377H33.7142V58.9083C49.1446 50.4532 79.9156 45.8869 101.184 49.3532C73.313 51.366 46.5179 60.8859 23.6715 76.8926V50.3509H0.410004L63.9836 0.823242Z" fill="#D29A3A"/>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M80.6871 59.6373C97.4756 54.0306 115.111 51.3477 132.817 51.7066C122.279 53.01 111.896 55.3362 101.814 58.6523C70.1044 69.1411 45.4928 87.4966 33.8685 107.08L16.8435 101.874C29.7023 84.5801 52.3079 68.8598 80.6871 59.5221V59.6373Z" fill="#D29A3A"/>
-                    <path d="M179.944 42.1518L175.083 46.7695C173.694 45.1644 171.979 43.8699 170.051 42.9704C168.122 42.0711 166.025 41.5872 163.897 41.5506C162.259 41.5282 160.633 41.8326 159.116 42.4457C157.599 43.0586 156.221 43.9679 155.063 45.1199C153.905 46.2718 152.991 47.6428 152.374 49.152C151.758 50.6613 151.452 52.2782 151.475 53.907C151.442 56.1401 151.991 58.3434 153.069 60.3025C154.117 62.1723 155.678 63.7071 157.57 64.7283C159.537 65.8092 161.752 66.3646 164 66.34C165.907 66.3653 167.797 65.9815 169.541 65.2144C171.605 64.179 173.472 62.7939 175.057 61.1211L179.776 66.0203C177.564 68.2944 174.949 70.1417 172.061 71.4693C169.451 72.5278 166.651 73.0458 163.832 72.9915C161.26 73.0848 158.695 72.6566 156.295 71.7329C153.894 70.8094 151.707 69.4098 149.867 67.6191C148.065 65.8102 146.655 63.6538 145.722 61.2826C144.788 58.9112 144.353 56.3753 144.441 53.8303C144.377 50.4449 145.229 47.1046 146.91 44.16C148.607 41.2938 151.056 38.9414 153.995 37.3551C157.028 35.6569 160.454 34.775 163.934 34.7968C166.943 34.7948 169.918 35.4406 172.653 36.6899C175.456 37.9589 177.944 39.8233 179.944 42.1518Z" fill="black"/>
-                    <path d="M185.961 35.7559H193.021V49.4937H205.25V35.7559H212.283V72.147H205.25V56.1964H193.034V72.147H185.961V35.7559Z" fill="black"/>
-                    <path d="M237.95 34.8477C240.441 34.8209 242.911 35.3033 245.206 36.2647C247.502 37.2263 249.575 38.6465 251.298 40.4375C253.109 42.2119 254.539 44.3348 255.499 46.6771C256.458 49.0192 256.927 51.5315 256.878 54.0602C256.93 56.5627 256.466 59.0491 255.518 61.3675C254.57 63.6858 253.155 65.787 251.362 67.5421C247.761 71.0836 242.891 73.0572 237.828 73.0284C232.764 72.9995 227.919 70.971 224.358 67.3886C221.447 64.3736 219.591 60.5042 219.067 56.3559C218.544 52.2077 219.38 48.0019 221.451 44.3644C223.135 41.4806 225.549 39.0864 228.452 37.421C231.357 35.7554 234.649 34.877 238.001 34.8734L237.95 34.8477ZM237.872 41.6271C236.283 41.5898 234.702 41.8822 233.233 42.4857C231.762 43.089 230.435 43.9903 229.335 45.1318C228.179 46.3146 227.278 47.7176 226.684 49.2565C226.089 50.7955 225.814 52.4383 225.876 54.0857C225.799 55.9053 226.154 57.7173 226.907 59.3765C227.663 61.0357 228.797 62.4962 230.222 63.6408C232.39 65.4284 235.121 66.3976 237.937 66.3782C239.524 66.3922 241.097 66.0763 242.553 65.4507C244.009 64.8252 245.32 63.9038 246.397 62.7455C248.655 60.3705 249.913 57.2262 249.913 53.9579C249.913 50.6895 248.655 47.5452 246.397 45.1702C245.302 44.0226 243.978 43.1148 242.511 42.5048C241.043 41.8947 239.464 41.5959 237.872 41.6271Z" fill="black"/>
-                    <path d="M262.947 35.7559H269.853V72.147H262.947V35.7559Z" fill="black"/>
-                    <path d="M311.309 42.1518L306.435 46.7695C305.049 45.1636 303.336 43.8681 301.411 42.9686C299.485 42.0689 297.388 41.5858 295.262 41.5506C293.624 41.5282 291.999 41.8326 290.481 42.4457C288.964 43.0586 287.586 43.9679 286.427 45.1199C285.27 46.2718 284.356 47.6428 283.74 49.152C283.124 50.6613 282.818 52.2782 282.839 53.907C282.808 56.1383 283.354 58.3401 284.421 60.3025C285.472 62.1698 287.033 63.7038 288.921 64.7283C290.889 65.8076 293.104 66.3629 295.351 66.34C297.259 66.3669 299.148 65.983 300.894 65.2144C302.957 64.179 304.824 62.7939 306.409 61.1211L311.13 66.0203C308.918 68.2957 306.303 70.1433 303.413 71.4693C300.803 72.5268 298.003 73.0446 295.185 72.9915C292.612 73.087 290.046 72.6598 287.645 71.7362C285.245 70.8125 283.058 69.4116 281.219 67.6191C278.316 64.5109 276.469 60.5737 275.938 56.364C275.407 52.1543 276.221 47.8851 278.263 44.16C279.956 41.2914 282.406 38.9382 285.347 37.3551C288.375 35.6567 291.798 34.7749 295.275 34.7968C298.284 34.792 301.259 35.438 303.992 36.6899C306.801 37.9604 309.297 39.8242 311.309 42.1518Z" fill="black"/>
-                    <path d="M317.418 35.7559H337.386V42.5354H324.335V49.1228H337.386V55.7742H324.335V65.3036H337.386V72.1086H317.418V35.7559Z" fill="black"/>
-                    <path d="M355.35 35.7559H362.512L371.72 61.607L381.054 35.7559H388.204L374.985 72.147H368.272L355.35 35.7559Z" fill="black"/>
-                    <path d="M404.933 35.7559H412.006L426.074 72.147H418.833L415.966 64.6513H401.049L398.132 72.147H390.904L404.933 35.7559ZM408.508 45.4133L403.609 57.8976H413.395L408.508 45.4133Z" fill="black"/>
-                    <path d="M431.448 35.7559H438.418V65.5339H448.55V72.147H431.448V35.7559Z" fill="black"/>
-                    <path d="M453.848 35.7559H460.817V65.5339H470.963V72.147H453.848V35.7559Z" fill="black"/>
-                    <path d="M476.273 35.7559H496.244V42.5354H483.192V49.1228H496.244V55.7742H483.192V65.3036H496.244V72.1086H476.273V35.7559Z" fill="black"/>
-                    <path d="M500.139 35.7559H507.611L514.438 48.8541L521.228 35.7559H528.609L517.898 56.3499V72.1086H510.889V56.3499L500.139 35.7559Z" fill="black"/>
-                    <path d="M548.784 35.7559H552.436V51.0159H571.056V35.7559H574.721V72.1469H571.056V54.5846H552.436V72.1469H548.784V35.7559Z" fill="black"/>
-                    <path d="M601.03 34.8481C603.603 34.7818 606.162 35.2362 608.555 36.1839C610.947 37.1316 613.119 38.5526 614.943 40.3611C617.621 43.0477 619.44 46.4618 620.172 50.1739C620.904 53.8861 620.517 57.7306 619.059 61.2246C617.601 64.7186 615.136 67.7058 611.977 69.8108C608.817 71.9159 605.102 73.0447 601.3 73.0554C598.752 73.112 596.22 72.6499 593.858 71.6975C591.496 70.745 589.355 69.3224 587.567 67.5169C585.765 65.7807 584.343 63.6949 583.389 61.3887C582.432 59.0826 581.963 56.6056 582.011 54.1117C581.991 50.7024 582.879 47.3485 584.584 44.3903C586.218 41.4717 588.618 39.0492 591.527 37.3808C594.412 35.7107 597.692 34.8364 601.03 34.8481ZM601.197 38.3786C598.48 38.3745 595.814 39.1038 593.482 40.4891C591.11 41.8356 589.146 43.7931 587.797 46.1556C586.424 48.5775 585.718 51.3181 585.754 54.0989C585.742 56.121 586.135 58.1254 586.906 59.9964C587.676 61.8676 588.812 63.5688 590.246 65.0023C591.679 66.4358 593.384 67.5733 595.26 68.3495C597.138 69.1256 599.15 69.5252 601.184 69.525C603.948 69.5425 606.668 68.8322 609.065 67.4657C611.434 66.1444 613.39 64.2021 614.724 61.8503C616.082 59.4325 616.779 56.7022 616.743 53.9325C616.782 51.1868 616.086 48.4804 614.724 46.0915C613.318 43.7641 611.334 41.8359 608.964 40.4917C606.592 39.1476 603.913 38.4331 601.184 38.4168L601.197 38.3786Z" fill="black"/>
-                    <path d="M626.207 72.1469L631.453 35.7559H632.045L646.91 65.6106L661.633 35.7559H662.225L667.483 72.1469H663.895L660.283 46.1168L647.424 72.1343H646.485L633.395 45.9121L629.807 72.1343L626.207 72.1469Z" fill="black"/>
-                    <path d="M674.698 35.7559H695.658V39.3247H678.35V50.7216H695.502V54.2904H678.35V68.5782H695.502V72.1469H674.698V35.7559Z" fill="black"/>
-                    <path d="M698.189 65.3679L701.301 63.5131C703.488 67.5211 706.017 69.525 708.889 69.525C710.092 69.5329 711.277 69.2382 712.335 68.6681C713.359 68.1542 714.216 67.3599 714.804 66.3784C715.358 65.4592 715.653 64.4067 715.653 63.3341C715.61 62.0361 715.161 60.7839 714.366 59.7525C712.572 57.5188 710.463 55.5543 708.104 53.9197C706.014 52.4913 704.101 50.821 702.408 48.9439C701.156 47.3563 700.473 45.3978 700.466 43.3797C700.45 41.8624 700.845 40.3687 701.61 39.0564C702.374 37.7525 703.487 36.6853 704.826 35.9737C706.208 35.2224 707.763 34.8349 709.338 34.848C711.035 34.8432 712.704 35.2846 714.173 36.1272C716.064 37.357 717.688 38.9536 718.945 40.8215L715.962 43.0727C715.005 41.6808 713.812 40.4645 712.438 39.4784C711.483 38.9089 710.388 38.6124 709.275 38.6214C707.944 38.5569 706.641 39.0165 705.648 39.9006C705.195 40.3197 704.837 40.829 704.595 41.3955C704.353 41.9619 704.235 42.5727 704.247 43.188C704.247 43.9822 704.419 44.7671 704.749 45.4904C705.197 46.4045 705.811 47.2285 706.561 47.9206C707.037 48.3812 708.619 49.5963 711.28 51.5535C713.788 53.2431 715.991 55.3402 717.8 57.7571C718.91 59.3725 719.522 61.2753 719.561 63.2318C719.567 64.5231 719.302 65.8014 718.781 66.9845C718.261 68.1676 717.498 69.229 716.54 70.1007C715.574 71.0504 714.427 71.7977 713.165 72.2985C711.905 72.7995 710.555 73.0438 709.198 73.0172C707.05 73.0406 704.946 72.426 703.153 71.2519C701.046 69.7176 699.343 67.6988 698.189 65.3679Z" fill="black"/>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M56.5513 26.4824H63.3664V33.249H56.5513V26.4824ZM66.7355 36.434H73.5377V43.2134H66.7355V36.434ZM56.5513 36.434H63.3664V43.2134H56.5513V36.434ZM66.7355 26.4824H73.5377V33.249H66.7355V26.4824Z" fill="#D29A3A"/>
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_4_534">
-                    <rect width="719.19" height="106.244" fill="white" transform="translate(0.410004 0.823242)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-
-            <p className="text-[#3A4F66] text-3xl mb-8">Building communities throughout the Central Valley</p>
-
-            <div className="space-y-6 text-[#3A4F66] text-lg">
-              <p>For More Information about PASEO, Please Call or Text</p>
-              
-              <div className="space-y-4">
-                <p className="text-lg leading-relaxed">
-                  Stephanie Stine<br />
-                  Community Sales Manager<br />
-                  209-308-9000<br />
-                  DRE# 02189834
-                </p>
-                
-                <p className="text-lg leading-relaxed">
-                  Hours<br />
-                  Monday – Closed<br />
-                  Tuesday – Saturday 10am – 5pm<br />
-                  Sunday – 11am – 4pm
-                </p>
-                
-                <p className="text-lg">154 Montage Drive, Merced, CA 95348</p>
-              </div>
-            </div>
-
-            {/* Contact Links */}
-            <div className="flex justify-center items-center gap-8 my-8">
-              <Link to="tel:209-308-9000" className="flex items-center gap-2 text-black font-bold text-lg">
-                <Phone className="w-5 h-5 text-brand-gold" />
-                209-308-9000
-              </Link>
-              <Link to="/contact" className="flex items-center gap-2 text-black font-bold text-xl">
-                <MessageSquare className="w-5 h-5 text-brand-gold" />
-                Send Message
-              </Link>
-            </div>
-
-            {/* Social Media */}
+      <footer className="bg-[#F9FAFB] py-16">
+        <div className="container mx-auto px-8 max-w-4xl">
+          <div className="text-center">
             <div className="flex justify-center mb-8">
-              <Link to="#" className="w-12 h-12 bg-gray-800 text-white rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="h-24"
+              />
+            </div>
+
+            <h3 className="text-gray-600 text-[30px] leading-9 mb-8 px-4">
+              Building communities throughout the Central Valley
+            </h3>
+
+            <p className="text-gray-600 mb-8">
+              For More Information about PASEO, Please Call or Text
+            </p>
+
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Stephanie Stine<br />
+                Community Sales Manager<br />
+                209-308-9000<br />
+                DRE# 02189834
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Hours<br />
+                Monday – Closed<br />
+                Tuesday – Saturday 10am – 5pm<br />
+                Sunday – 11am – 4pm
+              </p>
+            </div>
+
+            <p className="text-gray-600 text-lg leading-7 mb-8">
+              154 Montage Drive, Merced, CA 95348
+            </p>
+
+            <div className="flex justify-center items-center mb-8">
+              <Link to="tel:209-308-9000" className="flex items-center text-lg font-bold leading-7">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold w-5 h-5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span className="ml-2 font-bold">209-308-9000</span>
+              </Link>
+              <span className="text-gray-300 ml-4">|</span>
+              <Link to="/contact" className="flex items-center text-xl font-bold leading-7 ml-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold w-5 h-5">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span className="ml-2 font-bold">Send Message</span>
+              </Link>
+            </div>
+
+            <div className="flex justify-center mb-8">
+              <Link to="#" className="flex items-center justify-center bg-gray-800 text-white rounded-full w-12 h-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 3h6v6"/>
+                  <path d="M10 14 21 3"/>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 </svg>
               </Link>
             </div>
 
-            {/* Equal Housing */}
             <div className="flex justify-center mb-8">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
-                className="w-[102px] h-[109px]"
+                className="w-20 h-24"
               />
             </div>
 
-            {/* Footer Links */}
-            <div className="flex justify-center items-center gap-6 text-black font-medium">
+            <div className="flex justify-center items-center">
               <span>® All Rights Reserved</span>
-              <div className="w-px h-6 bg-gray-300"></div>
-              <Link to="#" className="hover:text-brand-gold transition-colors">Privacy Policy</Link>
+              <span className="text-gray-300 ml-2">|</span>
+              <Link to="#" className="ml-2 hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
