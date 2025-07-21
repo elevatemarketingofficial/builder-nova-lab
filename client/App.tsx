@@ -54,11 +54,12 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Create root only once to prevent duplicate createRoot warning
-let root: ReturnType<typeof createRoot> | null = null;
-
+// Prevent duplicate createRoot warning by using global reference
 const container = document.getElementById("root")!;
-if (!root) {
-  root = createRoot(container);
+
+// Use globalThis to persist across hot reloads
+if (!(globalThis as any).__reactRoot) {
+  (globalThis as any).__reactRoot = createRoot(container);
 }
-root.render(<App />);
+
+(globalThis as any).__reactRoot.render(<App />);
