@@ -156,14 +156,15 @@ export default function SkyviewII() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative h-[450px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+          className="relative h-[379px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(https://api.builder.io/api/v1/image/assets/TEMP/cb2ed8d9e8a4689f6202d7208e300c36eea7e0d5?width=3840)`,
+            backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5cb4d10da7e44618bf3889b413cca06d)`,
+            backgroundColor: "rgba(79, 21, 21, 1)",
           }}
         >
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-          
+
           <div className="relative z-10 text-center text-white px-4">
             <h1 className="text-[77px] font-bold leading-[80px] mb-4">
               Skyview II
@@ -210,7 +211,7 @@ export default function SkyviewII() {
         <section className="py-16 flex justify-center px-4">
           <div className="max-w-[1270px] w-full">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b5102e00b2bc37abf224426f193d9b87c9478a76?width=2540"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3ed8b769037c42528a238cd31d9706a7"
               alt="Skyview II Floor Plan"
               className="w-full h-auto"
             />
