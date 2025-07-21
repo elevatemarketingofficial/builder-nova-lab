@@ -44,6 +44,7 @@ const App = () => (
           <Route path="/homes/skyview" element={<Skyview />} />
           <Route path="/homes/skyview-ii" element={<SkyviewII />} />
           <Route path="/homes/windridge" element={<Windridge />} />
+          <Route path="/homes/mountain-top" element={<MountainTop />} />
           <Route path="/community" element={<Community />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/listings" element={<Listings />} />
