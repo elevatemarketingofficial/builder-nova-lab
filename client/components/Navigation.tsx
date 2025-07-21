@@ -41,8 +41,7 @@ export default function Navigation() {
   useEffect(() => {
     return () => {
       if (aboutTimeoutRef.current) clearTimeout(aboutTimeoutRef.current);
-      if (floorPlansTimeoutRef.current)
-        clearTimeout(floorPlansTimeoutRef.current);
+      if (floorPlansTimeoutRef.current) clearTimeout(floorPlansTimeoutRef.current);
     };
   }, []);
 
@@ -89,9 +88,7 @@ export default function Navigation() {
         <Link
           to="/homes"
           className={`flex items-center space-x-1 text-[16px] font-normal uppercase transition-colors ${
-            location.pathname === "/homes" ||
-            location.pathname.startsWith("/homes/") ||
-            isFloorPlansOpen
+            location.pathname === "/homes" || location.pathname.startsWith("/homes/") || isFloorPlansOpen
               ? "text-brand-gold"
               : "text-black hover:text-brand-gold"
           }`}
@@ -119,9 +116,12 @@ export default function Navigation() {
             >
               Skyview
             </Link>
-            <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed border-b border-gray-100">
+            <Link
+              to="/homes/skyview-ii"
+              className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100"
+            >
               Skyview II
-            </div>
+            </Link>
             <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed border-b border-gray-100">
               Windridge
             </div>
@@ -133,8 +133,7 @@ export default function Navigation() {
             </div>
           </div>
         )}
-        {(location.pathname === "/homes" ||
-          location.pathname.startsWith("/homes/")) && (
+        {(location.pathname === "/homes" || location.pathname.startsWith("/homes/")) && (
           <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
         )}
       </div>
