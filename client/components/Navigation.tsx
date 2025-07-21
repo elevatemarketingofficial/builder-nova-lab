@@ -137,9 +137,12 @@ export default function Navigation() {
             >
               Mountain Top
             </Link>
-            <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed">
+            <Link
+              to="/homes/mountain-top-ii"
+              className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100 last:border-b-0"
+            >
               Mountain Top II
-            </div>
+            </Link>
           </div>
         )}
         {(location.pathname === "/homes" ||
