@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ChevronLeft,
@@ -17,16 +17,120 @@ export default function Windridge() {
 
   const carouselImages = [
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/cc3a933eda3f97deb339d4fa29ba7ce62f1cf6b8?width=1251",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8d754d93ed6b4d769f9396b208d801e0?format=webp&width=800",
       alt: "Windridge Property Photo 1",
     },
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/36142a464bb14843c75f4d7bae239929f27bc623?width=1251",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F26d6e0a00ca84be696489e3562b9d3d1?format=webp&width=800",
       alt: "Windridge Property Photo 2",
     },
     {
-      src: "https://api.builder.io/api/v1/image/assets/TEMP/e422635bf7fbe4398ba1238cd0d9831c85017d08?width=1251",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F46873431e0b14edaaf51ca95187e678e?format=webp&width=800",
       alt: "Windridge Property Photo 3",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6d94af41982944f38b0bd5b8822e1732?format=webp&width=800",
+      alt: "Windridge Property Photo 4",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fac919dc1b16c4d849632ea41daf59638?format=webp&width=800",
+      alt: "Windridge Property Photo 5",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7aca70623e8f438ba429a48132c20f4d?format=webp&width=800",
+      alt: "Windridge Property Photo 6",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc99931fd04004506a1fc69f621e6fb63?format=webp&width=800",
+      alt: "Windridge Property Photo 7",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7630d12e5c40491496702d6a4614bdda?format=webp&width=800",
+      alt: "Windridge Property Photo 8",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fec751fc4920340ceb2b385deabbf2c48?format=webp&width=800",
+      alt: "Windridge Property Photo 9",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F323cd95f293b4add88dc3228d00f8884?format=webp&width=800",
+      alt: "Windridge Property Photo 10",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5e0fed1ef0124e30a1cb3323979a7ca1?format=webp&width=800",
+      alt: "Windridge Property Photo 11",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2dc7f8d7c5c34e0eb9d2d81815eac0a1?format=webp&width=800",
+      alt: "Windridge Property Photo 12",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F9adc9f0d50a34579a3c69e6a07c68c15?format=webp&width=800",
+      alt: "Windridge Property Photo 13",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa0463b8adb584db5b831811ca7c3702e?format=webp&width=800",
+      alt: "Windridge Property Photo 14",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F64422394660a4bfabe916c67c5911fec?format=webp&width=800",
+      alt: "Windridge Property Photo 15",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdf744396fe1b4a859b6987e0b67f788b?format=webp&width=800",
+      alt: "Windridge Property Photo 16",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F00e7d666cf294451bb46c0a209b805ba?format=webp&width=800",
+      alt: "Windridge Property Photo 17",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdeb15197d54f4f25a6d3e68895723672?format=webp&width=800",
+      alt: "Windridge Property Photo 18",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffcb7592283f2407db9c05e1adc3d8b5e?format=webp&width=800",
+      alt: "Windridge Property Photo 19",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F98fbaa07d8e2455b9ff3f22d12c79603?format=webp&width=800",
+      alt: "Windridge Property Photo 20",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc6cb74ccb5da4b919aea0db0eed6979c?format=webp&width=800",
+      alt: "Windridge Property Photo 21",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc173649ce97b49d0bf883ddaaa53fdcb?format=webp&width=800",
+      alt: "Windridge Property Photo 22",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0996b4945b22462ebaa7c428b48f8874?format=webp&width=800",
+      alt: "Windridge Property Photo 23",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1d7b9c7a73f40a4a8d853321a76a6ae?format=webp&width=800",
+      alt: "Windridge Property Photo 24",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb124adaab0da448496d6efdbe0a4d998?format=webp&width=800",
+      alt: "Windridge Property Photo 25",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdef03c24caa847b69c6ff561ccff6ddb?format=webp&width=800",
+      alt: "Windridge Property Photo 26",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Faa1f67c58b034777aa41b11beb767258?format=webp&width=800",
+      alt: "Windridge Property Photo 27",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7f9b76278ed44ff0a76ae953f2a56c3c?format=webp&width=800",
+      alt: "Windridge Property Photo 28",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F423f48a3661c477cba81fabf4f329a1f?format=webp&width=800",
+      alt: "Windridge Property Photo 29",
     },
   ];
 
@@ -197,7 +301,7 @@ export default function Windridge() {
             </div>
             <div className="relative">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/dcd3d32f56d6fa552ae86cf2df6650c7b1bfb8f0?width=1548"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f"
                 alt="Windridge Home"
                 className="w-full h-[500px] object-cover"
               />
