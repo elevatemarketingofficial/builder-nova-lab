@@ -366,141 +366,16 @@ export default function SkyviewII() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {/* Row 1 */}
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbbaf452c60f347a0ada53924ec150db3"
-                  alt="Skyview II Photo 1"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F407be3e1c0294a30a83420af811bafb8"
-                  alt="Skyview II Photo 2"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fee2dc49c9fd64e31babc6728509ffaec"
-                  alt="Skyview II Photo 3"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60e6d21ecd194a5bba391887cbdb3ffa"
-                  alt="Skyview II Photo 4"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Row 2 */}
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7772d34bff43488bb5ec7a0d55754049"
-                  alt="Skyview II Photo 5"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40230ba56e54408ab2d5722b865287d6"
-                  alt="Skyview II Photo 6"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff7871cd519be42e28a322a951b06ef71"
-                  alt="Skyview II Photo 7"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc99de7a0969e4c82a0a75980f8f8c419"
-                  alt="Skyview II Photo 8"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Row 3 */}
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7bfd22a67f694dc6a76e64c0d519ec10"
-                  alt="Skyview II Photo 9"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1c115d2145034afbbad51d7ce220326c"
-                  alt="Skyview II Photo 10"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F14a86578dd55483f9277732307f1de73"
-                  alt="Skyview II Photo 11"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffca6381f7eba4b23ad7248d17741ffdb"
-                  alt="Skyview II Photo 12"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Row 4 */}
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3113e71f456f4d18ba5805ec3c8e7fa9"
-                  alt="Skyview II Photo 13"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8e2115827972422cab02bebb67799847"
-                  alt="Skyview II Photo 14"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a85c84e926f45b2a3afa874e123776a"
-                  alt="Skyview II Photo 15"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F05fe48746d7949f0afd30954888c233c"
-                  alt="Skyview II Photo 16"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Row 5 - Only 2 images */}
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F052c5f125d1641fa8de214ff17358ead"
-                  alt="Skyview II Photo 17"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6249ac39828f48788ba339a4bd4d0fe9"
-                  alt="Skyview II Photo 18"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+              {galleryImages.map((image, index) => (
+                <div key={index} className="aspect-[3/2] overflow-hidden cursor-pointer">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    onClick={() => openLightbox(index)}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
