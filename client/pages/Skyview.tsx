@@ -166,7 +166,7 @@ export default function Skyview() {
               {/* Hero Image */}
               <div className="relative w-full lg:w-[774px] h-[600px] bg-gray-200 rounded-lg overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/c466975c7992eb10d3998d9d3e316824bb6c9a02?width=1548"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a"
                   alt="Skyview home exterior"
                   className="w-full h-full object-cover"
                 />
@@ -262,65 +262,101 @@ export default function Skyview() {
         </section>
 
         {/* Virtual Tour */}
-        <section className="py-12">
-          <div className="max-w-[1290px] mx-auto px-4">
-            <h2 className="text-[#192A3D] text-[32px] font-bold mb-8">Virtual Tour</h2>
-            <div className="bg-black h-[714px] flex items-center justify-center mb-4">
-              <div className="text-center text-white">
-                <h3 className="text-[28px] font-bold mb-4">
-                  We couldn't verify the security of your connection.
-                </h3>
-                <p className="text-[13px]">
-                  Access to this content has been restricted. Contact your internet service provider for help.
-                </p>
+        <section className="bg-gray-50 py-16">
+          <div className="max-w-[1280px] mx-auto px-8">
+            <h2 className="text-gray-800 text-[30px] font-bold leading-9 mb-8">Virtual Tour</h2>
+            <div className="flex flex-col relative mt-5">
+              <div>
+                <iframe
+                  src="https://app.lapentor.com/sphere/1791-a"
+                  frameBorder="0"
+                  width="100%"
+                  height="500px"
+                  scrolling="no"
+                  allow="vr,gyroscope,accelerometer"
+                  allowFullScreen={true}
+                  className="w-full h-[500px]"
+                />
               </div>
             </div>
-            <div className="text-center">
-              <p className="text-[#3A4F66] text-[16px] flex items-center justify-center gap-2">
-                <span>🖱️</span>
-                Use mouse to drag and scroll to zoom
-              </p>
+            <div className="flex items-center text-gray-600 justify-center mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 mr-2"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="7" />
+                <path d="M12 6v4" />
+              </svg>
+              <span>Use mouse to drag and scroll to zoom</span>
             </div>
           </div>
         </section>
 
         {/* Photo Gallery */}
-        <section className="py-12">
-          <div className="max-w-[1920px] mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 h-[417px]">
-              <div className="relative">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/0a2c153a2410e1f524378c551edc9d1a7042188b?width=1251"
-                  alt="Skyview home exterior view 1"
-                  className="w-full h-full object-cover"
-                />
+        <section className="py-16">
+          <div className="max-w-[1280px] mx-auto px-8">
+            <div className="relative">
+              <div className="grid grid-cols-3 gap-4">
+                <div className="relative">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5bb85330dae74c2bba136c7a6f69c8be?format=webp&width=800"
+                    alt="Skyview Property Photo 1"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="relative">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F327c51f784bf42298cc5f617f48ef412?format=webp&width=800"
+                    alt="Skyview Property Photo 2"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="relative">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F882bc128bba844de822ea465bdaa14e8?format=webp&width=800"
+                    alt="Skyview Property Photo 3"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
               </div>
-              <div className="relative">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/b5d5b6dbaa301e38d20109beeff95d2b2b3ec408?width=1251"
-                  alt="Skyview home exterior view 2"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/901e219c9fe4eaa1a2d02e678470a22aedb88a17?width=1251"
-                  alt="Skyview home interior view"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            
-            {/* Navigation arrows */}
-            <div className="relative -mt-[417px] flex justify-between items-center h-[417px] px-4">
-              <button className="bg-[#EDEDED] bg-opacity-90 p-4 rounded-full hover:bg-opacity-100 transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6 text-gray-700"
+                >
+                  <path d="m15 18-6-6 6-6" />
                 </svg>
               </button>
-              <button className="bg-[#EDEDED] bg-opacity-90 p-4 rounded-full hover:bg-opacity-100 transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6 text-gray-700"
+                >
+                  <path d="m9 18 6-6-6-6" />
                 </svg>
               </button>
             </div>
@@ -333,7 +369,7 @@ export default function Skyview() {
             <h2 className="text-[#192A3D] text-[34px] font-bold mb-8">Floor Plan</h2>
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/408c95bd15f4b93870135886809bcc369c962c08?width=2160"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fceaae636b948446caa7266921478ef25"
                 alt="Skyview floor plan"
                 className="max-w-[1080px] w-full h-auto"
               />
