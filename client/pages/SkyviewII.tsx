@@ -380,6 +380,60 @@ export default function SkyviewII() {
           </div>
         </section>
 
+        {/* Lightbox Modal */}
+        {lightboxOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+            <div className="relative max-w-7xl max-h-full p-4">
+              {/* Close Button */}
+              <button
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+              >
+                <X className="w-8 h-8" />
+              </button>
+
+              {/* Previous Button */}
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
+              >
+                <ChevronLeft className="w-12 h-12" />
+              </button>
+
+              {/* Next Button */}
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
+              >
+                <ChevronRight className="w-12 h-12" />
+              </button>
+
+              {/* Image */}
+              <div className="flex flex-col items-center">
+                <img
+                  src={galleryImages[currentImageIndex].src}
+                  alt={galleryImages[currentImageIndex].alt}
+                  className="max-w-full max-h-[80vh] object-contain"
+                />
+
+                {/* Caption */}
+                <div className="text-white text-center mt-4 px-4">
+                  <p className="text-lg font-medium">{galleryImages[currentImageIndex].alt}</p>
+                  <p className="text-sm text-gray-300 mt-1">
+                    {currentImageIndex + 1} of {galleryImages.length}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Background Click to Close */}
+            <div
+              className="absolute inset-0 -z-10"
+              onClick={closeLightbox}
+            ></div>
+          </div>
+        )}
+
         {/* Footer */}
         <footer className="bg-[#F2F4F7] py-16">
           <div className="max-w-[1270px] mx-auto px-4 text-center">
