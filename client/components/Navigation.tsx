@@ -41,7 +41,8 @@ export default function Navigation() {
   useEffect(() => {
     return () => {
       if (aboutTimeoutRef.current) clearTimeout(aboutTimeoutRef.current);
-      if (floorPlansTimeoutRef.current) clearTimeout(floorPlansTimeoutRef.current);
+      if (floorPlansTimeoutRef.current)
+        clearTimeout(floorPlansTimeoutRef.current);
     };
   }, []);
 
@@ -88,7 +89,9 @@ export default function Navigation() {
         <Link
           to="/homes"
           className={`flex items-center space-x-1 text-[16px] font-normal uppercase transition-colors ${
-            location.pathname === "/homes" || location.pathname.startsWith("/homes/") || isFloorPlansOpen
+            location.pathname === "/homes" ||
+            location.pathname.startsWith("/homes/") ||
+            isFloorPlansOpen
               ? "text-brand-gold"
               : "text-black hover:text-brand-gold"
           }`}
@@ -136,7 +139,8 @@ export default function Navigation() {
             </div>
           </div>
         )}
-        {(location.pathname === "/homes" || location.pathname.startsWith("/homes/")) && (
+        {(location.pathname === "/homes" ||
+          location.pathname.startsWith("/homes/")) && (
           <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
         )}
       </div>
