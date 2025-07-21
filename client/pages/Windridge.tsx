@@ -446,14 +446,18 @@ export default function Windridge() {
       {/* Photo Carousel */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="relative overflow-hidden">
+            <div className="flex transition-transform duration-500 ease-in-out"
+                 style={{
+                   transform: `translateX(-${(currentImageIndex * 100) / 3}%)`,
+                   width: `${(carouselImages.length * 100) / 3}%`
+                 }}>
               {carouselImages.map((image, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="w-1/3 flex-shrink-0 px-2">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-80 object-cover rounded-lg"
                   />
                 </div>
               ))}
@@ -462,13 +466,13 @@ export default function Windridge() {
             {/* Navigation buttons */}
             <button
               onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all z-10"
             >
               <ChevronLeft className="w-6 h-6 text-gray-700" />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all z-10"
             >
               <ChevronRight className="w-6 h-6 text-gray-700" />
             </button>
