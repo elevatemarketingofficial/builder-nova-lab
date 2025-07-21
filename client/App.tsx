@@ -14,6 +14,7 @@ import Home1691A from "./pages/Home1691A";
 import OceansideII from "./pages/OceansideII";
 import Home1724A from "./pages/Home1724A";
 import Skyview from "./pages/Skyview";
+import SkyviewII from "./pages/SkyviewII";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Listings from "./pages/Listings";
