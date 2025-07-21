@@ -38,6 +38,28 @@ export default function MountainTopII() {
     "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2cab4052ac3a45d3887792edfbf062e0",
   ];
 
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!selectedPhoto) return;
+
+      if (e.key === 'Escape') {
+        setSelectedPhoto(null);
+      } else if (e.key === 'ArrowLeft') {
+        const newIndex = currentLightboxIndex > 0 ? currentLightboxIndex - 1 : photoGallery.length - 1;
+        setCurrentLightboxIndex(newIndex);
+        setSelectedPhoto(photoGallery[newIndex]);
+      } else if (e.key === 'ArrowRight') {
+        const newIndex = currentLightboxIndex < photoGallery.length - 1 ? currentLightboxIndex + 1 : 0;
+        setCurrentLightboxIndex(newIndex);
+        setSelectedPhoto(photoGallery[newIndex]);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedPhoto, currentLightboxIndex, photoGallery]);
+
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
       {/* Header */}
