@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Home1691A = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,56 @@ const Home1691A = () => {
     message: "",
     acceptTerms: false,
   });
+
+  // Carousel state for property images
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Carousel images with the provided 24 URLs
+  const carouselImages = [
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffd967d8db433476e9da2662709b98ee0?format=webp&width=800", alt: "Oceanside Property Photo 1" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffa40aa04d20942828963f9879cdb6239?format=webp&width=800", alt: "Oceanside Property Photo 2" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4b27242d10b74967a266537a53a319ce?format=webp&width=800", alt: "Oceanside Property Photo 3" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb2e64a453dc04401a050250d01cd9eb5?format=webp&width=800", alt: "Oceanside Property Photo 4" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F12113bbd9b1a4d17b37483d92ed5dcd1?format=webp&width=800", alt: "Oceanside Property Photo 5" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F58917eca56c24a79b2b01a03e676d5ef?format=webp&width=800", alt: "Oceanside Property Photo 6" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5417095c189b435f91184d9a115a586f?format=webp&width=800", alt: "Oceanside Property Photo 7" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1e9d75367f49449a9a8ecb1a760f0fca?format=webp&width=800", alt: "Oceanside Property Photo 8" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa6b7bafbd20c4d47a265878f366a9531?format=webp&width=800", alt: "Oceanside Property Photo 9" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60372f828b3e44479256b84149545805?format=webp&width=800", alt: "Oceanside Property Photo 10" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F44165155746643c6983881db7dc49247?format=webp&width=800", alt: "Oceanside Property Photo 11" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb28b9ca38e574a75baa5df1b71bd3cf1?format=webp&width=800", alt: "Oceanside Property Photo 12" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2d9f03bcb9df44fc956877329645cec8?format=webp&width=800", alt: "Oceanside Property Photo 13" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc89ced8bfa48404996dca794ba7c6116?format=webp&width=800", alt: "Oceanside Property Photo 14" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe8d89f650d4342538134aaee1bc94c39?format=webp&width=800", alt: "Oceanside Property Photo 15" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc95fceab0cf545a09b81711fa419bf1b?format=webp&width=800", alt: "Oceanside Property Photo 16" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a869c72d72745a9913bd863de003832?format=webp&width=800", alt: "Oceanside Property Photo 17" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F500b298f578f407f991fe09b17563c5b?format=webp&width=800", alt: "Oceanside Property Photo 18" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F532da2a889c744d696e50e500a004da6?format=webp&width=800", alt: "Oceanside Property Photo 19" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Faf879962418145a6a2dd95dc0029cc9c?format=webp&width=800", alt: "Oceanside Property Photo 20" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb18cc3320bff4092b82e78fd2c5131a0?format=webp&width=800", alt: "Oceanside Property Photo 21" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0208fa94b1f4427089953e3d6b56454a?format=webp&width=800", alt: "Oceanside Property Photo 22" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe99a1897b904401b926ffea0f86e2715?format=webp&width=800", alt: "Oceanside Property Photo 23" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F63f3e9ffecc24e2198fb40e18b625874?format=webp&width=800", alt: "Oceanside Property Photo 24" },
+  ];
+
+  // Auto-advance carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length,
+    );
+  };
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -188,7 +239,7 @@ const Home1691A = () => {
             </div>
             <div className="lg:w-2/3 relative">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-1.jpg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2a8d4d259f674bd791d94eb6062a85ce"
                 alt="Oceanside home exterior"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
@@ -284,133 +335,47 @@ const Home1691A = () => {
             </p>
           </div>
 
-          {/* Virtual Tour Embed */}
-          <div className="bg-black h-[600px] relative rounded-lg overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/75 to-transparent p-4">
-              <h3 className="text-white text-center text-sm">
-                Kitchen / Dining
-              </h3>
-            </div>
-
-            {/* Navigation arrows */}
-            <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#EDEDED]/90 rounded-full p-4">
-              <svg width="60" height="60" viewBox="0 0 60 61" fill="none">
-                <path
-                  d="M38.76 8.44995C38.28 8.44995 37.81 8.54995 37.35 8.74995C36.89 8.94995 36.52 9.18995 36.24 9.46995L18.48 27.47C17.84 28.11 17.52 29.02 17.52 30.2C17.52 31.38 17.84 32.29 18.48 32.93L36.24 52.19C36.68 52.63 37.09 52.95 37.47 53.15C37.85 53.35 38.28 53.45 38.76 53.45C39.92 53.45 40.84 53.11 41.52 52.43C41.88 52.07 42.18 51.64 42.42 51.14C42.66 50.64 42.78 50.15 42.78 49.67C42.78 48.51 42.36 47.61 41.52 46.97L26.28 30.17L41.52 14.45C42.16 13.81 42.48 13.05 42.48 12.17C42.48 11.01 42.16 10.11 41.52 9.46995C41 9.06995 40.54 8.79995 40.14 8.65995C39.74 8.51995 39.28 8.44995 38.76 8.44995Z"
-                  fill="#EDEDED"
-                  fillOpacity="0.9"
-                />
-              </svg>
-            </button>
-
-            <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#EDEDED]/90 rounded-full p-4">
-              <svg width="60" height="60" viewBox="0 0 60 61" fill="none">
-                <path
-                  d="M41.76 32.93C42.44 32.25 42.78 31.33 42.78 30.17C42.78 29.65 42.7 29.17 42.54 28.73C42.38 28.29 42.12 27.95 41.76 27.71L24 9.70995C23.6 9.30995 23.19 8.99995 22.77 8.77995C22.35 8.55995 21.84 8.44995 21.24 8.44995C20.24 8.44995 19.42 8.78995 18.78 9.46995C18.38 9.82995 18.07 10.25 17.85 10.73C17.63 11.21 17.52 11.69 17.52 12.17C17.52 13.37 17.84 14.29 18.48 14.93L33.78 30.47L18.24 47.21C17.6 47.85 17.28 48.77 17.28 49.97C17.28 50.93 17.68 51.85 18.48 52.73C19.28 53.21 20.2 53.45 21.24 53.45C21.76 53.45 22.26 53.34 22.74 53.12C23.22 52.9 23.64 52.59 24 52.19L41.76 32.93Z"
-                  fill="#EDEDED"
-                  fillOpacity="0.9"
-                />
-              </svg>
-            </button>
-
-            {/* Room selection sidebar */}
-            <div className="absolute right-8 top-8 bg-white rounded shadow-lg p-4 w-56">
-              <h4 className="text-sm font-bold text-red-500 mb-4">1691</h4>
-              <div className="space-y-2">
-                <div className="bg-red-500 text-white px-3 py-2 rounded text-sm">
-                  Kitchen / Dining
-                </div>
-                <div className="text-gray-600 px-3 py-2 text-sm">
-                  Living Room
-                </div>
-                <div className="text-gray-600 px-3 py-2 text-sm">Bedroom 4</div>
-                <div className="text-gray-600 px-3 py-2 text-sm">Bedroom 2</div>
-                <div className="text-gray-600 px-3 py-2 text-sm">Bath 2</div>
-                <div className="text-gray-600 px-3 py-2 text-sm">Bedroom 3</div>
-                <div className="text-gray-600 px-3 py-2 text-sm">Laundry</div>
-                <div className="text-gray-600 px-3 py-2 text-sm">
-                  Master Bedroom
-                </div>
-                <div className="text-gray-600 px-3 py-2 text-sm">
-                  Master Bathroom
-                </div>
-                <div className="text-gray-600 px-3 py-2 text-sm">
-                  Walk in Closet
-                </div>
-              </div>
-            </div>
-
-            {/* Toggle button */}
-            <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded shadow-lg p-3">
-              <svg width="30" height="30" viewBox="0 0 31 31" fill="none">
-                <g clipPath="url(#clip0_26_118)">
-                  <path
-                    d="M26.8591 0.134521H4.14091C2.1326 0.134521 0.504547 1.76258 0.504547 3.77089V26.4891C0.504547 28.4974 2.1326 30.1254 4.14091 30.1254H26.8591C28.8674 30.1254 30.4955 28.4974 30.4955 26.4891V3.77089C30.4955 1.76258 28.8674 0.134521 26.8591 0.134521Z"
-                    stroke="#8B8B8B"
-                    strokeWidth="0.00909091"
-                  />
-                  <path
-                    d="M16.7818 10.8063L18.6545 8.91811L17.8827 8.13993L15.6791 10.3627V14.4736H14.5773V15.5845H15.6791V16.6954H16.7809V15.5845H23.9436V24.4736H16.7809V18.9181H15.6791V20.029H11.2709V21.1399H15.6791V24.4736H7.96546V21.139H9.06728V20.0299H7.96546V15.5845H12.3736V14.4736H7.96546V6.69538H15.6791V7.80629H16.7809V5.58447H6.86364V25.5845H25.0455V14.4736H16.7818V10.8063Z"
-                    fill="#28324E"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_26_118">
-                    <rect
-                      width="30"
-                      height="30"
-                      fill="white"
-                      transform="translate(0.5 0.129883)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+          <div className="flex flex-col relative mt-5">
+            <div
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<iframe src="https://app.lapentor.com/sphere/1791-a" frameborder="0" width="100%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>',
+              }}
+            />
           </div>
         </div>
       </section>
 
-      {/* Image Carousel */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Photo Carousel */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
-                alt="Home interior 1"
-                className="w-full h-[417px] object-cover"
-              />
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
-                alt="Home interior 2"
-                className="w-full h-[417px] object-cover"
-              />
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen.jpg"
-                alt="Home interior 3"
-                className="w-full h-[417px] object-cover"
-              />
+            <div className="grid grid-cols-3 gap-4">
+              {carouselImages
+                .slice(currentImageIndex, currentImageIndex + 3)
+                .map((image, index) => (
+                  <div key={currentImageIndex + index} className="relative">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                ))}
             </div>
 
             {/* Navigation buttons */}
-            <button className="absolute left-4 top-1/2 transform -translate-y-1/2">
-              <svg width="60" height="60" viewBox="0 0 60 61" fill="none">
-                <path
-                  d="M38.76 8.44995C38.28 8.44995 37.81 8.54995 37.35 8.74995C36.89 8.94995 36.52 9.18995 36.24 9.46995L18.48 27.47C17.84 28.11 17.52 29.02 17.52 30.2C17.52 31.38 17.84 32.29 18.48 32.93L36.24 52.19C36.68 52.63 37.09 52.95 37.47 53.15C37.85 53.35 38.28 53.45 38.76 53.45C39.92 53.45 40.84 53.11 41.52 52.43C41.88 52.07 42.18 51.64 42.42 51.14C42.66 50.64 42.78 50.15 42.78 49.67C42.78 48.51 42.36 47.61 41.52 46.97L26.28 30.17L41.52 14.45C42.16 13.81 42.48 13.05 42.48 12.17C42.48 11.01 42.16 10.11 41.52 9.46995C41 9.06995 40.54 8.79995 40.14 8.65995C39.74 8.51995 39.28 8.44995 38.76 8.44995Z"
-                  fill="#EDEDED"
-                  fillOpacity="0.9"
-                />
-              </svg>
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all z-10"
+            >
+              <ChevronLeft className="w-6 h-6 text-gray-700" />
             </button>
-
-            <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
-              <svg width="60" height="60" viewBox="0 0 60 61" fill="none">
-                <path
-                  d="M41.76 32.93C42.44 32.25 42.78 31.33 42.78 30.17C42.78 29.65 42.7 29.17 42.54 28.73C42.38 28.29 42.12 27.95 41.76 27.71L24 9.70995C23.6 9.30995 23.19 8.99995 22.77 8.77995C22.35 8.55995 21.84 8.44995 21.24 8.44995C20.24 8.44995 19.42 8.78995 18.78 9.46995C18.38 9.82995 18.07 10.25 17.85 10.73C17.63 11.21 17.52 11.69 17.52 12.17C17.52 13.37 17.84 14.29 18.48 14.93L33.78 30.47L18.24 47.21C17.6 47.85 17.28 48.77 17.28 49.97C17.28 50.93 17.68 51.85 18.48 52.73C19.28 53.21 20.2 53.45 21.24 53.45C21.76 53.45 22.26 53.34 22.74 53.12C23.22 52.9 23.64 52.59 24 52.19L41.76 32.93Z"
-                  fill="#EDEDED"
-                  fillOpacity="0.9"
-                />
-              </svg>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 hover:bg-opacity-100 p-4 rounded-full transition-all z-10"
+            >
+              <ChevronRight className="w-6 h-6 text-gray-700" />
             </button>
           </div>
         </div>
@@ -424,7 +389,7 @@ const Home1691A = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FPLAN-1691A-scaled.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4c288fe755f94715a66181b6c684e201"
               alt="Floor plan for 1691 home"
               className="max-w-full h-auto"
             />
@@ -432,150 +397,113 @@ const Home1691A = () => {
         </div>
       </section>
 
-      {/* Interested List CTA */}
-      <section className="py-12 bg-brand-gold">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-4">
+      {/* Join Interested List */}
+      <section className="py-12">
+        <div className="max-w-[1290px] mx-auto px-4">
+          <div className="flex items-center bg-brand-gold rounded-lg gap-6 justify-between p-8">
+            <div className="text-left">
+              <h2 className="text-white text-[32px] font-bold leading-[35px] mb-4">
                 Join the
                 <br />
                 Interested List
               </h2>
-            </div>
-            <div className="flex-1 text-center">
-              <p className="text-white text-lg">
+              <p className="text-white leading-[26.4px] max-w-[540px]">
                 Sign-up to stay in the loop with new home releases, builder
-                incentives,
-                <br />
-                special events & more!
+                incentives, special events & more!
               </p>
             </div>
-            <div>
-              <button className="bg-white text-black px-8 py-4 rounded font-medium">
-                Register
-              </button>
-            </div>
+            <Link
+              to="/contact"
+              className="bg-white text-black text-lg leading-[27px] transition-all duration-150 ease-in-out py-4 px-10"
+            >
+              Register
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      {/* Contact Form Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-8">
           <div className="text-center mb-12">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fanthony.jpg"
-              alt="Contact representative"
-              className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-brand-gold/30"
-            />
-            <h2 className="text-3xl font-bold text-brand-dark-blue">
-              Get in Touch
-            </h2>
+            <div className="flex justify-center mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
+                alt="Contact"
+                className="w-28 h-28 rounded-full"
+              />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label
-                  htmlFor="firstName"
-                  className="block text-sm text-brand-text-gray mb-2"
-                >
+                <label className="block text-sm text-gray-600 mb-2">
                   First Name
                 </label>
                 <input
                   type="text"
-                  id="firstName"
                   name="firstName"
-                  value={formData.firstName}
-                  onChange={handleInputChange}
-                  className="w-full p-3 border-b border-gray-400 bg-white focus:border-brand-gold outline-none"
+                  className="w-full border-b border-gray-500 rounded h-10 px-3"
                 />
               </div>
               <div>
-                <label
-                  htmlFor="lastName"
-                  className="block text-sm text-brand-text-gray mb-2"
-                >
+                <label className="block text-sm text-gray-600 mb-2">
                   Last Name
                 </label>
                 <input
                   type="text"
-                  id="lastName"
                   name="lastName"
-                  value={formData.lastName}
-                  onChange={handleInputChange}
-                  className="w-full p-3 border-b border-gray-400 bg-white focus:border-brand-gold outline-none"
+                  className="w-full border-b border-gray-500 rounded h-10 px-3"
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm text-brand-text-gray mb-2"
-                >
+                <label className="block text-sm text-gray-600 mb-2">
                   Email
                 </label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full p-3 border-b border-gray-400 bg-white focus:border-brand-gold outline-none"
+                  className="w-full border-b border-gray-500 rounded h-10 px-3"
                 />
               </div>
               <div>
-                <label
-                  htmlFor="phoneNumber"
-                  className="block text-sm text-brand-text-gray mb-2"
-                >
+                <label className="block text-sm text-gray-600 mb-2">
                   Phone Number
                 </label>
                 <input
                   type="tel"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleInputChange}
-                  className="w-full p-3 border-b border-gray-400 bg-white focus:border-brand-gold outline-none"
+                  name="phone"
+                  className="w-full border-b border-gray-500 rounded h-10 px-3"
                 />
               </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm text-brand-text-gray mb-2"
-              >
+            <div className="mt-6">
+              <label className="block text-sm text-gray-600 mb-2">
                 How can we help you?
               </label>
               <textarea
-                id="message"
                 name="message"
                 rows={6}
-                value={formData.message}
-                onChange={handleInputChange}
-                className="w-full p-3 border-b border-gray-400 bg-white focus:border-brand-gold outline-none resize-none"
-              ></textarea>
+                className="w-full border-b border-gray-500 rounded p-2 px-3 resize-none"
+              />
             </div>
 
-            <div>
-              <label className="block text-sm text-brand-text-gray mb-2">
+            <div className="mt-6">
+              <label className="block text-sm text-gray-600 mb-4">
                 Accept Terms of Contacting
               </label>
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start">
                 <input
                   type="checkbox"
-                  id="acceptTerms"
-                  name="acceptTerms"
-                  checked={formData.acceptTerms}
-                  onChange={handleInputChange}
-                  className="mt-1 w-4 h-4 text-blue-600 rounded"
+                  className="bg-blue-600 block w-3 h-3 mt-1 overflow-visible"
                 />
-                <div className="text-sm text-brand-text-gray">
+                <div className="text-sm text-gray-600 leading-[23px] ml-3">
                   <p>
                     By pressing the Submit button, I agree to Choice Valley
                     contacting me by email and/or phone
@@ -594,7 +522,7 @@ const Home1691A = () => {
 
             <button
               type="submit"
-              className="bg-gray-600 text-white px-12 py-3 rounded text-sm font-medium"
+              className="bg-gray-500 text-white text-sm font-medium leading-5 mt-6 transition-all duration-150 ease-in-out rounded px-12 py-3"
             >
               Submit
             </button>
@@ -603,213 +531,127 @@ const Home1691A = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F2F4F7] py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center space-y-8">
-            {/* Logo */}
-            <div className="flex justify-center">
-              <svg
-                width="720"
-                height="107"
-                viewBox="0 0 720 107"
-                fill="none"
-                className="w-80"
-              >
-                <g clipPath="url(#clip0_26_210)">
-                  <mask
-                    id="mask0_26_210"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="720"
-                    height="107"
-                  >
-                    <path
-                      d="M719.6 0.553223H0.410004V106.797H719.6V0.553223Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_26_210)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M63.9836 0.553223L78.8226 11.9374V5.79764H94.3303V24.2298L125.873 48.904C122.504 48.904 119.058 48.5971 115.586 48.5971H109.259L63.8679 12.9224L28.9821 40.1677H33.7142V58.6383C49.1446 50.1832 79.9156 45.6169 101.184 49.0832C73.313 51.0959 46.5179 60.6159 23.6715 76.6226V50.0809H0.410004L63.9836 0.553223Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M80.6871 59.3673C97.4756 53.7605 115.111 51.0776 132.817 51.4366C122.279 52.7399 111.896 55.0662 101.814 58.3823C70.1044 68.8711 45.4928 87.2266 33.8685 106.81L16.8435 101.604C29.7023 84.3101 52.3079 68.5897 80.6871 59.252V59.3673Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      d="M179.944 41.8818L175.083 46.4995C173.694 44.8944 171.979 43.5998 170.051 42.7004C168.122 41.801 166.025 41.3172 163.897 41.2806C162.259 41.2582 160.633 41.5626 159.116 42.1757C157.599 42.7886 156.221 43.6979 155.063 44.8499C153.905 46.0018 152.991 47.3728 152.374 48.882C151.758 50.3913 151.452 52.0081 151.475 53.6369C151.442 55.87 151.991 58.0734 153.069 60.0325C154.117 61.9022 155.678 63.4371 157.57 64.4583C159.537 65.5392 161.752 66.0946 164 66.0699C165.907 66.0953 167.797 65.7115 169.541 64.9444C171.605 63.9089 173.472 62.5238 175.057 60.8511L179.776 65.7502C177.564 68.0243 174.949 69.8717 172.061 71.1992C169.451 72.2578 166.651 72.7757 163.832 72.7215C161.26 72.8148 158.695 72.3866 156.295 71.4629C153.894 70.5394 151.707 69.1397 149.867 67.3491C148.065 65.5402 146.655 63.3838 145.722 61.0126C144.788 58.6412 144.353 56.1052 144.441 53.5603C144.377 50.1749 145.229 46.8346 146.91 43.89C148.607 41.0238 151.056 38.6714 153.995 37.0851C157.028 35.3868 160.454 34.505 163.934 34.5268C166.943 34.5248 169.918 35.1706 172.653 36.4199C175.456 37.6889 177.944 39.5532 179.944 41.8818Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M185.961 35.4858H193.021V49.2237H205.25V35.4858H212.283V71.877H205.25V55.9264H193.034V71.877H185.961V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M237.95 34.5777C240.441 34.5509 242.911 35.0333 245.206 35.9947C247.502 36.9563 249.575 38.3765 251.298 40.1675C253.109 41.9419 254.539 44.0648 255.499 46.4071C256.458 48.7492 256.927 51.2615 256.878 53.7902C256.93 56.2927 256.466 58.7791 255.518 61.0975C254.57 63.4158 253.155 65.5169 251.362 67.2721C247.761 70.8136 242.891 72.7871 237.828 72.7584C232.764 72.7294 227.919 70.701 224.358 67.1186C221.447 64.1036 219.591 60.2342 219.067 56.0859C218.544 51.9377 219.38 47.7319 221.451 44.0944C223.135 41.2106 225.549 38.8164 228.452 37.1509C231.357 35.4854 234.649 34.607 238.001 34.6034L237.95 34.5777ZM237.872 41.3571C236.283 41.3198 234.702 41.6122 233.233 42.2157C231.762 42.819 230.435 43.7203 229.335 44.8618C228.179 46.0446 227.278 47.4476 226.684 48.9865C226.089 50.5254 225.814 52.1683 225.876 53.8157C225.799 55.6353 226.154 57.4473 226.907 59.1065C227.663 60.7657 228.797 62.2262 230.222 63.3708C232.39 65.1583 235.121 66.1276 237.937 66.1082C239.524 66.1222 241.097 65.8063 242.553 65.1807C244.009 64.5552 245.32 63.6338 246.397 62.4754C248.655 60.1005 249.913 56.9561 249.913 53.6879C249.913 50.4195 248.655 47.2752 246.397 44.9002C245.302 43.7526 243.978 42.8448 242.511 42.2348C241.043 41.6246 239.464 41.3258 237.872 41.3571Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M262.947 35.4858H269.853V71.877H262.947V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M311.309 41.8818L306.435 46.4995C305.049 44.8936 303.336 43.598 301.411 42.6986C299.485 41.7989 297.388 41.3158 295.262 41.2806C293.624 41.2582 291.999 41.5626 290.481 42.1757C288.964 42.7886 287.586 43.6979 286.427 44.8499C285.27 46.0018 284.356 47.3728 283.74 48.882C283.124 50.3913 282.818 52.0082 282.839 53.637C282.808 55.8682 283.354 58.0701 284.421 60.0325C285.472 61.8998 287.033 63.4338 288.921 64.4583C290.889 65.5376 293.104 66.0928 295.351 66.0699C297.259 66.0969 299.148 65.713 300.894 64.9444C302.957 63.9089 304.824 62.5239 306.409 60.8511L311.13 65.7502C308.918 68.0257 306.303 69.8733 303.413 71.1992C300.803 72.2568 298.003 72.7746 295.185 72.7215C292.612 72.8169 290.046 72.3898 287.645 71.4662C285.245 70.5425 283.058 69.1415 281.219 67.3491C278.316 64.2409 276.469 60.3037 275.938 56.094C275.407 51.8843 276.221 47.615 278.263 43.89C279.956 41.0214 282.406 38.6682 285.347 37.0851C288.375 35.3867 291.798 34.5049 295.275 34.5268C298.284 34.522 301.259 35.168 303.992 36.4199C306.801 37.6904 309.297 39.5542 311.309 41.8818Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M317.418 35.4858H337.386V42.2653H324.335V48.8528H337.386V55.5042H324.335V65.0336H337.386V71.8386H317.418V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M355.35 35.4858H362.512L371.72 61.337L381.054 35.4858H388.204L374.985 71.877H368.272L355.35 35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M404.933 35.4858H412.006L426.074 71.877H418.833L415.966 64.3813H401.049L398.132 71.877H390.904L404.933 35.4858ZM408.508 45.1433L403.609 57.6276H413.395L408.508 45.1433Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M431.448 35.4858H438.418V65.2639H448.55V71.877H431.448V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M453.848 35.4858H460.817V65.2639H470.963V71.877H453.848V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M476.273 35.4858H496.244V42.2653H483.192V48.8528H496.244V55.5042H483.192V65.0336H496.244V71.8386H476.273V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M500.139 35.4858H507.611L514.438 48.5841L521.228 35.4858H528.609L517.898 56.0798V71.8386H510.889V56.0798L500.139 35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M548.784 35.4858H552.436V50.7459H571.056V35.4858H574.721V71.8769H571.056V54.3146H552.436V71.8769H548.784V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M601.03 34.5781C603.603 34.5118 606.162 34.9662 608.555 35.9139C610.947 36.8616 613.119 38.2826 614.943 40.091C617.621 42.7777 619.44 46.1917 620.172 49.9039C620.904 53.6161 620.517 57.4606 619.059 60.9546C617.601 64.4485 615.136 67.4358 611.977 69.5407C608.817 71.6458 605.102 72.7746 601.3 72.7854C598.752 72.842 596.22 72.3799 593.858 71.4275C591.496 70.475 589.355 69.0523 587.567 67.2468C585.765 65.5107 584.343 63.4248 583.389 61.1187C582.432 58.8125 581.963 56.3356 582.011 53.8416C581.991 50.4323 582.879 47.0785 584.584 44.1203C586.218 41.2017 588.618 38.7792 591.527 37.1108C594.412 35.4407 597.692 34.5664 601.03 34.5781ZM601.197 38.1085C598.48 38.1044 595.814 38.8338 593.482 40.219C591.11 41.5656 589.146 43.5231 587.797 45.8856C586.424 48.3075 585.718 51.0481 585.754 53.8289C585.742 55.8509 586.135 57.8554 586.906 59.7264C587.676 61.5976 588.812 63.2988 590.246 64.7323C591.679 66.1658 593.384 67.3032 595.26 68.0795C597.138 68.8555 599.15 69.2552 601.184 69.255C603.948 69.2725 606.668 68.5621 609.065 67.1957C611.434 65.8743 613.39 63.932 614.724 61.5803C616.082 59.1625 616.779 56.4322 616.743 53.6625C616.782 50.9168 616.086 48.2104 614.724 45.8215C613.318 43.4941 611.334 41.5659 608.964 40.2216C606.592 38.8776 603.913 38.1631 601.184 38.1468L601.197 38.1085Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M626.207 71.8769L631.453 35.4858H632.045L646.91 65.3406L661.633 35.4858H662.225L667.483 71.8769H663.895L660.283 45.8468L647.424 71.8643H646.485L633.395 45.6421L629.807 71.8643L626.207 71.8769Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M674.698 35.4858H695.658V39.0547H678.35V50.4515H695.502V54.0203H678.35V68.3082H695.502V71.8769H674.698V35.4858Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M698.189 65.0979L701.301 63.2431C703.488 67.2511 706.017 69.255 708.889 69.255C710.092 69.2629 711.277 68.9682 712.335 68.398C713.359 67.8841 714.216 67.0899 714.804 66.1084C715.358 65.1891 715.653 64.1367 715.653 63.0641C715.61 61.7661 715.161 60.5139 714.366 59.4825C712.572 57.2488 710.463 55.2843 708.104 53.6497C706.014 52.2213 704.101 50.551 702.408 48.6739C701.156 47.0863 700.473 45.1278 700.466 43.1097C700.45 41.5923 700.845 40.0987 701.61 38.7864C702.374 37.4825 703.487 36.4153 704.826 35.7037C706.208 34.9524 707.763 34.5649 709.338 34.578C711.035 34.5732 712.704 35.0145 714.173 35.8571C716.064 37.0869 717.688 38.6836 718.945 40.5515L715.962 42.8027C715.005 41.4108 713.812 40.1945 712.438 39.2084C711.483 38.6389 710.388 38.3424 709.275 38.3514C707.944 38.2869 706.641 38.7465 705.648 39.6306C705.195 40.0497 704.837 40.559 704.595 41.1255C704.353 41.6919 704.235 42.3027 704.247 42.9179C704.247 43.7122 704.419 44.4971 704.749 45.2203C705.197 46.1345 705.811 46.9585 706.561 47.6505C707.037 48.1111 708.619 49.3263 711.28 51.2834C713.788 52.973 715.991 55.0701 717.8 57.4871C718.91 59.1025 719.522 61.0052 719.561 62.9618C719.567 64.253 719.302 65.5314 718.781 66.7145C718.261 67.8975 717.498 68.959 716.54 69.8307C715.574 70.7803 714.427 71.5277 713.165 72.0285C711.905 72.5295 710.555 72.7738 709.198 72.7472C707.05 72.7705 704.946 72.156 703.153 70.9819C701.046 69.4476 699.343 67.4288 698.189 65.0979Z"
-                      fill="black"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M56.5513 26.2124H63.3664V32.979H56.5513V26.2124ZM66.7355 36.164H73.5377V42.9434H66.7355V36.164ZM56.5513 36.164H63.3664V42.9434H56.5513V36.164ZM66.7355 26.2124H73.5377V32.979H66.7355V26.2124Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_26_210">
-                    <rect
-                      width="719.19"
-                      height="106.244"
-                      fill="white"
-                      transform="translate(0.410004 0.553223)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+      <footer className="bg-gray-50 py-16">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="text-center">
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="h-24"
+              />
             </div>
-
-            {/* Tagline */}
-            <p className="text-3xl text-brand-text-gray capitalize">
+            <h3 className="text-gray-600 text-3xl leading-9 mb-8 px-4">
               Building communities throughout the Central Valley
+            </h3>
+            <p className="text-gray-600 mb-8">
+              For More Information about PASEO, Please Call or Text
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-4">
-              <p className="text-brand-text-gray">
-                For More Information about PASEO, Please Call or Text
-              </p>
-              <div className="space-y-2">
-                <p className="text-lg text-brand-text-gray">
-                  Stephanie Stine
-                  <br />
-                  Community Sales Manager
-                  <br />
-                  209-308-9000
-                  <br />
-                  DRE# 02189834
-                </p>
-              </div>
-              <div className="space-y-2">
-                <p className="text-lg text-brand-text-gray">
-                  Hours
-                  <br />
-                  Monday – Closed
-                  <br />
-                  Tuesday – Saturday 10am – 5pm
-                  <br />
-                  Sunday – 11am – 4pm
-                </p>
-              </div>
-              <p className="text-lg text-brand-text-gray">
-                154 Montage Drive, Merced, CA 95348
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-[29px]">
+                Stephanie Stine
+                <br />
+                Community Sales Manager
+                <br />
+                209-308-9000
+                <br />
+                DRE# 02189834
               </p>
             </div>
-
-            {/* Contact Links */}
-            <div className="flex justify-center items-center space-x-6">
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-[29px]">
+                Hours
+                <br />
+                Monday – Closed
+                <br />
+                Tuesday – Saturday 10am – 5pm
+                <br />
+                Sunday – 11am – 4pm
+              </p>
+            </div>
+            <p className="text-gray-600 text-lg leading-7 mb-8">
+              154 Montage Drive, Merced, CA 95348
+            </p>
+            <div className="flex items-center justify-center mb-8">
               <a
                 href="tel:209-308-9000"
-                className="flex items-center space-x-2 text-black font-bold"
+                className="flex items-center text-lg font-bold leading-7"
               >
-                <span className="text-brand-gold text-xl">📞</span>
-                <span>209-308-9000</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold w-5 h-5"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span className="ml-2">209-308-9000</span>
               </a>
+              <span className="text-gray-300 ml-4">|</span>
+              <a
+                href="/contact"
+                className="flex items-center text-xl font-bold leading-7 ml-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold w-5 h-5"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <span className="ml-2">Send Message</span>
+              </a>
+            </div>
+            <div className="flex justify-center mb-8">
               <a
                 href="#"
-                className="flex items-center space-x-2 text-black font-bold"
+                className="flex items-center bg-gray-800 text-white w-12 h-12 justify-center rounded-full"
               >
-                <span className="text-brand-gold text-xl">✉️</span>
-                <span>Send Message</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6"
+                >
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
               </a>
             </div>
-
-            {/* Social Media */}
-            <div className="flex justify-center">
-              <button className="bg-gray-800 text-white p-3 rounded-full">
-                <span className="text-2xl">📘</span>
-              </button>
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-20 h-24"
+              />
             </div>
-          </div>
-
-          {/* Equal Housing Logo */}
-          <div className="flex justify-end mt-8">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
-              alt="Equal Housing Opportunity"
-              className="w-24 h-auto"
-            />
-          </div>
-
-          {/* Copyright */}
-          <div className="text-center mt-8 pt-8 border-t border-gray-300">
-            <div className="flex justify-center items-center space-x-4 text-sm text-black">
+            <div className="flex items-center justify-center text-black">
               <span>® All Rights Reserved</span>
-              <span className="text-gray-300">|</span>
-              <a href="#" className="hover:text-brand-gold">
+              <span className="text-gray-300 ml-2">|</span>
+              <a
+                href="#"
+                className="ml-2 transition-all duration-150 ease-in-out"
+              >
                 Privacy Policy
               </a>
             </div>
