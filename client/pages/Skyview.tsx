@@ -49,8 +49,8 @@ const PhotoCarouselSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => {
-        const nextIndex = prevIndex + 3;
-        return nextIndex >= carouselImages.length ? 0 : nextIndex;
+        const nextIndex = prevIndex + 1;
+        return nextIndex >= carouselImages.length - 2 ? 0 : nextIndex;
       });
     }, 5000);
 
@@ -59,15 +59,15 @@ const PhotoCarouselSection = () => {
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) => {
-      const nextIndex = prevIndex + 3;
-      return nextIndex >= carouselImages.length ? 0 : nextIndex;
+      const nextIndex = prevIndex + 1;
+      return nextIndex >= carouselImages.length - 2 ? 0 : nextIndex;
     });
   };
 
   const prevSlide = () => {
     setCurrentImageIndex((prevIndex) => {
-      const nextIndex = prevIndex - 3;
-      return nextIndex < 0 ? Math.max(carouselImages.length - 3, 0) : nextIndex;
+      const nextIndex = prevIndex - 1;
+      return nextIndex < 0 ? carouselImages.length - 3 : nextIndex;
     });
   };
 
@@ -467,199 +467,237 @@ export default function Skyview() {
           </div>
         </section>
 
-        {/* Contact Form */}
-        <section className="py-32 bg-white">
-          <div className="max-w-[1290px] mx-auto px-4">
-            <div className="text-center mb-12">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
-                alt="Sales representative"
-                className="w-[108px] h-[108px] rounded-full border-3 border-[#D29A3A] border-opacity-34 mx-auto mb-6"
-              />
-              <h2 className="text-[#192A3D] text-[34px] font-bold mb-8">Get in Touch</h2>
-            </div>
-
-            <form className="max-w-[730px] mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block text-[#3A4F66] text-[15px] mb-2">First Name</label>
-                  <input
-                    type="text"
-                    className="w-full h-[40px] border-b border-[#69727D] bg-white rounded-sm px-2 focus:outline-none focus:border-[#D29A3A]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#3A4F66] text-[15px] mb-2">Last Name</label>
-                  <input
-                    type="text"
-                    className="w-full h-[40px] border-b border-[#69727D] bg-white rounded-sm px-2 focus:outline-none focus:border-[#D29A3A]"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block text-[#3A4F66] text-[15px] mb-2">Email</label>
-                  <input
-                    type="email"
-                    className="w-full h-[40px] border-b border-[#69727D] bg-white rounded-sm px-2 focus:outline-none focus:border-[#D29A3A]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#3A4F66] text-[15px] mb-2">Phone Number</label>
-                  <input
-                    type="tel"
-                    className="w-full h-[40px] border-b border-[#69727D] bg-white rounded-sm px-2 focus:outline-none focus:border-[#D29A3A]"
-                  />
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <label className="block text-[#3A4F66] text-[15px] mb-2">How can we help you?</label>
-                <textarea
-                  rows={6}
-                  className="w-full border-b border-[#69727D] bg-white rounded-sm px-2 py-2 focus:outline-none focus:border-[#D29A3A] resize-none"
-                ></textarea>
-              </div>
-
-              <div className="mb-6">
-                <label className="block text-[#3A4F66] text-[15px] mb-2">Accept Terms of Contacting</label>
-                <div className="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    className="w-[13px] h-[13px] bg-[#0075FF] rounded-sm mt-1"
-                    defaultChecked
-                  />
-                  <div className="text-[#3A4F66] text-[15px] leading-[24.75px]">
-                    <p>By pressing the Submit button, I agree to Choice Valley contacting me by email and/or phone</p>
-                    <p>to share home availability information or related opportunities. I also understand that any</p>
-                    <p>information I've shared in this form is subject to Choice Valley Homes' Privacy Policy.</p>
-                  </div>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="bg-[#69727D] text-white px-12 py-3 text-[15px] font-medium rounded-sm hover:bg-opacity-90 transition-colors"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-        </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#F2F4F7] py-16">
-        <div className="max-w-[1270px] mx-auto px-4">
-          <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8">
-              <svg
-                width="719"
-                height="106"
-                viewBox="0 0 719 106"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto max-w-full h-auto"
-              >
-                <g clipPath="url(#clip0_5_1070)">
-                  <mask
-                    id="mask0_5_1070"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="720"
-                    height="107"
-                  >
-                    <path d="M719.6 0.0429688H0.409912V106.287H719.6V0.0429688Z" fill="white" />
-                  </mask>
-                  <g mask="url(#mask0_5_1070)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M63.9835 0.0429688L78.8225 11.4272V5.28738H94.3302V23.7195L125.873 48.3938C122.504 48.3938 119.058 48.0868 115.586 48.0868H109.259L63.8678 12.4121L28.982 39.6574H33.7141V58.128C49.1445 49.673 79.9155 45.1066 101.184 48.5729C73.3129 50.5857 46.5178 60.1056 23.6715 76.1124V49.5706H0.409912L63.9835 0.0429688Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M80.6871 58.857C97.4757 53.2503 115.111 50.5674 132.817 50.9263C122.279 52.2297 111.896 54.5559 101.814 57.8721C70.1044 68.3608 45.4928 86.7163 33.8685 106.3L16.8435 101.094C29.7023 83.7998 52.3079 68.0795 80.6871 58.7418V58.857Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5_1070">
-                    <rect
-                      width="719.19"
-                      height="106.244"
-                      fill="white"
-                      transform="translate(0.409912 0.0429688)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-
-            <h3 className="text-[#3A4F66] text-[30px] font-normal capitalize leading-[49.5px] mb-8">
-              Building communities throughout the Central Valley
-            </h3>
-
-            <p className="text-[#3A4F66] text-[16px] leading-[26.4px] mb-6">
-              For More Information about PASEO, Please Call or Text
-            </p>
-
-            <div className="text-[#3A4F66] text-[18px] leading-[29.7px] mb-6">
-              <p>Stephanie Stine</p>
-              <p>Community Sales Manager</p>
-              <p>209-308-9000</p>
-              <p>DRE# 02189834</p>
-            </div>
-
-            <div className="text-[#3A4F66] text-[18px] leading-[29.7px] mb-6">
-              <p>Hours</p>
-              <p>Monday – Closed</p>
-              <p>Tuesday – Saturday 10am – 5pm</p>
-              <p>Sunday – 11am – 4pm</p>
-            </div>
-
-            <p className="text-[#3A4F66] text-[18px] leading-[29.7px] mb-8">
-              154 Montage Drive, Merced, CA 95348
-            </p>
-
-            <div className="flex justify-center items-center gap-4 mb-8">
-              <div className="flex items-center gap-2">
-                <Phone className="w-5 h-5 text-[#D29A3A]" />
-                <span className="text-black text-[18px] font-bold">209-308-9000</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MessageSquare className="w-5 h-5 text-[#D29A3A]" />
-                <span className="text-black text-[21px] font-bold">Send Message</span>
-              </div>
-            </div>
-
-            <div className="flex justify-center mb-8">
-              <div className="bg-[#262626] rounded-full p-3">
-                <span className="text-white text-[25px]">📘</span>
-              </div>
-            </div>
-
-            <div className="flex justify-center mb-8">
+      {/* Contact Form */}
+      <section className="bg-white py-24">
+        <div className="max-w-[768px] mx-auto px-8">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-6">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
-                alt="Equal Housing Opportunity"
-                className="w-[102px] h-[109px]"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
+                alt="Contact"
+                className="w-[112px] h-[112px] rounded-full"
               />
             </div>
+            <h2 className="text-gray-800 text-[30px] font-bold leading-9">
+              Get in Touch
+            </h2>
+          </div>
+          <form>
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <label className="block text-gray-600 text-[14px] leading-5 mb-2">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  className="w-full h-[40px] border-b border-gray-500 rounded px-3"
+                />
+              </div>
+              <div>
+                <label className="block text-gray-600 text-[14px] leading-5 mb-2">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  className="w-full h-[40px] border-b border-gray-500 rounded px-3"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-6 mt-6">
+              <div>
+                <label className="block text-gray-600 text-[14px] leading-5 mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full h-[40px] border-b border-gray-500 rounded px-3"
+                />
+              </div>
+              <div>
+                <label className="block text-gray-600 text-[14px] leading-5 mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="w-full h-[40px] border-b border-gray-500 rounded px-3"
+                />
+              </div>
+            </div>
+            <div className="mt-6">
+              <label className="block text-gray-600 text-[14px] leading-5 mb-2">
+                How can we help you?
+              </label>
+              <textarea
+                name="message"
+                rows={6}
+                className="w-full border-b border-gray-500 rounded px-3 py-2 resize-none"
+              />
+            </div>
+            <div className="mt-6">
+              <label className="block text-gray-600 text-[14px] leading-5 mb-4">
+                Accept Terms of Contacting
+              </label>
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  className="w-3 h-3 bg-blue-600 mt-1"
+                />
+                <div className="text-gray-600 text-[14px] leading-[23px] ml-3">
+                  <p>
+                    By pressing the Submit button, I agree to Choice Valley
+                    contacting me by email and/or phone
+                  </p>
+                  <p>
+                    to share home availability information or related
+                    opportunities. I also understand that any
+                  </p>
+                  <p>
+                    information I've shared in this form is subject to Choice
+                    Valley Homes' Privacy Policy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              className="bg-gray-500 text-white text-[14px] font-medium leading-5 mt-6 rounded px-12 py-3 hover:bg-opacity-90 transition-colors"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
 
-            <div className="flex justify-center items-center gap-2 text-black text-[16px] font-medium">
+      {/* Footer */}
+      <footer className="bg-gray-50 py-16">
+        <div className="max-w-[1024px] mx-auto px-8">
+          <div className="text-center">
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="h-24"
+              />
+            </div>
+            <h3 className="text-gray-600 text-[30px] leading-9 mb-8 px-4">
+              Building communities throughout the Central Valley
+            </h3>
+            <p className="text-gray-600 mb-8">
+              For More Information about PASEO, Please Call or Text
+            </p>
+            <div className="mb-8">
+              <p className="text-gray-600 text-[18px] leading-[29px]">
+                <span>Stephanie Stine</span>
+                <br />
+                <span>Community Sales Manager</span>
+                <br />
+                <span>209-308-9000</span>
+                <br />
+                <span>DRE# 02189834</span>
+              </p>
+            </div>
+            <div className="mb-8">
+              <p className="text-gray-600 text-[18px] leading-[29px]">
+                <span>Hours</span>
+                <br />
+                <span>Monday – Closed</span>
+                <br />
+                <span>Tuesday – Saturday 10am – 5pm</span>
+                <br />
+                <span>Sunday – 11am – 4pm</span>
+              </p>
+            </div>
+            <p className="text-gray-600 text-[18px] leading-7 mb-8">
+              154 Montage Drive, Merced, CA 95348
+            </p>
+            <div className="flex items-center justify-center mb-8">
+              <a
+                href="tel:209-308-9000"
+                className="flex items-center text-[18px] font-bold leading-7"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 text-[#D29A3A] mr-2"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span className="font-bold ml-2">209-308-9000</span>
+              </a>
+              <span className="text-gray-300 ml-4">|</span>
+              <a
+                href="/contact"
+                className="flex items-center text-[20px] font-bold leading-7 ml-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 text-[#D29A3A] mr-2"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <span className="font-bold ml-2">Send Message</span>
+              </a>
+            </div>
+            <div className="flex justify-center mb-8">
+              <a
+                href="#"
+                className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6"
+                >
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            </div>
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-20 h-24"
+              />
+            </div>
+            <div className="flex items-center justify-center text-black">
               <span>® All Rights Reserved</span>
-              <span className="text-[#DDD]">|</span>
-              <Link to="#" className="hover:text-[#D29A3A] transition-colors">
+              <span className="text-gray-300 ml-2">|</span>
+              <a
+                href="#"
+                className="ml-2 hover:text-[#D29A3A] transition-colors"
+              >
                 Privacy Policy
-              </Link>
+              </a>
             </div>
           </div>
         </div>
