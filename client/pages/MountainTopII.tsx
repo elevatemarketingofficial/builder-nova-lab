@@ -1,40 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Navigation from "../components/Navigation";
 
 export default function MountainTopII() {
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [currentLightboxIndex, setCurrentLightboxIndex] = useState(0);
 
   const photoGallery = [
-    "https://api.builder.io/api/v1/image/assets/TEMP/13ed732dd4a3d67371a9e4664532b1053257e907?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/65da1430dda07eb8f6b0856dd848bd98ab9b5ccf?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/9c2e0b2bc1b81c2104c9893dc5118dcb0b74c06a?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/623d447deef1dd2f9aae6488249c33b6f11ab013?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/6d4c751370fd3ba16d596d42d450335373cebc96?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/103c6ff32d6e4639601ee991f78f45fbebf8903a?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/456ffb17f8c7409dad43fa1777f5e4c500f09431?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/52a4e75b194184795eca4904ff6f616b174198ae?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/96d362393a7d7cd94a6e80954566921cc743f078?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/d92c9b1160924c13cac88986c606a751db57bfb3?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/78e10d0599afc0ace92d48f8b1bf658106491c1a?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/791dbda390ad561de6eaaa27c6835aa0cbc6eac6?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/7ee922ffe2340724f3a413df5daea7ffe70706a6?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/9abace799f109159a00b96b4bdc9f701faa7cfa7?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/dafe0b60d27ea9932be8248512cdf2956bece30d?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/abddc5155f7ccc2b7938670d28ed3ed415ab04ea?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/eb46b8b656dd56d5c77fc559929056245b534ab1?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/3a3ca1f558d2a249294d988c12123c49beac6a02?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/1a614e26f825a8b8c8caa04965a7e3b99cbf2339?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/bc6bf00c671e14cd063622b23a5dc52454ddf6f0?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/ebd8d0b28917294308f8eb4a8ee17f53132fa8a4?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/527ddce572957fe9ab1b977396b30cf708665972?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/dfc12379ecdee8358804931ce91fb0b31e6cc5ba?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/dd7371e486cac47a9034d07c52a4060f479da2f4?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/4619ab29c40280d9e9a48e5fd1262fe5401b5a94?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/3b228b84cf364d20e614870b95334c7e66a35342?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/673908834e27128fefd0a140a11fba2e93f79f55?width=620",
-    "https://api.builder.io/api/v1/image/assets/TEMP/4afae5f75168e34cae9a5f4ed4790a92cd93bf2e?width=620",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fed8ed6f602ec461f9e8d79afe7d2d798",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7e840c433d314694949378699d2573f2",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0dbdb08471754e89b27db2eb19edc6ee",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa0564e7830634caa8966f259aa981746",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F64b6744fc8224095a76ecca52ce3bf1a",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe12da3c4cb604329b951fc94099c4a6e",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4ec0a4ee484c489d9b8b37bc749c8816",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbff0641d649844738d4bf399ae42fd5c",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc3a8c445d7cd4e9f8d6cdbba433d1bfa",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F614bf91edf8547b1b09de9e691f5b80e",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F97e8517fac664693b9cf3b9f9b19c4f7",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbee39998102c4945828af25ef5699882",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Feff3145e4be84155a653f6b7da63571a",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4b6bee8626fc49d28f9cf29b7504aa1b",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa3b72589676c40729a27cc4061c567aa",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6fa224d0855a45b6bb522af06d42baca",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F860fa53a6ce24919b2677d6b91347d44",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb7d04fed6b2f434cb70c636d5ffb0c2a",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffdf9733db5e74476866ca6ed4f4c9b58",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F09b70fc39a3b491d93c585a8462fc970",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3471ba16515a42209b5b337eb1e5ef84",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fafdeee367e704b55b4194f426170c2a9",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbb1aad45964640cf91885b494f60405d",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F33c28bf4235842118d75b3b2d90673ed",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7aae7de09716487f856b2c9736f485ce",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8f3f3e983ae541838a7c2d455cd6bb4d",
+    "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2cab4052ac3a45d3887792edfbf062e0",
   ];
 
   return (
@@ -187,9 +188,9 @@ export default function MountainTopII() {
 
       {/* Hero Section */}
       <section
-        className="relative h-[450px] flex items-center justify-center"
+        className="relative h-[450px] text-white text-[78px] leading-[80px] text-center flex items-center justify-center"
         style={{
-          backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/80c52edbe85b2a984d3e5efac5e43cd60e06bfd4?width=3840')`,
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626')`,
           backgroundSize: "100% 284.373%",
           backgroundPosition: "0px -414.84px",
           backgroundRepeat: "no-repeat",
@@ -197,7 +198,7 @@ export default function MountainTopII() {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <h1 className="relative text-white text-[78px] font-bold leading-[80px] text-center">
+        <h1 className="relative z-10 font-normal">
           Mountain Top II
         </h1>
       </section>
@@ -270,7 +271,7 @@ export default function MountainTopII() {
         <div className="max-w-[1270px] mx-auto px-4">
           <div className="flex flex-col justify-center items-center">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/db4884f485e4e512ada945f36bd8e3dafef88bad?width=2540"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5c5fb281429e42189395aab6ce592ced"
               alt="Mountain Top II Floor Plan"
               className="w-full h-auto max-w-[1270px]"
             />
@@ -333,8 +334,11 @@ export default function MountainTopII() {
             {photoGallery.map((photo, index) => (
               <div
                 key={index}
-                className="relative cursor-pointer"
-                onClick={() => setSelectedPhoto(photo)}
+                className="relative cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => {
+                  setSelectedPhoto(photo);
+                  setCurrentLightboxIndex(index);
+                }}
               >
                 <img
                   src={photo}
@@ -347,181 +351,191 @@ export default function MountainTopII() {
         </div>
       </section>
 
-      {/* Photo Modal */}
+      {/* Lightbox Modal */}
       {selectedPhoto && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-8"
-          onClick={() => setSelectedPhoto(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <img
-              src={selectedPhoto}
-              alt="Selected photo"
-              className="max-w-full max-h-full object-contain"
-            />
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            {/* Close button */}
             <button
               onClick={() => setSelectedPhoto(null)}
-              className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center"
+              className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors"
             >
-              ×
+              <X className="w-8 h-8" />
             </button>
+
+            {/* Previous button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                const newIndex = currentLightboxIndex > 0 ? currentLightboxIndex - 1 : photoGallery.length - 1;
+                setCurrentLightboxIndex(newIndex);
+                setSelectedPhoto(photoGallery[newIndex]);
+              }}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-gray-300 transition-colors"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+
+            {/* Next button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                const newIndex = currentLightboxIndex < photoGallery.length - 1 ? currentLightboxIndex + 1 : 0;
+                setCurrentLightboxIndex(newIndex);
+                setSelectedPhoto(photoGallery[newIndex]);
+              }}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-gray-300 transition-colors"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+
+            {/* Image */}
+            <img
+              src={selectedPhoto}
+              alt={`Mountain Top II Photo ${currentLightboxIndex + 1}`}
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image counter */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-3 py-1 rounded">
+              {currentLightboxIndex + 1} / {photoGallery.length}
+            </div>
           </div>
+
+          {/* Click outside to close */}
+          <div
+            className="absolute inset-0 -z-10"
+            onClick={() => setSelectedPhoto(null)}
+          />
         </div>
       )}
 
       {/* Footer */}
-      <footer className="bg-[#F2F4F7] py-16">
-        <div className="max-w-[1270px] mx-auto px-4">
+      <footer className="bg-gray-50 py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Logo */}
             <div className="flex justify-center mb-8">
-              <svg
-                width="719"
-                height="106"
-                viewBox="0 0 721 107"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
                 className="h-24 w-auto"
-              >
-                <g clipPath="url(#clip0_9_1331)">
-                  <mask
-                    id="mask0_9_1331"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="721"
-                    height="107"
-                  >
-                    <path
-                      d="M720.163 0.194336H0.9729V106.438H720.163V0.194336Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_9_1331)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M64.5465 0.194336L79.3855 11.5785V5.43875H94.8932V23.8709L126.436 48.5452C123.067 48.5452 119.621 48.2382 116.149 48.2382H109.822L64.4308 12.5635L29.545 39.8088H34.2771V58.2794C49.7075 49.8243 80.4785 45.258 101.747 48.7243C73.8759 50.737 47.0808 60.257 24.2344 76.2637V49.722H0.9729L64.5465 0.194336Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M81.2501 59.0084C98.0386 53.4016 115.674 50.7187 133.38 51.0777C122.842 52.3811 112.459 54.7073 102.377 58.0234C70.6674 68.5122 46.0558 86.8677 34.4315 106.451L17.4065 101.245C30.2653 83.9512 52.8709 68.2309 81.2501 58.8932V59.0084Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_9_1331">
-                    <rect
-                      width="719.19"
-                      height="106.244"
-                      fill="white"
-                      transform="translate(0.9729 0.194336)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+              />
             </div>
 
-            <h3 className="text-[#3A4F66] text-[30px] leading-[49.5px] mb-8 capitalize">
+            <h3 className="text-3xl text-gray-600 mb-8 px-4">
               Building communities throughout the Central Valley
             </h3>
 
-            <p className="text-[#3A4F66] text-[16px] leading-[26.4px] mb-8">
+            <p className="text-gray-600 mb-8">
               For More Information about PASEO, Please Call or Text
             </p>
 
             <div className="mb-8">
-              <p className="text-[#3A4F66] text-[18px] leading-[29.7px] text-center">
-                Stephanie Stine
+              <p className="text-lg text-gray-600 leading-relaxed">
+                <span>Stephanie Stine</span>
                 <br />
-                Community Sales Manager
+                <span>Community Sales Manager</span>
                 <br />
-                209-308-9000
+                <span>209-308-9000</span>
                 <br />
-                DRE# 02189834
+                <span>DRE# 02189834</span>
               </p>
             </div>
 
             <div className="mb-8">
-              <p className="text-[#3A4F66] text-[18px] leading-[29.7px] text-center">
-                Hours
+              <p className="text-lg text-gray-600 leading-relaxed">
+                <span>Hours</span>
                 <br />
-                Monday – Closed
+                <span>Monday – Closed</span>
                 <br />
-                Tuesday – Saturday 10am – 5pm
+                <span>Tuesday – Saturday 10am – 5pm</span>
                 <br />
-                Sunday – 11am – 4pm
+                <span>Sunday – 11am – 4pm</span>
               </p>
             </div>
 
-            <p className="text-[#3A4F66] text-[18px] leading-[29.7px] mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               154 Montage Drive, Merced, CA 95348
             </p>
 
-            <div className="flex justify-center items-center gap-4 mb-8">
+            <div className="flex justify-center items-center space-x-4 mb-8">
               <a
                 href="tel:209-308-9000"
-                className="flex items-center gap-2 text-black text-[18px] font-bold"
+                className="flex items-center text-lg font-bold space-x-2"
               >
                 <svg
-                  width="21"
-                  height="21"
-                  viewBox="0 0 21 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
                   fill="none"
-                  className="text-[#D29A3A]"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold"
                 >
-                  <path d="M10.5 0L21 10.5H0L10.5 0Z" fill="currentColor" />
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                209-308-9000
+                <span>209-308-9000</span>
               </a>
               <span className="text-gray-300">|</span>
               <a
                 href="/contact"
-                className="flex items-center gap-2 text-black text-[21px] font-bold"
+                className="flex items-center text-xl font-bold space-x-2"
               >
                 <svg
-                  width="21"
-                  height="21"
-                  viewBox="0 0 21 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
                   fill="none"
-                  className="text-[#D29A3A]"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold"
                 >
-                  <path d="M10.5 0L21 10.5H0L10.5 0Z" fill="currentColor" />
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
-                Send Message
+                <span>Send Message</span>
               </a>
             </div>
 
             <div className="flex justify-center mb-8">
               <a
                 href="#"
-                className="bg-[#262626] text-white w-12 h-12 rounded-full flex items-center justify-center"
+                className="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center"
               >
                 <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
-                  className="text-white"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M12.5 0L25 12.5H0L12.5 0Z" fill="currentColor" />
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                 </svg>
               </a>
             </div>
 
             <div className="flex justify-center mb-8">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/9782cd38729bec66687ac16776959526386ea393?width=203"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
-                className="w-[102px] h-[109px]"
+                className="w-20 h-24"
               />
             </div>
 
-            <div className="flex justify-center items-center gap-2 text-black text-[16px]">
+            <div className="flex justify-center items-center space-x-2 text-black">
               <span>® All Rights Reserved</span>
               <span className="text-gray-300">|</span>
               <Link
