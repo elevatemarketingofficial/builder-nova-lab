@@ -446,18 +446,14 @@ export default function Windridge() {
       {/* Photo Carousel */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden">
-            <div className="flex transition-transform duration-500 ease-in-out"
-                 style={{
-                   transform: `translateX(-${(currentImageIndex * 100) / 3}%)`,
-                   width: `${(carouselImages.length * 100) / 3}%`
-                 }}>
-              {carouselImages.map((image, index) => (
-                <div key={index} className="w-1/3 flex-shrink-0 px-2">
+          <div className="relative">
+            <div className="grid grid-cols-3 gap-4">
+              {carouselImages.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
+                <div key={currentImageIndex + index} className="relative">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-80 object-cover rounded-lg"
+                    className="w-full h-80 object-cover"
                   />
                 </div>
               ))}
