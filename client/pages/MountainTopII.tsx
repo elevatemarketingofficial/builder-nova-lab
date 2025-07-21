@@ -7,28 +7,6 @@ export default function MountainTopII() {
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [currentLightboxIndex, setCurrentLightboxIndex] = useState(0);
 
-  // Keyboard navigation for lightbox
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (!selectedPhoto) return;
-
-      if (e.key === 'Escape') {
-        setSelectedPhoto(null);
-      } else if (e.key === 'ArrowLeft') {
-        const newIndex = currentLightboxIndex > 0 ? currentLightboxIndex - 1 : photoGallery.length - 1;
-        setCurrentLightboxIndex(newIndex);
-        setSelectedPhoto(photoGallery[newIndex]);
-      } else if (e.key === 'ArrowRight') {
-        const newIndex = currentLightboxIndex < photoGallery.length - 1 ? currentLightboxIndex + 1 : 0;
-        setCurrentLightboxIndex(newIndex);
-        setSelectedPhoto(photoGallery[newIndex]);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedPhoto, currentLightboxIndex, photoGallery]);
-
   const photoGallery = [
     "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
     "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fed8ed6f602ec461f9e8d79afe7d2d798",
