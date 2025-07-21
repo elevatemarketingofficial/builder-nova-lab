@@ -17,6 +17,7 @@ import Skyview from "./pages/Skyview";
 import SkyviewII from "./pages/SkyviewII";
 import Windridge from "./pages/Windridge";
 import MountainTop from "./pages/MountainTop";
+import MountainTopII from "./pages/MountainTopII";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Listings from "./pages/Listings";
