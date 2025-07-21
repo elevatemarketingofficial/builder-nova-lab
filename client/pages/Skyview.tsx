@@ -3,6 +3,133 @@ import { Link } from "react-router-dom";
 import { ChevronDown, Phone, MessageSquare, Home } from "lucide-react";
 import Navigation from "../components/Navigation";
 
+const PhotoCarouselSection = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const carouselImages = [
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5bb85330dae74c2bba136c7a6f69c8be?format=webp&width=800", alt: "Skyview Property Photo 1" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F327c51f784bf42298cc5f617f48ef412?format=webp&width=800", alt: "Skyview Property Photo 2" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F882bc128bba844de822ea465bdaa14e8?format=webp&width=800", alt: "Skyview Property Photo 3" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F42b1cbcef69d41c3b064a36fb86bc777?format=webp&width=800", alt: "Skyview Property Photo 4" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc5f2dee1c05b4e04be6b080898ee7879?format=webp&width=800", alt: "Skyview Property Photo 5" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F021dd80773e445a08cb5b185c9cf877e?format=webp&width=800", alt: "Skyview Property Photo 6" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5856abe53335488f9224a17f450e092b?format=webp&width=800", alt: "Skyview Property Photo 7" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F04cceae3c0b64da8b3ab096e0f9c49d1?format=webp&width=800", alt: "Skyview Property Photo 8" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4506630d17ca439ca2e435145de53589?format=webp&width=800", alt: "Skyview Property Photo 9" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F709c2c347e2247dab5a834d63673fa92?format=webp&width=800", alt: "Skyview Property Photo 10" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5b3d31a1478346f3815aa29671b42fbc?format=webp&width=800", alt: "Skyview Property Photo 11" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F94047416a0a54b0982f8e997f0cb50b9?format=webp&width=800", alt: "Skyview Property Photo 12" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffdc7e23dcffe436aa9a864328944e5f0?format=webp&width=800", alt: "Skyview Property Photo 13" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3f4d8ffb72a04d9a901735083187fc17?format=webp&width=800", alt: "Skyview Property Photo 14" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fcd5aa9c9cc5f477d8a1414c4b7b2bc3d?format=webp&width=800", alt: "Skyview Property Photo 15" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc58e2aa6a5d14d05bf050cbcf759c0dc?format=webp&width=800", alt: "Skyview Property Photo 16" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F92752a9976e045b38058b42c53440000?format=webp&width=800", alt: "Skyview Property Photo 17" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F94c63e415d194178a50a5337850b2616?format=webp&width=800", alt: "Skyview Property Photo 18" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5b13a9dededa45468c23ea9272ec7168?format=webp&width=800", alt: "Skyview Property Photo 19" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0d83ac448f2c4a65ba959902f1690cb3?format=webp&width=800", alt: "Skyview Property Photo 20" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7a0a87fb796d4feea801d57c0a85b0a4?format=webp&width=800", alt: "Skyview Property Photo 21" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F85fff8d79dac4d83a1d96679674a4d3e?format=webp&width=800", alt: "Skyview Property Photo 22" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb1ca4cd604a244dfb2fe9515c5a5ca27?format=webp&width=800", alt: "Skyview Property Photo 23" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbe9e5fd419ef47bfb02d20a884d261a1?format=webp&width=800", alt: "Skyview Property Photo 24" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2575d5739133437ab6823e5d29400ed1?format=webp&width=800", alt: "Skyview Property Photo 25" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F13e7961b2eec43beab8973ad69d670ac?format=webp&width=800", alt: "Skyview Property Photo 26" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc72377bc784447949a9487cc4808dace?format=webp&width=800", alt: "Skyview Property Photo 27" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa53eee6de7994d4ebeac34b5af0ac3bb?format=webp&width=800", alt: "Skyview Property Photo 28" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F9b8e85764cb249ee96327e34cccdaabe?format=webp&width=800", alt: "Skyview Property Photo 29" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F81834af5d318440e9220b2c542047aca?format=webp&width=800", alt: "Skyview Property Photo 30" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F254a4bd2ff7f4bf8974d9bea3c761a16?format=webp&width=800", alt: "Skyview Property Photo 31" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2b7e4781a6e448238e6f920cb53925e2?format=webp&width=800", alt: "Skyview Property Photo 32" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60fd7f4ac15a4225bdbee87e31e99e48?format=webp&width=800", alt: "Skyview Property Photo 33" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1411acd414114eb094c602f27e8b3e38?format=webp&width=800", alt: "Skyview Property Photo 34" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8136b431ccf348538e830318d08998ef?format=webp&width=800", alt: "Skyview Property Photo 35" },
+    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc9bf03259a2c4f68a3974880fd8a252a?format=webp&width=800", alt: "Skyview Property Photo 36" }
+  ];
+
+  // Auto-advance carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => {
+        const nextIndex = prevIndex + 3;
+        return nextIndex >= carouselImages.length ? 0 : nextIndex;
+      });
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
+
+  const nextSlide = () => {
+    setCurrentImageIndex((prevIndex) => {
+      const nextIndex = prevIndex + 3;
+      return nextIndex >= carouselImages.length ? 0 : nextIndex;
+    });
+  };
+
+  const prevSlide = () => {
+    setCurrentImageIndex((prevIndex) => {
+      const nextIndex = prevIndex - 3;
+      return nextIndex < 0 ? Math.max(carouselImages.length - 3, 0) : nextIndex;
+    });
+  };
+
+  return (
+    <section className="py-16">
+      <div className="max-w-[1280px] mx-auto px-8">
+        <div className="relative">
+          <div className="grid grid-cols-3 gap-4">
+            {carouselImages.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
+              <div key={currentImageIndex + index} className="relative">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-gray-700"
+            >
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition-colors z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-gray-700"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Skyview() {
   const [activeElevation, setActiveElevation] = useState('A');
 
