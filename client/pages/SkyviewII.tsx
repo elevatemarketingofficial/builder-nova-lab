@@ -1,8 +1,103 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Bed, Bath, Square } from "lucide-react";
+import { Bed, Bath, Square, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Navigation from "../components/Navigation";
 
 export default function SkyviewII() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const galleryImages = [
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fbbaf452c60f347a0ada53924ec150db3",
+      alt: "Skyview II Photo 1"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F407be3e1c0294a30a83420af811bafb8",
+      alt: "Skyview II Photo 2"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fee2dc49c9fd64e31babc6728509ffaec",
+      alt: "Skyview II Photo 3"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60e6d21ecd194a5bba391887cbdb3ffa",
+      alt: "Skyview II Photo 4"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7772d34bff43488bb5ec7a0d55754049",
+      alt: "Skyview II Photo 5"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40230ba56e54408ab2d5722b865287d6",
+      alt: "Skyview II Photo 6"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff7871cd519be42e28a322a951b06ef71",
+      alt: "Skyview II Photo 7"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc99de7a0969e4c82a0a75980f8f8c419",
+      alt: "Skyview II Photo 8"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7bfd22a67f694dc6a76e64c0d519ec10",
+      alt: "Skyview II Photo 9"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1c115d2145034afbbad51d7ce220326c",
+      alt: "Skyview II Photo 10"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F14a86578dd55483f9277732307f1de73",
+      alt: "Skyview II Photo 11"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffca6381f7eba4b23ad7248d17741ffdb",
+      alt: "Skyview II Photo 12"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3113e71f456f4d18ba5805ec3c8e7fa9",
+      alt: "Skyview II Photo 13"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8e2115827972422cab02bebb67799847",
+      alt: "Skyview II Photo 14"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a85c84e926f45b2a3afa874e123776a",
+      alt: "Skyview II Photo 15"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F05fe48746d7949f0afd30954888c233c",
+      alt: "Skyview II Photo 16"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F052c5f125d1641fa8de214ff17358ead",
+      alt: "Skyview II Photo 17"
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6249ac39828f48788ba339a4bd4d0fe9",
+      alt: "Skyview II Photo 18"
+    }
+  ];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
       {/* Header */}
