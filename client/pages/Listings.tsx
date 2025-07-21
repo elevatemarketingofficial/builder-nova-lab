@@ -236,12 +236,11 @@ export default function Listings() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative h-[516px] flex items-center justify-center bg-cover bg-center"
+          className="relative h-[356px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdf77fe81a4b3421d88ec12984e9ce8d6?format=webp&width=800')`,
+            backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5e1b5d4d91e74176b93746b6e062f354)`,
           }}
         >
-          <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="relative z-10 text-center text-white px-4">
             <h1 className="text-[65px] font-bold leading-[68px] mb-4">
               Available Listings
