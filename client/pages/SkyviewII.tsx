@@ -334,28 +334,28 @@ export default function SkyviewII() {
               {/* Row 3 */}
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/d9c2e0a4aa3a5d42c7c715f7baef388389e3cd14?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7bfd22a67f694dc6a76e64c0d519ec10"
                   alt="Skyview II Photo 9"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/0f6754e42b48b0be7f26f517aa498308ccc4edd5?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1c115d2145034afbbad51d7ce220326c"
                   alt="Skyview II Photo 10"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/6f8ec490a38919a3e1c7f0103adda1788462a4a4?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F14a86578dd55483f9277732307f1de73"
                   alt="Skyview II Photo 11"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/7733bf3aa2b3ae0f6e167a1f49b4ee5d0d136355?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffca6381f7eba4b23ad7248d17741ffdb"
                   alt="Skyview II Photo 12"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -364,28 +364,28 @@ export default function SkyviewII() {
               {/* Row 4 */}
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/70a95601e5cee18eb736f7344ecb0cac876d3cc5?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3113e71f456f4d18ba5805ec3c8e7fa9"
                   alt="Skyview II Photo 13"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/d6f119fd086428d07c888ef2ac21cccf9ecea2fb?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8e2115827972422cab02bebb67799847"
                   alt="Skyview II Photo 14"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/1a93ca7de48300b5e7374a18f78e7ea858d0bbc5?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a85c84e926f45b2a3afa874e123776a"
                   alt="Skyview II Photo 15"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/07170038f374d105b26fedcf032a85bcc44681a8?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F05fe48746d7949f0afd30954888c233c"
                   alt="Skyview II Photo 16"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -394,14 +394,14 @@ export default function SkyviewII() {
               {/* Row 5 - Only 2 images */}
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/31a81c5161dfd77666648f32b191b9c8b8c18379?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F052c5f125d1641fa8de214ff17358ead"
                   alt="Skyview II Photo 17"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/a02a0f16f6e5bf3840cc5923867237c8a0fe690f?width=620"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6249ac39828f48788ba339a4bd4d0fe9"
                   alt="Skyview II Photo 18"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
