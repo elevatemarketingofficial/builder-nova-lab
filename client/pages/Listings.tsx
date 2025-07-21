@@ -241,6 +241,9 @@ export default function Listings() {
             backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5e1b5d4d91e74176b93746b6e062f354)`,
           }}
         >
+          {/* Dark overlay for fade effect */}
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
           <div className="relative z-10 text-center text-white px-4">
             <h1 className="text-[65px] font-bold leading-[68px] mb-4">
               Available Listings
