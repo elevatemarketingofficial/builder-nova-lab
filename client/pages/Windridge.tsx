@@ -291,7 +291,7 @@ export default function Windridge() {
             />
           </div>
           <div className="flex items-center justify-center mt-4 text-gray-600">
-            <span className="mr-2">🖱️</span>
+            <Mouse className="w-4 h-4 mr-2" />
             <span>Use mouse to drag and scroll to zoom</span>
           </div>
         </div>
