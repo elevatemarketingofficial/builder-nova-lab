@@ -448,15 +448,17 @@ export default function Windridge() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <div className="grid grid-cols-3 gap-4">
-              {carouselImages.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
-                <div key={currentImageIndex + index} className="relative">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-              ))}
+              {carouselImages
+                .slice(currentImageIndex, currentImageIndex + 3)
+                .map((image, index) => (
+                  <div key={currentImageIndex + index} className="relative">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                ))}
             </div>
 
             {/* Navigation buttons */}
