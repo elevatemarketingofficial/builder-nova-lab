@@ -81,7 +81,7 @@ export default function Listings() {
       sqft: "1336 Sq. Ft.",
       garage: "2 cars",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdf77fe81a4b3421d88ec12984e9ce8d6?format=webp&width=800",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3cb62305d4014e75bc11b78f11f2ce8e",
     },
   ];
 
