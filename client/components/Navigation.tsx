@@ -117,7 +117,7 @@ export default function Navigation() {
               to="/homes/skyview"
               className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100"
             >
-              Skyview 1
+              Skyview
             </Link>
             <Link
               to="/homes/skyview-ii"
@@ -185,22 +185,7 @@ export default function Navigation() {
         )}
       </div>
 
-      {/* Register */}
-      <div className="relative">
-        <Link
-          to="/register"
-          className={`text-[16px] font-normal uppercase transition-colors ${
-            location.pathname === "/register"
-              ? "text-brand-gold"
-              : "text-black hover:text-brand-gold"
-          }`}
-        >
-          Register
-        </Link>
-        {location.pathname === "/register" && (
-          <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
-        )}
-      </div>
+
     </nav>
   );
 }
