@@ -5,7 +5,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  ExternalLink,
+  Instagram,
 } from "lucide-react";
 import Header from "../components/Header";
 
@@ -501,7 +501,7 @@ export default function About() {
                 href="#"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 
