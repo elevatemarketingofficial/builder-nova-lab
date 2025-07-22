@@ -132,10 +132,13 @@ export default function Register() {
         }}
       >
         {/* Gradient Overlay */}
-        <div 
+        <div
           className="absolute inset-0 w-full h-full"
           style={{
-            background: "linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.57) 100%)",
+            backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
             opacity: 0.91
           }}
         />
