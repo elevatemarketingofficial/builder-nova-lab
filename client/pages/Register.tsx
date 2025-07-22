@@ -222,7 +222,7 @@ export default function Register() {
             </div>
 
             {/* Form Fields */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-[#3A4F66] text-[14px] font-medium leading-[24.75px]">
                   First Name
