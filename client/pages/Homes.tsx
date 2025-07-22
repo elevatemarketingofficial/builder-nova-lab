@@ -4,14 +4,10 @@ import {
   Phone,
   MessageSquare,
   Home,
-<<<<<<< HEAD
   Instagram,
-=======
-  ExternalLink,
   Bed,
   Bath,
   Square,
->>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
 } from "lucide-react";
 import Header from "../components/Header";
 
@@ -130,7 +126,87 @@ export default function Homes() {
                 key={plan.id}
                 className="bg-white rounded-lg overflow-hidden shadow-lg"
               >
-<<<<<<< HEAD
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={plan.image}
+                    alt={plan.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-[24px] font-bold text-brand-dark-blue mb-2">
+                    {plan.name}
+                  </h3>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-1">
+                      <Square className="w-4 h-4 text-brand-medium-blue" />
+                      <span className="text-[14px] text-brand-medium-blue">
+                        {plan.sqft}
+                      </span>
+                    </div>
+                    <span className="text-[14px] text-brand-medium-blue">
+                      {plan.details}
+                    </span>
+                  </div>
+                  <Link
+                    to={plan.link}
+                    className="block w-full bg-brand-gold text-white text-center py-3 px-4 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
+                  >
+                    View Details
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-[800px] mx-auto px-4 text-center">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue mb-4">
+            Ready to See More?
+          </h2>
+          <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed mb-8">
+            Schedule a tour to see our model homes or contact our sales team to
+            learn more about customization options, pricing, and availability.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="bg-brand-gold text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
+            >
+              Schedule Tour
+            </Link>
+            <Link
+              to="/listings"
+              className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
+            >
+              View Available Homes
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-brand-light-gray py-12 lg:py-16">
+        <div className="max-w-[1140px] mx-auto px-4">
+          <div className="text-center space-y-8">
+            {/* Company Logo */}
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc4fda5d5de5e4c6b86b95cf3a4a5b4c9"
+                alt="Choice Valley Homes"
+                className="h-[60px] lg:h-[80px]"
+              />
+            </div>
+
+            {/* Contact & Message Links */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8">
+              <a
+                href="tel:+12093089000"
+                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[21px]"
+              >
                 <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
                 209-308-9000
               </a>
@@ -173,69 +249,9 @@ export default function Homes() {
                 Privacy Policy
               </a>
             </div>
-=======
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={plan.image}
-                    alt={plan.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-[24px] font-bold text-brand-dark-blue mb-2">
-                    {plan.name}
-                  </h3>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="flex items-center gap-1">
-                      <Square className="w-4 h-4 text-brand-medium-blue" />
-                      <span className="text-[14px] text-brand-medium-blue">
-                        {plan.sqft}
-                      </span>
-                    </div>
-                    <span className="text-[14px] text-brand-medium-blue">
-                      {plan.details}
-                    </span>
-                  </div>
-                  <Link
-                    to={plan.link}
-                    className="block w-full bg-brand-gold text-white text-center py-3 px-4 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
-                  >
-                    View Details
-                  </Link>
-                </div>
-              </div>
-            ))}
->>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
           </div>
         </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-[800px] mx-auto px-4 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue mb-4">
-            Ready to See More?
-          </h2>
-          <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed mb-8">
-            Schedule a tour to see our model homes or contact our sales team to
-            learn more about customization options, pricing, and availability.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-brand-gold text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
-            >
-              Schedule Tour
-            </Link>
-            <Link
-              to="/listings"
-              className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-brand-gold hover:text-white transition-colors"
-            >
-              View Available Homes
-            </Link>
-          </div>
-        </div>
-      </section>
+      </footer>
     </div>
   );
 }
