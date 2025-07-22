@@ -212,7 +212,7 @@ const Home1691A = () => {
             </div>
 
             {/* Navigation */}
-            <Navigation />
+            <Header />
 
             {/* View Listings Button */}
             <button className="bg-brand-gold text-white px-5 py-3 rounded text-sm font-medium flex items-center space-x-2">
