@@ -4,12 +4,8 @@ import {
   ChevronDown,
   Phone,
   MessageSquare,
-<<<<<<< HEAD
   Instagram,
-=======
   Home,
-  ExternalLink,
->>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
   Bed,
   Bath,
   Car,
@@ -26,6 +22,31 @@ export default function Listings() {
     bathrooms: "",
     homeType: "",
   });
+  
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+    termsAccepted: false,
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value, type } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+  };
 
   const listings = [
     {
@@ -300,7 +321,6 @@ export default function Listings() {
             <h2 className="text-[28px] lg:text-[35px] font-bold text-brand-dark-blue mb-4">
               Ready to Make Paseo Your Home?
             </h2>
-<<<<<<< HEAD
 
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -507,28 +527,12 @@ export default function Listings() {
             <div className="flex justify-center items-center gap-2 mt-8 text-black">
               <span>® All Rights Reserved</span>
               <span className="text-gray-300">|</span>
-=======
-            <p className="text-[16px] text-brand-medium-blue mb-8">
-              Schedule a tour or contact our sales team to learn more about
-              available homes and financing options.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
->>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
-              <Link
-                to="/contact"
-                className="bg-brand-gold text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
-              >
-                Schedule Tour
-              </Link>
-              <Link
-                to="/register"
-                className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-brand-gold hover:text-white transition-colors"
-              >
-                Join Interest List
-              </Link>
+              <a href="#" className="hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </a>
             </div>
           </div>
-        </section>
+        </footer>
       </main>
     </div>
   );
