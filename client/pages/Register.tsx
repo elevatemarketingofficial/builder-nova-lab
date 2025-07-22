@@ -142,25 +142,19 @@ export default function Register() {
         
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
-          <h1 
-            className="text-white font-bold leading-[80px] mb-4"
+          <h1
+            className="text-white font-bold mb-4 text-4xl md:text-6xl lg:text-[74.844px] leading-tight lg:leading-[80px] max-w-4xl"
             style={{
-              fontSize: "74.844px",
-              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-              width: "796px",
-              height: "80px"
+              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif"
             }}
           >
             Register Your Interest
           </h1>
-          <p 
-            className="text-white"
+          <p
+            className="text-white text-sm md:text-base max-w-3xl"
             style={{
-              fontSize: "16px",
               fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-              lineHeight: "26.4px",
-              width: "786px",
-              height: "20px"
+              lineHeight: "26.4px"
             }}
           >
             Stay in the know about upcoming events, exclusive new home releases, builder incentives, and more.
