@@ -161,8 +161,19 @@ const OceansideII = () => {
               "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg')",
           }}
         >
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          {/* Background image with dark overlay */}
+          <div
+            className="absolute inset-0 bg-black/30"
+            style={{
+              backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78)",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover"
+            }}
+          >
+            {/* Additional dark overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          </div>
           <div className="relative z-10 flex items-center justify-start h-full max-w-7xl mx-auto px-4">
             <h1 className="text-7xl lg:text-8xl font-bold text-white">
               Oceanside II
