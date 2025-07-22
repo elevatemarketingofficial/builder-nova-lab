@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import {
   ChevronLeft,
   ChevronRight,
+  HomeIcon,
   Bath,
   Bed,
   Square,
   Mouse,
 } from "lucide-react";
 import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 
 export default function Windridge() {
   const [activeElevation, setActiveElevation] = useState("A");
