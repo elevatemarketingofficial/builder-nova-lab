@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Home1691A = () => {
