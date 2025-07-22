@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HomeIcon, ChevronLeft, ChevronRight, X } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function MountainTopII() {
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
