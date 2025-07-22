@@ -161,7 +161,15 @@ const OceansideII = () => {
               "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div
+            className="absolute inset-0 bg-black/30"
+            style={{
+              backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78)",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover"
+            }}
+          ></div>
           <div className="relative z-10 flex items-center justify-start h-full max-w-7xl mx-auto px-4">
             <h1 className="text-7xl lg:text-8xl font-bold text-white">
               Oceanside II
@@ -194,7 +202,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FOceanside-II-Floor-Plan-1.png"
+            src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb9a92c6277e743eb97249884e21e2d21"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -306,132 +314,132 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09064.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F09a9caa8c8bd4935b01d7bf1edd87f4d"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09097.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09068.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F9fbb0683fb2e43809fff7d5e4e371ff7"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09151.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F623104fc1eff4265a19385ce11589049"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09048.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff5f365dcfeea41e6952c53bb3f3e0a9b"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F37300fc9d48644aa8330a8577561fc34"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bathroom.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd22b7dddb29a49ccae0f48458079b3e6"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff5d8b0816b24475897b8a855da3777ac"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 3 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDining.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fca12b4c0bd794cce8d5b1e600b2ddc35"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09123.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc6b0190a7c254cf2ab3a58ace579a70a"
               alt="Living space"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09147.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fef760819cfb44b47a6ee1e6477183692"
               alt="Master bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09054.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F9a3ec5d32bc04e32b1d423fcd884ebfc"
               alt="Bathroom vanity"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 4 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-2.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fff298a3374554807a0bc85d040c21a9b"
               alt="Bedroom 2"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-3.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd601840fe6c64a35b63e8c13f388a9eb"
               alt="Bedroom 3"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStairs.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6bb3c5b137d5437d8b940e340f94ffe8"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09058.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2fc8185c135943a5a683c018bb15dce8"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09077.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F8b4b7fbf87e8468baac1f2b6b4ef1da3"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bath.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb0d06747f6ed41fcb9a1f15d965675d1"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen-Breakfast-Bar.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdbc5cf2188484f6e93520dab914e95e1"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09128.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb05090361e594973adb7a6432507f532"
               alt="Kitchen island"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 6 */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09089.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7d08caaf43dc42218fe92ca77a05f963"
               alt="Living room view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09150.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc334502dd7c74e94a3309a2a5a51914f"
               alt="Family room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09073.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3a1455b5382c423f895d2618af6a83a8"
               alt="Dining room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09131.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6f8c5f8000214e3faa168e3b231ec3d8"
               alt="Entry foyer"
               className="w-full h-[207px] object-cover"
             />
@@ -440,213 +448,127 @@ const OceansideII = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F2F4F7] py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center space-y-8">
-            {/* Logo */}
-            <div className="flex justify-center">
-              <svg
-                width="720"
-                height="107"
-                viewBox="0 0 720 107"
-                fill="none"
-                className="w-80"
-              >
-                <g clipPath="url(#clip0_31_604)">
-                  <mask
-                    id="mask0_31_604"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="720"
-                    height="107"
-                  >
-                    <path
-                      d="M719.6 0.103027H0.410004V106.347H719.6V0.103027Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_31_604)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M63.9836 0.103027L78.8226 11.4872V5.34744H94.3303V23.7796L125.873 48.4538C122.504 48.4538 119.058 48.1469 115.586 48.1469H109.259L63.8679 12.4722L28.9821 39.7175H33.7142V58.1881C49.1446 49.733 79.9156 45.1667 101.184 48.633C73.313 50.6457 46.5179 60.1657 23.6715 76.1724V49.6307H0.410004L63.9836 0.103027Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M80.6871 58.9171C97.4756 53.3103 115.111 50.6274 132.817 50.9864C122.279 52.2897 111.896 54.616 101.814 57.9321C70.1044 68.4209 45.4928 86.7764 33.8685 106.36L16.8435 101.154C29.7023 83.8599 52.3079 68.1395 80.6871 58.8018V58.9171Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      d="M179.944 41.4316L175.083 46.0493C173.694 44.4442 171.979 43.1496 170.051 42.2502C168.122 41.3508 166.025 40.867 163.897 40.8304C162.259 40.808 160.633 41.1124 159.116 41.7255C157.599 42.3384 156.221 43.2477 155.063 44.3997C153.905 45.5516 152.991 46.9226 152.374 48.4318C151.758 49.9411 151.452 51.558 151.475 53.1868C151.442 55.4198 151.991 57.6232 153.069 59.5823C154.117 61.452 155.678 62.9869 157.57 64.0081C159.537 65.089 161.752 65.6444 164 65.6197C165.907 65.6451 167.797 65.2613 169.541 64.4942C171.605 63.4587 173.472 62.0737 175.057 60.4009L179.776 65.3C177.564 67.5741 174.949 69.4215 172.061 70.749C169.451 71.8076 166.651 72.3255 163.832 72.2713C161.26 72.3646 158.695 71.9364 156.295 71.0127C153.894 70.0892 151.707 68.6895 149.867 66.8989C148.065 65.09 146.655 62.9336 145.722 60.5624C144.788 58.191 144.353 55.655 144.441 53.1101C144.377 49.7247 145.229 46.3844 146.91 43.4398C148.607 40.5736 151.056 38.2212 153.995 36.6349C157.028 34.9367 160.454 34.0548 163.934 34.0766C166.943 34.0746 169.918 34.7204 172.653 35.9697C175.456 37.2387 177.944 39.103 179.944 41.4316Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M185.961 35.0356H193.021V48.7735H205.25V35.0356H212.283V71.4268H205.25V55.4762H193.034V71.4268H185.961V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M237.95 34.1275C240.441 34.1007 242.911 34.5831 245.206 35.5445C247.502 36.5061 249.575 37.9263 251.298 39.7173C253.109 41.4917 254.539 43.6146 255.499 45.9569C256.458 48.299 256.927 50.8113 256.878 53.34C256.93 55.8425 256.466 58.3289 255.518 60.6473C254.57 62.9656 253.155 65.0668 251.362 66.8219C247.761 70.3634 242.891 72.337 237.828 72.3082C232.764 72.2793 227.919 70.2508 224.358 66.6684C221.447 63.6534 219.591 59.784 219.067 55.6357C218.544 51.4875 219.38 47.2817 221.451 43.6442C223.135 40.7604 225.549 38.3662 228.452 36.7008C231.357 35.0352 234.649 34.1568 238.001 34.1532L237.95 34.1275ZM237.872 40.9069C236.283 40.8696 234.702 41.162 233.233 41.7655C231.762 42.3688 230.435 43.2701 229.335 44.4116C228.179 45.5944 227.278 46.9974 226.684 48.5363C226.089 50.0752 225.814 51.7181 225.876 53.3655C225.799 55.1851 226.154 56.9971 226.907 58.6563C227.663 60.3155 228.797 61.776 230.222 62.9206C232.39 64.7081 235.121 65.6774 237.937 65.658C239.524 65.672 241.097 65.3561 242.553 64.7305C244.009 64.105 245.32 63.1836 246.397 62.0252C248.655 59.6503 249.913 56.5059 249.913 53.2377C249.913 49.9693 248.655 46.825 246.397 44.45C245.302 43.3024 243.978 42.3946 242.511 41.7846C241.043 41.1744 239.464 40.8757 237.872 40.9069Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M262.947 35.0356H269.853V71.4268H262.947V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M311.309 41.4316L306.435 46.0493C305.049 44.4434 303.336 43.1478 301.411 42.2484C299.485 41.3487 297.388 40.8656 295.262 40.8304C293.624 40.808 291.999 41.1124 290.481 41.7255C288.964 42.3384 287.586 43.2477 286.427 44.3997C285.27 45.5516 284.356 46.9226 283.74 48.4318C283.124 49.9411 282.818 51.558 282.839 53.1868C282.808 55.418 283.354 57.6199 284.421 59.5823C285.472 61.4496 287.033 62.9836 288.921 64.0081C290.889 65.0874 293.104 65.6426 295.351 65.6198C297.259 65.6467 299.148 65.2628 300.894 64.4942C302.957 63.4588 304.824 62.0737 306.409 60.4009L311.13 65.3C308.918 67.5755 306.303 69.4231 303.413 70.749C300.803 71.8066 298.003 72.3244 295.185 72.2713C292.612 72.3667 290.046 71.9396 287.645 71.016C285.245 70.0923 283.058 68.6913 281.219 66.8989C278.316 63.7907 276.469 59.8535 275.938 55.6438C275.407 51.4341 276.221 47.1648 278.263 43.4398C279.956 40.5712 282.406 38.218 285.347 36.6349C288.375 34.9365 291.798 34.0547 295.275 34.0766C298.284 34.0718 301.259 34.7178 303.992 35.9697C306.801 37.2402 309.297 39.104 311.309 41.4316Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M317.418 35.0356H337.386V41.8152H324.335V48.4026H337.386V55.054H324.335V64.5834H337.386V71.3884H317.418V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M355.35 35.0356H362.512L371.72 60.8868L381.054 35.0356H388.204L374.985 71.4268H368.272L355.35 35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M404.933 35.0356H412.006L426.074 71.4268H418.833L415.966 63.9311H401.049L398.132 71.4268H390.904L404.933 35.0356ZM408.508 44.6931L403.609 57.1774H413.395L408.508 44.6931Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M431.448 35.0356H438.418V64.8137H448.55V71.4268H431.448V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M453.848 35.0356H460.817V64.8137H470.963V71.4268H453.848V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M476.273 35.0356H496.244V41.8152H483.192V48.4026H496.244V55.054H483.192V64.5834H496.244V71.3884H476.273V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M500.139 35.0356H507.611L514.438 48.1339L521.228 35.0356H528.609L517.898 55.6296V71.3884H510.889V55.6296L500.139 35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M548.784 35.0356H552.436V50.2957H571.056V35.0356H574.721V71.4267H571.056V53.8644H552.436V71.4267H548.784V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M601.03 34.1279C603.603 34.0616 606.162 34.516 608.555 35.4637C610.947 36.4114 613.119 37.8324 614.943 39.6409C617.621 42.3275 619.44 45.7415 620.172 49.4537C620.904 53.1659 620.517 57.0104 619.059 60.5044C617.601 63.9983 615.136 66.9856 611.977 69.0905C608.817 71.1956 605.102 72.3244 601.3 72.3352C598.752 72.3918 596.22 71.9297 593.858 70.9773C591.496 70.0248 589.355 68.6021 587.567 66.7967C585.765 65.0605 584.343 62.9746 583.389 60.6685C582.432 58.3623 581.963 55.8854 582.011 53.3914C581.991 49.9821 582.879 46.6283 584.584 43.6701C586.218 40.7515 588.618 38.329 591.527 36.6606C594.412 34.9905 597.692 34.1162 601.03 34.1279ZM601.197 37.6583C598.48 37.6543 595.814 38.3836 593.482 39.7688C591.11 41.1154 589.146 43.0729 587.797 45.4354C586.424 47.8573 585.718 50.5979 585.754 53.3787C585.742 55.4008 586.135 57.4052 586.906 59.2762C587.676 61.1474 588.812 62.8486 590.246 64.2821C591.679 65.7156 593.384 66.853 595.26 67.6293C597.138 68.4053 599.15 68.805 601.184 68.8048C603.948 68.8223 606.668 68.112 609.065 66.7455C611.434 65.4241 613.39 63.4818 614.724 61.1301C616.082 58.7123 616.779 55.982 616.743 53.2123C616.782 50.4666 616.086 47.7602 614.724 45.3713C613.318 43.0439 611.334 41.1157 608.964 39.7714C606.592 38.4274 603.913 37.7129 601.184 37.6966L601.197 37.6583Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M626.207 71.4267L631.453 35.0356H632.045L646.91 64.8904L661.633 35.0356H662.225L667.483 71.4267H663.895L660.283 45.3966L647.424 71.4141H646.485L633.395 45.1919L629.807 71.4141L626.207 71.4267Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M674.698 35.0356H695.658V38.6045H678.35V50.0013H695.502V53.5702H678.35V67.858H695.502V71.4267H674.698V35.0356Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M698.189 64.6477L701.301 62.7929C703.488 66.8009 706.017 68.8048 708.889 68.8048C710.092 68.8127 711.277 68.518 712.335 67.9478C713.359 67.4339 714.216 66.6397 714.804 65.6582C715.358 64.7389 715.653 63.6865 715.653 62.6139C715.61 61.3159 715.161 60.0637 714.366 59.0323C712.572 56.7986 710.463 54.8341 708.104 53.1995C706.014 51.7711 704.101 50.1008 702.408 48.2237C701.156 46.6361 700.473 44.6776 700.466 42.6595C700.45 41.1422 700.845 39.6485 701.61 38.3362C702.374 37.0323 703.487 35.9651 704.826 35.2535C706.208 34.5022 707.763 34.1147 709.338 34.1278C711.035 34.123 712.704 34.5643 714.173 35.4069C716.064 36.6368 717.688 38.2334 718.945 40.1013L715.962 42.3525C715.005 40.9606 713.812 39.7443 712.438 38.7582C711.483 38.1887 710.388 37.8922 709.275 37.9012C707.944 37.8367 706.641 38.2963 705.648 39.1804C705.195 39.5995 704.837 40.1088 704.595 40.6753C704.353 41.2417 704.235 41.8525 704.247 42.4677C704.247 43.262 704.419 44.0469 704.749 44.7701C705.197 45.6843 705.811 46.5083 706.561 47.2003C707.037 47.661 708.619 48.8761 711.28 50.8332C713.788 52.5228 715.991 54.6199 717.8 57.0369C718.91 58.6523 719.522 60.5551 719.561 62.5116C719.567 63.8028 719.302 65.0812 718.781 66.2643C718.261 67.4473 717.498 68.5088 716.54 69.3805C715.574 70.3302 714.427 71.0775 713.165 71.5783C711.905 72.0793 710.555 72.3236 709.198 72.297C707.05 72.3203 704.946 71.7058 703.153 70.5317C701.046 68.9974 699.343 66.9786 698.189 64.6477Z"
-                      fill="black"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M56.5513 25.7622H63.3664V32.5288H56.5513V25.7622ZM66.7355 35.7138H73.5377V42.4932H66.7355V35.7138ZM56.5513 35.7138H63.3664V42.4932H56.5513V35.7138ZM66.7355 25.7622H73.5377V32.5288H66.7355V25.7622Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_31_604">
-                    <rect
-                      width="719.19"
-                      height="106.244"
-                      fill="white"
-                      transform="translate(0.410004 0.103027)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+      <footer className="bg-gray-50 py-16">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="text-center">
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="h-24"
+              />
             </div>
-
-            {/* Tagline */}
-            <p className="text-3xl text-brand-text-gray capitalize">
+            <h3 className="text-gray-600 text-3xl leading-9 mb-8 px-4">
               Building communities throughout the Central Valley
+            </h3>
+            <p className="text-gray-600 mb-8">
+              For More Information about PASEO, Please Call or Text
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-4">
-              <p className="text-brand-text-gray">
-                For More Information about PASEO, Please Call or Text
-              </p>
-              <div className="space-y-2">
-                <p className="text-lg text-brand-text-gray">
-                  Stephanie Stine
-                  <br />
-                  Community Sales Manager
-                  <br />
-                  209-308-9000
-                  <br />
-                  DRE# 02189834
-                </p>
-              </div>
-              <div className="space-y-2">
-                <p className="text-lg text-brand-text-gray">
-                  Hours
-                  <br />
-                  Monday – Closed
-                  <br />
-                  Tuesday – Saturday 10am – 5pm
-                  <br />
-                  Sunday – 11am – 4pm
-                </p>
-              </div>
-              <p className="text-lg text-brand-text-gray">
-                154 Montage Drive, Merced, CA 95348
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-[29px]">
+                Stephanie Stine
+                <br />
+                Community Sales Manager
+                <br />
+                209-308-9000
+                <br />
+                DRE# 02189834
               </p>
             </div>
-
-            {/* Contact Links */}
-            <div className="flex justify-center items-center space-x-6">
+            <div className="mb-8">
+              <p className="text-gray-600 text-lg leading-[29px]">
+                Hours
+                <br />
+                Monday – Closed
+                <br />
+                Tuesday – Saturday 10am – 5pm
+                <br />
+                Sunday – 11am – 4pm
+              </p>
+            </div>
+            <p className="text-gray-600 text-lg leading-7 mb-8">
+              154 Montage Drive, Merced, CA 95348
+            </p>
+            <div className="flex items-center justify-center mb-8">
               <a
                 href="tel:209-308-9000"
-                className="flex items-center space-x-2 text-black font-bold"
+                className="flex items-center text-lg font-bold leading-7"
               >
-                <span className="text-brand-gold text-xl">📞</span>
-                <span>209-308-9000</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold w-5 h-5"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span className="ml-2">209-308-9000</span>
               </a>
+              <span className="text-gray-300 ml-4">|</span>
+              <a
+                href="/contact"
+                className="flex items-center text-xl font-bold leading-7 ml-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-brand-gold w-5 h-5"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <span className="ml-2">Send Message</span>
+              </a>
+            </div>
+            <div className="flex justify-center mb-8">
               <a
                 href="#"
-                className="flex items-center space-x-2 text-black font-bold"
+                className="flex items-center bg-gray-800 text-white w-12 h-12 justify-center rounded-full"
               >
-                <span className="text-brand-gold text-xl">✉️</span>
-                <span>Send Message</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6"
+                >
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
               </a>
             </div>
-
-            {/* Social Media */}
-            <div className="flex justify-center">
-              <button className="bg-gray-800 text-white p-3 rounded-full">
-                <span className="text-2xl">📘</span>
-              </button>
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-20 h-24"
+              />
             </div>
-          </div>
-
-          {/* Equal Housing Logo */}
-          <div className="flex justify-end mt-8">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
-              alt="Equal Housing Opportunity"
-              className="w-24 h-auto"
-            />
-          </div>
-
-          {/* Copyright */}
-          <div className="text-center mt-8 pt-8 border-t border-gray-300">
-            <div className="flex justify-center items-center space-x-4 text-sm text-black">
+            <div className="flex items-center justify-center text-black">
               <span>® All Rights Reserved</span>
-              <span className="text-gray-300">|</span>
-              <a href="#" className="hover:text-brand-gold">
+              <span className="text-gray-300 ml-2">|</span>
+              <a
+                href="#"
+                className="ml-2 transition-all duration-150 ease-in-out"
+              >
                 Privacy Policy
               </a>
             </div>
