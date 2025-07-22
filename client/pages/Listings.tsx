@@ -548,7 +548,9 @@ export default function Listings() {
 
               <div className="flex justify-center mt-8">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
                 >
                   <Instagram className="w-6 h-6 text-white" />
