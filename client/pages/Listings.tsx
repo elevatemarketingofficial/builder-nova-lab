@@ -10,7 +10,7 @@ import {
   Square,
   Car,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Listings() {
   const [formData, setFormData] = useState({
@@ -234,7 +234,7 @@ export default function Listings() {
 
       {/* Main Content */}
       <main>
-        {/* Hero Section */}
+                {/* Hero Section */}
         <section
           className="relative h-[356px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
