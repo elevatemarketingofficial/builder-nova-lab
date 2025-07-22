@@ -374,7 +374,7 @@ export default function Skyview() {
           </Link>
 
           {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <Link
