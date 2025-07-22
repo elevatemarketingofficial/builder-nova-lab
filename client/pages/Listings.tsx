@@ -219,7 +219,7 @@ export default function Listings() {
           </Link>
 
           {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <Link
