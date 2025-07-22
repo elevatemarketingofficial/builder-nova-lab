@@ -9,7 +9,7 @@ import {
   Square,
   Mouse,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Windridge() {
   const [activeElevation, setActiveElevation] = useState("A");
