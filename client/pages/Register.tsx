@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Navigation from "../components/Navigation";
 
 export default function Register() {
   const [selectedModel, setSelectedModel] = useState<string>("");
