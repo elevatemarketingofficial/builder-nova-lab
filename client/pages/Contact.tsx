@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Home, Phone, MessageSquare, ExternalLink } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
