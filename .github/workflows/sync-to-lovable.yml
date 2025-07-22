@@ -23,11 +23,11 @@ jobs:
 
       # ——— 3. Clone the Lovable-linked repo into ./lovable using GitHub Checkout ———
       - name: Clone Lovable Repo
-  uses: actions/checkout@v4
-  with:
-    repository: elevatemarketingofficial/silent-observer-node
-    path: lovable
-    token: '${{ secrets.LOVABLE_PAT }}'
+        uses: actions/checkout@v4
+        with:
+          repository: elevatemarketingofficial/silent-observer-node
+          path: lovable
+          token: '${{ secrets.LOVABLE_PAT }}'
 
       # ——— 4. Sync Builder files into Lovable repo ———
       - name: Sync Builder → Lovable
