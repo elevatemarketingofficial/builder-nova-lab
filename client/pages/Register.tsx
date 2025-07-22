@@ -125,10 +125,13 @@ export default function Register() {
       </header>
 
       {/* Hero Section */}
-      <section 
+      <section
         className="relative h-[496px] w-full"
         style={{
-          background: "url('https://api.builder.io/api/v1/image/assets/TEMP/d049e63e73a48af629ef169e2bbcb6e822121891?width=3840') lightgray 0% 0% / 75px 75px repeat"
+          backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover"
         }}
       >
         {/* Dark overlay */}
