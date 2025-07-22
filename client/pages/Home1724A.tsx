@@ -369,9 +369,12 @@ const Home1724A = () => {
                 special events & more!
               </p>
             </div>
-            <button className="bg-white text-black px-[40px] py-[20px] text-[18px] font-normal">
+            <Link
+              to="/register"
+              className="bg-white text-black px-[40px] py-[20px] text-[18px] font-normal hover:bg-gray-100 transition-colors inline-block"
+            >
               Register
-            </button>
+            </Link>
           </div>
         </section>
 
