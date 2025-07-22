@@ -181,13 +181,13 @@ export default function Register() {
               </div>
 
               {/* Model Options Grid */}
-              <div className="grid grid-cols-4 gap-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
                 {models.map((model) => (
                   <div key={model.id} className="flex flex-col items-start gap-3">
                     <img
                       src={model.image}
                       alt={`Model ${model.name}`}
-                      className="w-[200px] h-[200px] object-cover"
+                      className="w-full max-w-[200px] h-[200px] object-cover"
                     />
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input
