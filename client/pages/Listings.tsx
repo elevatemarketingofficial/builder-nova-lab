@@ -4,7 +4,7 @@ import {
   Home,
   Phone,
   MessageSquare,
-  ExternalLink,
+  Instagram,
   Bed,
   Bath,
   Square,
@@ -234,7 +234,7 @@ export default function Listings() {
 
       {/* Main Content */}
       <main>
-        {/* Hero Section */}
+                {/* Hero Section */}
         <section
           className="relative h-[356px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
@@ -551,7 +551,7 @@ export default function Listings() {
                   href="#"
                   className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
                 >
-                  <ExternalLink className="w-6 h-6 text-white" />
+                  <Instagram className="w-6 h-6 text-white" />
                 </a>
               </div>
             </div>
