@@ -140,7 +140,7 @@ export default function HomeownerServiceRequest() {
           </Link>
 
                     {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <Link
@@ -412,7 +412,7 @@ export default function HomeownerServiceRequest() {
                 <br />
                 Monday – Closed
                 <br />
-                Tuesday ��� Saturday 10am – 5pm
+                Tuesday – Saturday 10am – 5pm
                 <br />
                 Sunday – 11am – 4pm
               </p>
