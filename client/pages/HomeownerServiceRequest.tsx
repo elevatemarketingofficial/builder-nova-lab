@@ -6,7 +6,7 @@ import {
   Home,
   ExternalLink,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function HomeownerServiceRequest() {
   return (
@@ -139,7 +139,7 @@ export default function HomeownerServiceRequest() {
             </div>
           </Link>
 
-          {/* Navigation */}
+                    {/* Navigation */}
           <Navigation />
 
           {/* View Listings Button */}
@@ -412,7 +412,7 @@ export default function HomeownerServiceRequest() {
                 <br />
                 Monday – Closed
                 <br />
-                Tuesday – Saturday 10am – 5pm
+                Tuesday ��� Saturday 10am – 5pm
                 <br />
                 Sunday – 11am – 4pm
               </p>
