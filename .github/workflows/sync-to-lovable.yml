@@ -15,13 +15,21 @@ jobs:
         with:
           path: builder
 
-      # ——— 2. Clone the Lovable-linked repo into ./lovable ———
-      - name: Clone Lovable Repo
+      # ——— 2. Debug the token to confirm it exists ———
+      - name: Debug PAT presence
+        run: echo "LOVABLE_PAT length = ${#LOVABLE_PAT}"
         env:
           LOVABLE_PAT: ${{ secrets.LOVABLE_PAT }}
-          GIT_LFS_SKIP_SMUDGE: "1"
-        run: git clone --depth 1 https://x-access-token:${LOVABLE_PAT}@github.com/elevatemarketingofficial/silent-observer-node.git lovable
-      # ——— 3. Sync Builder files into Lovable repo ———
+
+      # ——— 3. Clone the Lovable-linked repo into ./lovable using GitHub Checkout ———
+      - name: Clone Lovable Repo
+        uses: actions/checkout@v4
+        with:
+          repository: elevatemarketingofficial/silent-observer-node
+          path: lovable
+          token: ${{ secrets.LOVABLE_PAT }}
+
+      # ——— 4. Sync Builder files into Lovable repo ———
       - name: Sync Builder → Lovable
         run: |
           rsync -av --delete \
