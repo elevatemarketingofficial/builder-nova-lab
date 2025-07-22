@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
   ChevronLeft,
   ChevronRight,
-  HomeIcon,
   Bath,
   Bed,
   Square,
