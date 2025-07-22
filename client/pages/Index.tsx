@@ -5,7 +5,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  ExternalLink,
+  Instagram,
 } from "lucide-react";
 import Header from "../components/Header";
 
