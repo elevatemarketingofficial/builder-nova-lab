@@ -62,8 +62,10 @@ export default function MountainTopII() {
 
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
-      {/* Header */}
-      <header className="bg-white shadow-lg relative z-50">
+      <Header />
+
+      {/* Remove this duplicate header section - keeping only for hero content below */}
+      <div style={{display: 'none'}}>
         <div className="max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-[87px]">
             {/* Logo */}
@@ -206,7 +208,7 @@ export default function MountainTopII() {
             </Link>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Hero Section */}
       <section
