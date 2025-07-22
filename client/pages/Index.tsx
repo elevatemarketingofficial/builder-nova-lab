@@ -290,9 +290,12 @@ export default function Index() {
                 <p className="text-[14px] text-brand-medium-blue mb-6">
                   1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath
                 </p>
-                <button className="bg-brand-gold text-white px-6 py-3 text-[15px] font-normal border-2 border-brand-gold hover:bg-opacity-90 transition-colors">
+                <Link
+                  to="/homes/skyview-ii"
+                  className="bg-brand-gold text-white px-6 py-3 text-[15px] font-normal border-2 border-brand-gold hover:bg-opacity-90 transition-colors inline-block"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
 
