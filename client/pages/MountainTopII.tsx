@@ -92,7 +92,9 @@ export default function MountainTopII() {
 
               {/* Bathrooms */}
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">3 BATHS</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                  3 BATHS
+                </h3>
               </div>
 
               {/* Separator */}
@@ -100,7 +102,9 @@ export default function MountainTopII() {
 
               {/* Square Footage */}
               <div className="md:col-span-3">
-                <h3 className="text-2xl font-bold text-gray-800">1,890 SQ. FT.</h3>
+                <h3 className="text-2xl font-bold text-gray-800">
+                  1,890 SQ. FT.
+                </h3>
               </div>
             </div>
           </div>
@@ -271,7 +275,10 @@ export default function MountainTopII() {
           </div>
 
           <div className="flex justify-center items-center gap-4 mb-6">
-            <a href="tel:209-308-9000" className="text-blue-600 hover:underline">
+            <a
+              href="tel:209-308-9000"
+              className="text-blue-600 hover:underline"
+            >
               209-308-9000
             </a>
             <span>|</span>

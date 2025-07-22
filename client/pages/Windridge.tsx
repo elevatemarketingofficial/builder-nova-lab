@@ -31,13 +31,13 @@ export default function Windridge() {
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
   const prevImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -47,12 +47,13 @@ export default function Windridge() {
   }, []);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value, type } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
@@ -98,7 +99,9 @@ export default function Windridge() {
       {/* Elevation Selector */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Elevation</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">
+            Choose Your Elevation
+          </h2>
           <div className="flex justify-center gap-4">
             <button
               onClick={() => setSelectedElevation("A")}
@@ -135,15 +138,21 @@ export default function Windridge() {
               </div>
               <div className="flex flex-col items-center">
                 <Bath className="w-8 h-8 text-brand-gold mb-2" />
-                <h3 className="text-xl font-bold text-gray-800">2.5 Bathrooms</h3>
+                <h3 className="text-xl font-bold text-gray-800">
+                  2.5 Bathrooms
+                </h3>
               </div>
               <div className="flex flex-col items-center">
                 <Square className="w-8 h-8 text-brand-gold mb-2" />
-                <h3 className="text-xl font-bold text-gray-800">1,791 Sq. Ft.</h3>
+                <h3 className="text-xl font-bold text-gray-800">
+                  1,791 Sq. Ft.
+                </h3>
               </div>
               <div className="flex flex-col items-center">
                 <Mouse className="w-8 h-8 text-brand-gold mb-2" />
-                <h3 className="text-xl font-bold text-gray-800">2 Car Garage</h3>
+                <h3 className="text-xl font-bold text-gray-800">
+                  2 Car Garage
+                </h3>
               </div>
             </div>
           </div>
@@ -153,7 +162,9 @@ export default function Windridge() {
       {/* Virtual Tour Section */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Virtual Tour</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Virtual Tour
+          </h2>
           <div className="aspect-video bg-gray-900 rounded-lg overflow-hidden">
             <iframe
               src="https://my.matterport.com/show/?m=example"
@@ -185,7 +196,10 @@ export default function Windridge() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Interested in Windridge?
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-lg">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6 bg-white p-8 rounded-lg shadow-lg"
+          >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -214,7 +228,7 @@ export default function Windridge() {
                 />
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -266,7 +280,8 @@ export default function Windridge() {
                 required
               />
               <p className="text-sm text-gray-600">
-                I agree to be contacted about this home and future opportunities.
+                I agree to be contacted about this home and future
+                opportunities.
               </p>
             </div>
 
@@ -313,7 +328,10 @@ export default function Windridge() {
           </div>
 
           <div className="flex justify-center items-center gap-4 mb-6">
-            <a href="tel:209-308-9000" className="text-blue-600 hover:underline">
+            <a
+              href="tel:209-308-9000"
+              className="text-blue-600 hover:underline"
+            >
               209-308-9000
             </a>
             <span>|</span>
