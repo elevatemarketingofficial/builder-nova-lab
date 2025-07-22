@@ -4,7 +4,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  ExternalLink,
+  Instagram,
 } from "lucide-react";
 import Navigation from "../components/Navigation";
 
@@ -139,7 +139,7 @@ export default function HomeownerServiceRequest() {
             </div>
           </Link>
 
-          {/* Navigation */}
+                    {/* Navigation */}
           <Navigation />
 
           {/* View Listings Button */}
@@ -447,7 +447,7 @@ export default function HomeownerServiceRequest() {
                 href="#"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 
