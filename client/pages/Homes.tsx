@@ -7,7 +7,7 @@ import {
   Home,
   ExternalLink,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Homes() {
   const [formData, setFormData] = useState({
@@ -467,7 +467,7 @@ export default function Homes() {
         <div className="max-w-[1120px] mx-auto px-4">
           <div className="text-center space-y-6 lg:space-y-8">
             {/* Logo */}
-            <div className="flex justify-center mb-6 lg:mb-8">
+                        <div className="flex justify-center mb-6 lg:mb-8">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
@@ -479,7 +479,7 @@ export default function Homes() {
                   minWidth: "20px",
                   overflow: "hidden",
                 }}
-              />
+                            />
             </div>
 
             <h3 className="text-[20px] sm:text-[24px] lg:text-[30px] text-brand-medium-blue font-normal px-4">
