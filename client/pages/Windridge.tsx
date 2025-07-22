@@ -7,6 +7,7 @@ import {
   Bed,
   Square,
   Mouse,
+  Instagram,
 } from "lucide-react";
 import Header from "../components/Header";
 
@@ -576,24 +577,12 @@ export default function Windridge() {
 
             <div className="flex justify-center mb-8">
               <a
-                href="#"
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M15 3h6v6" />
-                  <path d="M10 14 21 3" />
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                </svg>
+                <Instagram className="w-6 h-6" />
               </a>
             </div>
 
