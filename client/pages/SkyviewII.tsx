@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bed, Bath, Square, ChevronLeft, ChevronRight, X } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function SkyviewII() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
