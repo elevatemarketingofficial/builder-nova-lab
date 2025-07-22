@@ -413,7 +413,7 @@ const Home1691A = () => {
               </p>
             </div>
             <Link
-              to="/contact"
+              to="/register"
               className="bg-white text-black text-lg leading-[27px] transition-all duration-150 ease-in-out py-4 px-10"
             >
               Register

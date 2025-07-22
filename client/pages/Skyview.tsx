@@ -581,7 +581,7 @@ export default function Skyview() {
                 </p>
               </div>
               <Link
-                to="/contact"
+                to="/register"
                 className="bg-white text-black px-10 py-4 text-[18px] font-normal hover:bg-gray-100 transition-colors"
               >
                 Register

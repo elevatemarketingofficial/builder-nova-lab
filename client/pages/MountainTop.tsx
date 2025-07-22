@@ -549,7 +549,7 @@ export default function MountainTop() {
               </p>
             </div>
             <Link
-              to="/contact"
+              to="/register"
               className="bg-white text-black text-lg leading-[27px] px-10 py-4 hover:bg-gray-100 transition-colors"
             >
               Register
