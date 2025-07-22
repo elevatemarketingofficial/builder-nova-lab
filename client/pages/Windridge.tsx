@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   ChevronLeft,
   ChevronRight,
@@ -661,7 +662,7 @@ export default function Windridge() {
                 <br />
                 <span>Tuesday – Saturday 10am – 5pm</span>
                 <br />
-                <span>Sunday – 11am – 4pm</span>
+                <span>Sunday �� 11am – 4pm</span>
               </p>
             </div>
 
