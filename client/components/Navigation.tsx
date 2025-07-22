@@ -184,6 +184,23 @@ export default function Navigation() {
           <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
         )}
       </div>
+
+      {/* Register */}
+      <div className="relative">
+        <Link
+          to="/register"
+          className={`text-[16px] font-normal uppercase transition-colors ${
+            location.pathname === "/register"
+              ? "text-brand-gold"
+              : "text-black hover:text-brand-gold"
+          }`}
+        >
+          Register
+        </Link>
+        {location.pathname === "/register" && (
+          <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
+        )}
+      </div>
     </nav>
   );
 }
