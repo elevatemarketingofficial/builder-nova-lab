@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+<<<<<<< HEAD
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
+=======
+import { ChevronLeft, ChevronRight } from "lucide-react";
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
 
 const Home1691A = () => {
   const [formData, setFormData] = useState({

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import { Instagram } from "lucide-react";
+=======
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
 import Header from "../components/Header";
 
 const OceansideII = () => {

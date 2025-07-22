@@ -184,8 +184,6 @@ export default function Navigation() {
           <div className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-brand-gold"></div>
         )}
       </div>
-
-
     </nav>
   );
 }

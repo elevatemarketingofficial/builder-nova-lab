@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 const Home1724A = () => {
   const [firstName, setFirstName] = useState("");
@@ -155,7 +155,7 @@ const Home1724A = () => {
           </div>
 
           {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <button className="flex items-center space-x-2 bg-brand-gold text-white px-5 py-3 rounded-[3px]">

@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import { Home, Instagram } from "lucide-react";
+=======
+import { Home } from "lucide-react";
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
 import Header from "../components/Header";
 
 export default function Register() {
@@ -59,6 +63,7 @@ export default function Register() {
 
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
+<<<<<<< HEAD
       {/* Header */}
       <header className="bg-white shadow-[0px_10px_20px_0px_rgba(44,62,80,0.05)] sticky top-0 z-50">
         <div className="max-w-[1290px] mx-auto px-4 h-[87px] flex items-center justify-between">
@@ -200,6 +205,9 @@ export default function Register() {
           </Link>
         </div>
       </header>
+=======
+      <Header />
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
 
       {/* Hero Section */}
       <section
@@ -212,10 +220,11 @@ export default function Register() {
           backgroundSize: "cover",
         }}
       >
-        {/* Dark overlay */}
+        {/* Background overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
         {/* Content */}
+<<<<<<< HEAD
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
           <h1
             className="text-white font-bold mb-4 text-4xl md:text-6xl lg:text-[74.844px] leading-tight lg:leading-[80px] max-w-4xl"
@@ -235,14 +244,21 @@ export default function Register() {
             Stay in the know about upcoming events, exclusive new home releases,
             builder incentives, and more.
           </p>
+=======
+        <div className="relative z-10 text-center text-white h-full flex items-center justify-center">
+          <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight">
+            JOIN THE INTEREST LIST
+          </h1>
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
         </div>
       </section>
 
-      {/* Form Section */}
-      <section className="py-[70px]">
-        <div className="max-w-[960px] mx-auto px-4">
+      {/* Registration Form Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-[1200px] mx-auto px-4">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Model Selection */}
+<<<<<<< HEAD
             <div className="space-y-8">
               <div className="flex items-start gap-2">
                 <label className="text-[#3A4F66] font-medium text-[15px] leading-[24.75px]">
@@ -274,83 +290,107 @@ export default function Register() {
                   <div
                     key={model.id}
                     className="flex flex-col items-start gap-3"
+=======
+            <div>
+              <h2 className="text-[24px] font-bold text-brand-dark-blue mb-6">
+                Which Home Model Interests You?
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {models.map((model) => (
+                  <div
+                    key={model.id}
+                    className={`cursor-pointer border-2 rounded-lg p-4 transition-colors ${
+                      selectedModel === model.id
+                        ? "border-brand-gold bg-brand-gold/10"
+                        : "border-gray-300 hover:border-brand-gold"
+                    }`}
+                    onClick={() => setSelectedModel(model.id)}
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
                   >
                     <img
                       src={model.image}
-                      alt={`Model ${model.name}`}
-                      className="w-full max-w-[200px] h-[200px] object-cover"
+                      alt={model.name}
+                      className="w-full h-32 object-cover rounded mb-2"
                     />
-                    <label className="flex items-center gap-2 cursor-pointer">
-                      <input
-                        type="radio"
-                        name="model"
-                        value={model.id}
-                        checked={selectedModel === model.id}
-                        onChange={(e) => setSelectedModel(e.target.value)}
-                        className="w-[13px] h-[13px] border border-[#767676] rounded-sm"
-                      />
-                      <span className="text-[#3A4F66] text-[15px] leading-[24.75px]">
-                        {model.name}
-                      </span>
-                    </label>
+                    <p className="text-center font-medium">{model.name}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Description Textarea */}
-            <div className="space-y-2">
+            {/* Description */}
+            <div>
+              <label className="block text-[15px] text-brand-medium-blue mb-2">
+                Tell us more about your interest
+              </label>
               <textarea
                 name="description"
                 value={formData.description}
                 onChange={handleInputChange}
+<<<<<<< HEAD
                 placeholder="What are you looking for in your new home?"
                 className="w-full h-[168px] p-4 border border-[#DADBDD] rounded-[7px] bg-white text-[16px] text-[#868E96] resize-none"
                 style={{
                   fontFamily:
                     "Roboto, -apple-system, Roboto, Helvetica, sans-serif",
                 }}
+=======
+                rows={4}
+                className="w-full bg-white border border-gray-300 rounded-sm px-3 py-2 focus:outline-none focus:border-brand-gold resize-none"
+                placeholder="What draws you to this community? Any specific features you're looking for?"
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
               />
             </div>
 
-            {/* Form Fields */}
+            {/* Contact Information */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-[#3A4F66] text-[14px] font-medium leading-[24.75px]">
-                  First Name
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  First Name *
                 </label>
                 <input
                   type="text"
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleInputChange}
+<<<<<<< HEAD
                   placeholder="First Name"
                   className="w-full h-[38px] px-4 border border-[#DADBDD] rounded-[7px] bg-white text-[16px] text-[#868E96]"
                   style={{
                     fontFamily:
                       "Roboto, -apple-system, Roboto, Helvetica, sans-serif",
                   }}
+=======
+                  required
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
                 />
               </div>
-              <div className="space-y-2">
-                <label className="text-[#3A4F66] text-[15px] font-medium leading-[24.75px]">
-                  Last Name
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  Last Name *
                 </label>
                 <input
                   type="text"
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleInputChange}
+<<<<<<< HEAD
                   placeholder="Last Name"
                   className="w-full h-[38px] px-4 border border-[#DADBDD] rounded-[7px] bg-white text-[16px] text-[#868E96]"
                   style={{
                     fontFamily:
                       "Roboto, -apple-system, Roboto, Helvetica, sans-serif",
                   }}
+=======
+                  required
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
                 />
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="space-y-2">
               <input
                 type="email"
@@ -453,10 +493,71 @@ export default function Register() {
                 <span>Privacy</span>
                 <span> - </span>
                 <span>Terms</span>
+=======
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                />
+              </div>
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  Mobile Phone *
+                </label>
+                <input
+                  type="tel"
+                  name="mobile"
+                  value={formData.mobile}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  Zip Code
+                </label>
+                <input
+                  type="text"
+                  name="zipCode"
+                  value={formData.zipCode}
+                  onChange={handleInputChange}
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                />
+              </div>
+              <div>
+                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                  Timeframe for Purchase
+                </label>
+                <select
+                  name="timeframe"
+                  value={formData.timeframe}
+                  onChange={handleInputChange}
+                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                >
+                  <option value="">Select timeframe...</option>
+                  <option value="immediate">Immediate (0-3 months)</option>
+                  <option value="short">Short-term (3-6 months)</option>
+                  <option value="medium">Medium-term (6-12 months)</option>
+                  <option value="long">Long-term (12+ months)</option>
+                </select>
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
               </div>
             </div>
 
             {/* Submit Button */}
+<<<<<<< HEAD
             <button
               type="submit"
               className="w-[129px] h-[40px] bg-[#1A7EFB] text-white text-[15px] font-medium rounded-[3px] leading-[24.75px]"
@@ -585,6 +686,19 @@ export default function Register() {
           </div>
         </div>
       </footer>
+=======
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-brand-gold text-white px-12 py-3 text-[15px] font-medium rounded-sm hover:bg-opacity-90 transition-colors"
+              >
+                Join Interest List
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+>>>>>>> 580d9099657e8fa7c42b47ccbd6fe4713cf328ba
     </div>
   );
 }
