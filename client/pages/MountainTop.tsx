@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Phone, MessageSquare, Home } from "lucide-react";
-import Navigation from "../components/Navigation";
+import { ChevronDown, Phone, MessageSquare } from "lucide-react";
+import Header from "../components/Header";
 
 const PhotoCarouselSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
