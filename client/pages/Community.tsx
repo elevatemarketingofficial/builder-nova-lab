@@ -8,7 +8,7 @@ import {
   X,
   ZoomIn,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Community() {
   const [formData, setFormData] = useState({
