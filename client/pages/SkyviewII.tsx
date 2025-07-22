@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Bed, Bath, Square, ChevronLeft, ChevronRight, X, Instagram } from "lucide-react";
+import {
+  Bed,
+  Bath,
+  Square,
+  ChevronLeft,
+  ChevronRight,
+  X,
+  Instagram,
+} from "lucide-react";
 import Navigation from "../components/Navigation";
 
 export default function SkyviewII() {

@@ -249,8 +249,12 @@ export default function Windridge() {
             <div className="bg-orange-50 p-8 text-center">
               <div className="flex justify-center mb-4">
                 <div className="w-12 h-12 text-brand-gold flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 9 9 12 5.16-3 9-6.45 9-12V7l-10-5z"/>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-10 h-10"
+                  >
+                    <path d="M12 2L2 7v10c0 5.55 3.84 9 9 12 5.16-3 9-6.45 9-12V7l-10-5z" />
                   </svg>
                 </div>
               </div>

@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Home,
-  Phone,
-  MessageSquare,
-  Instagram,
-  X,
-  ZoomIn,
-} from "lucide-react";
+import { Home, Phone, MessageSquare, Instagram, X, ZoomIn } from "lucide-react";
 import Header from "../components/Header";
 
 export default function Community() {

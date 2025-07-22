@@ -43,21 +43,27 @@ export default function MountainTopII() {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selectedPhoto) return;
 
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         setSelectedPhoto(null);
-      } else if (e.key === 'ArrowLeft') {
-        const newIndex = currentLightboxIndex > 0 ? currentLightboxIndex - 1 : photoGallery.length - 1;
+      } else if (e.key === "ArrowLeft") {
+        const newIndex =
+          currentLightboxIndex > 0
+            ? currentLightboxIndex - 1
+            : photoGallery.length - 1;
         setCurrentLightboxIndex(newIndex);
         setSelectedPhoto(photoGallery[newIndex]);
-      } else if (e.key === 'ArrowRight') {
-        const newIndex = currentLightboxIndex < photoGallery.length - 1 ? currentLightboxIndex + 1 : 0;
+      } else if (e.key === "ArrowRight") {
+        const newIndex =
+          currentLightboxIndex < photoGallery.length - 1
+            ? currentLightboxIndex + 1
+            : 0;
         setCurrentLightboxIndex(newIndex);
         setSelectedPhoto(photoGallery[newIndex]);
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedPhoto, currentLightboxIndex, photoGallery]);
 
   return (
@@ -76,9 +82,7 @@ export default function MountainTopII() {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <h1 className="relative z-10 font-normal">
-          Mountain Top II
-        </h1>
+        <h1 className="relative z-10 font-normal">Mountain Top II</h1>
       </section>
 
       {/* Property Details Card */}
@@ -169,7 +173,7 @@ export default function MountainTopII() {
               alt="Mountain Top II Virtual Tour"
               className="w-full h-full object-cover"
             />
-            
+
             {/* Play Button */}
             <div className="absolute inset-0 flex items-center justify-center">
               <svg
@@ -193,7 +197,9 @@ export default function MountainTopII() {
               <div className="flex items-center justify-between p-4 h-full">
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-white rounded-full"></div>
-                  <span className="text-white text-lg">Mountain Top II Video Tour</span>
+                  <span className="text-white text-lg">
+                    Mountain Top II Video Tour
+                  </span>
                 </div>
                 <div className="text-white text-sm">Copy link</div>
               </div>
@@ -245,7 +251,10 @@ export default function MountainTopII() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                const newIndex = currentLightboxIndex > 0 ? currentLightboxIndex - 1 : photoGallery.length - 1;
+                const newIndex =
+                  currentLightboxIndex > 0
+                    ? currentLightboxIndex - 1
+                    : photoGallery.length - 1;
                 setCurrentLightboxIndex(newIndex);
                 setSelectedPhoto(photoGallery[newIndex]);
               }}
@@ -258,7 +267,10 @@ export default function MountainTopII() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                const newIndex = currentLightboxIndex < photoGallery.length - 1 ? currentLightboxIndex + 1 : 0;
+                const newIndex =
+                  currentLightboxIndex < photoGallery.length - 1
+                    ? currentLightboxIndex + 1
+                    : 0;
                 setCurrentLightboxIndex(newIndex);
                 setSelectedPhoto(photoGallery[newIndex]);
               }}

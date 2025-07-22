@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Phone, MessageSquare, Home, Instagram } from "lucide-react";
+import {
+  ChevronDown,
+  Phone,
+  MessageSquare,
+  Home,
+  Instagram,
+} from "lucide-react";
 import Navigation from "../components/Navigation";
 
 const PhotoCarouselSection = () => {

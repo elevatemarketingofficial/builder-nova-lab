@@ -234,7 +234,7 @@ export default function Listings() {
 
       {/* Main Content */}
       <main>
-                {/* Hero Section */}
+        {/* Hero Section */}
         <section
           className="relative h-[356px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
