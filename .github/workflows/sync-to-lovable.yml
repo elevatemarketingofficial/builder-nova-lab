@@ -9,22 +9,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ——— 1. Check out the Builder.io repo (this repo) ———
+      # ——— 1. Check out the Builder.io repo into ./builder ———
       - name: Checkout Builder Repo
         uses: actions/checkout@v4
+        with:
+          path: builder
 
-      # ——— 2. Clone the Lovable-linked repo and overwrite its files ———
+      # ——— 2. Clone the Lovable-linked repo into ./lovable ———
       - name: Clone Lovable Repo
         env:
           GH_TOKEN: ${{ secrets.LOVABLE_PAT }}
-          GIT_LFS_SKIP_SMUDGE: "1"      # ← skip downloading missing LFS blobs
+          GIT_LFS_SKIP_SMUDGE: "1"
+        run: git clone --depth 1 https://x-access-token:${GH_TOKEN}@github.com/elevatemarketingofficial/silent-observer-node.git lovable
+
+      # ——— 3. Sync Builder files into Lovable repo ———
+      - name: Sync Builder → Lovable
         run: |
-          git clone --depth 1 https://x-access-token:${GH_TOKEN}@github.com/elevatemarketingofficial/silent-observer-node.git lovable
           rsync -av --delete \
             --exclude='.git' \
             --exclude='.lovable' \
             --exclude='lovable.json' \
-            ./ lovable/
+            builder/ lovable/
+
           cd lovable
           git config user.name "Builder Sync Bot"
           git config user.email "builder-sync@elevate.com"
