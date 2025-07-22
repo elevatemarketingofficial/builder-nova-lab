@@ -194,7 +194,7 @@ export default function MountainTopII() {
             </Link>
 
             {/* Navigation */}
-            <Navigation />
+            <Header />
 
             {/* View Listings Button */}
             <Link
