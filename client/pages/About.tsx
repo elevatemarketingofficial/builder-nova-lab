@@ -498,7 +498,9 @@ export default function About() {
             {/* Social Media */}
             <div className="flex justify-center">
               <a
-                href="#"
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
                 <Instagram className="w-6 h-6 text-white" />
