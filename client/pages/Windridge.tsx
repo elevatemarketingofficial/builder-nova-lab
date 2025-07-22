@@ -287,7 +287,7 @@ export default function Windridge() {
             </Link>
 
             {/* Navigation */}
-            <Navigation />
+            <Header />
 
             {/* View Listings Button */}
             <Link
