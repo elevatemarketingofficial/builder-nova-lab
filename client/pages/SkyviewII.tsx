@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Bed, Bath, Square, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { Bed, Bath, Square, ChevronLeft, ChevronRight, X, Instagram } from "lucide-react";
 import Navigation from "../components/Navigation";
 
 export default function SkyviewII() {
@@ -553,34 +553,12 @@ export default function SkyviewII() {
 
               <div className="flex justify-center mt-8">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
                 >
-                  <svg
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 3h6v6"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 14 21 3"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
-                  </svg>
+                  <Instagram className="w-6 h-6 text-white" />
                 </a>
               </div>
 
