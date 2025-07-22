@@ -33,7 +33,8 @@ export default function Listings() {
       baths: 2.5,
       sqft: 1746,
       garage: 2,
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       floorPlan: "/homes/oceanside-ii",
     },
     {
@@ -45,7 +46,8 @@ export default function Listings() {
       baths: 2.5,
       sqft: 1824,
       garage: 2,
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       floorPlan: "/homes/skyview-ii",
     },
     {
@@ -57,7 +59,8 @@ export default function Listings() {
       baths: 3,
       sqft: 1890,
       garage: 2,
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       floorPlan: "/homes/mountain-top-ii",
     },
     {
@@ -69,7 +72,8 @@ export default function Listings() {
       baths: 2.5,
       sqft: 1791,
       garage: 2,
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f",
       floorPlan: "/homes/windridge",
     },
   ];
@@ -89,7 +93,7 @@ export default function Listings() {
         >
           {/* Background overlay */}
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          
+
           {/* Content */}
           <div className="relative z-10 text-center text-white">
             <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight">
@@ -115,7 +119,9 @@ export default function Listings() {
                 className="flex items-center gap-2 bg-brand-gold text-white px-4 py-2 rounded-sm text-[14px] font-medium hover:bg-opacity-90 transition-colors"
               >
                 Filter Options
-                <ChevronDown className={`w-4 h-4 transition-transform ${filterOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform ${filterOpen ? "rotate-180" : ""}`}
+                />
               </button>
             </div>
 
@@ -129,7 +135,12 @@ export default function Listings() {
                     </label>
                     <select
                       value={selectedFilters.priceRange}
-                      onChange={(e) => setSelectedFilters(prev => ({...prev, priceRange: e.target.value}))}
+                      onChange={(e) =>
+                        setSelectedFilters((prev) => ({
+                          ...prev,
+                          priceRange: e.target.value,
+                        }))
+                      }
                       className="w-full p-2 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                     >
                       <option value="">Any Price</option>
@@ -144,7 +155,12 @@ export default function Listings() {
                     </label>
                     <select
                       value={selectedFilters.bedrooms}
-                      onChange={(e) => setSelectedFilters(prev => ({...prev, bedrooms: e.target.value}))}
+                      onChange={(e) =>
+                        setSelectedFilters((prev) => ({
+                          ...prev,
+                          bedrooms: e.target.value,
+                        }))
+                      }
                       className="w-full p-2 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                     >
                       <option value="">Any Bedrooms</option>
@@ -159,7 +175,12 @@ export default function Listings() {
                     </label>
                     <select
                       value={selectedFilters.bathrooms}
-                      onChange={(e) => setSelectedFilters(prev => ({...prev, bathrooms: e.target.value}))}
+                      onChange={(e) =>
+                        setSelectedFilters((prev) => ({
+                          ...prev,
+                          bathrooms: e.target.value,
+                        }))
+                      }
                       className="w-full p-2 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                     >
                       <option value="">Any Bathrooms</option>
@@ -174,7 +195,12 @@ export default function Listings() {
                     </label>
                     <select
                       value={selectedFilters.homeType}
-                      onChange={(e) => setSelectedFilters(prev => ({...prev, homeType: e.target.value}))}
+                      onChange={(e) =>
+                        setSelectedFilters((prev) => ({
+                          ...prev,
+                          homeType: e.target.value,
+                        }))
+                      }
                       className="w-full p-2 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                     >
                       <option value="">All Types</option>
@@ -193,7 +219,10 @@ export default function Listings() {
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {listings.map((listing) => (
-                <div key={listing.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div
+                  key={listing.id}
+                  className="bg-white rounded-lg shadow-lg overflow-hidden"
+                >
                   <div className="relative">
                     <img
                       src={listing.image}
@@ -204,7 +233,7 @@ export default function Listings() {
                       {listing.price}
                     </div>
                   </div>
-                  
+
                   <div className="p-6">
                     <h3 className="text-[24px] font-bold text-brand-dark-blue mb-2">
                       {listing.title}
@@ -212,26 +241,34 @@ export default function Listings() {
                     <p className="text-[14px] text-brand-medium-blue mb-4">
                       {listing.address}
                     </p>
-                    
+
                     <div className="flex items-center gap-6 mb-6">
                       <div className="flex items-center gap-1">
                         <Bed className="w-4 h-4 text-brand-medium-blue" />
-                        <span className="text-[14px] text-brand-medium-blue">{listing.beds} Beds</span>
+                        <span className="text-[14px] text-brand-medium-blue">
+                          {listing.beds} Beds
+                        </span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Bath className="w-4 h-4 text-brand-medium-blue" />
-                        <span className="text-[14px] text-brand-medium-blue">{listing.baths} Baths</span>
+                        <span className="text-[14px] text-brand-medium-blue">
+                          {listing.baths} Baths
+                        </span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Square className="w-4 h-4 text-brand-medium-blue" />
-                        <span className="text-[14px] text-brand-medium-blue">{listing.sqft} Sq Ft</span>
+                        <span className="text-[14px] text-brand-medium-blue">
+                          {listing.sqft} Sq Ft
+                        </span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Car className="w-4 h-4 text-brand-medium-blue" />
-                        <span className="text-[14px] text-brand-medium-blue">{listing.garage} Car</span>
+                        <span className="text-[14px] text-brand-medium-blue">
+                          {listing.garage} Car
+                        </span>
                       </div>
                     </div>
-                    
+
                     <div className="flex gap-3">
                       <Link
                         to={listing.floorPlan}
@@ -260,7 +297,8 @@ export default function Listings() {
               Ready to Make Paseo Your Home?
             </h2>
             <p className="text-[16px] text-brand-medium-blue mb-8">
-              Schedule a tour or contact our sales team to learn more about available homes and financing options.
+              Schedule a tour or contact our sales team to learn more about
+              available homes and financing options.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

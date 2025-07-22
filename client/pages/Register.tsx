@@ -19,30 +19,36 @@ export default function Register() {
     {
       id: "1691",
       name: "1691",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1c15f03cde79434616e878a1ca5ea11dcf3bf138?width=400",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/1c15f03cde79434616e878a1ca5ea11dcf3bf138?width=400",
     },
     {
       id: "1724",
-      name: "1724", 
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/4dd70e36ddd2d2e5f03811954d0ab82c390815d2?width=400",
+      name: "1724",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/4dd70e36ddd2d2e5f03811954d0ab82c390815d2?width=400",
     },
     {
       id: "1794",
       name: "1794",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/717885aed07a142a4d98a0b9821420926e5452cd?width=400",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/717885aed07a142a4d98a0b9821420926e5452cd?width=400",
     },
     {
-      id: "1874", 
+      id: "1874",
       name: "1874",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/2f4b03399c084d7ddddcb8d1fd0163459de6b9ea?width=400",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/2f4b03399c084d7ddddcb8d1fd0163459de6b9ea?width=400",
     },
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -59,15 +65,16 @@ export default function Register() {
       <section
         className="relative h-[496px] w-full"
         style={{
-          backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4')",
+          backgroundImage:
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          backgroundSize: "cover"
+          backgroundSize: "cover",
         }}
       >
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        
+
         {/* Content */}
         <div className="relative z-10 text-center text-white h-full flex items-center justify-center">
           <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight">

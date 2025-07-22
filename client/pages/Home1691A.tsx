@@ -18,30 +18,102 @@ const Home1691A = () => {
 
   // Carousel images with the provided 24 URLs
   const carouselImages = [
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffd967d8db433476e9da2662709b98ee0?format=webp&width=800", alt: "Oceanside Property Photo 1" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffa40aa04d20942828963f9879cdb6239?format=webp&width=800", alt: "Oceanside Property Photo 2" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4b27242d10b74967a266537a53a319ce?format=webp&width=800", alt: "Oceanside Property Photo 3" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb2e64a453dc04401a050250d01cd9eb5?format=webp&width=800", alt: "Oceanside Property Photo 4" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F12113bbd9b1a4d17b37483d92ed5dcd1?format=webp&width=800", alt: "Oceanside Property Photo 5" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F58917eca56c24a79b2b01a03e676d5ef?format=webp&width=800", alt: "Oceanside Property Photo 6" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5417095c189b435f91184d9a115a586f?format=webp&width=800", alt: "Oceanside Property Photo 7" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1e9d75367f49449a9a8ecb1a760f0fca?format=webp&width=800", alt: "Oceanside Property Photo 8" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa6b7bafbd20c4d47a265878f366a9531?format=webp&width=800", alt: "Oceanside Property Photo 9" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60372f828b3e44479256b84149545805?format=webp&width=800", alt: "Oceanside Property Photo 10" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F44165155746643c6983881db7dc49247?format=webp&width=800", alt: "Oceanside Property Photo 11" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb28b9ca38e574a75baa5df1b71bd3cf1?format=webp&width=800", alt: "Oceanside Property Photo 12" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2d9f03bcb9df44fc956877329645cec8?format=webp&width=800", alt: "Oceanside Property Photo 13" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc89ced8bfa48404996dca794ba7c6116?format=webp&width=800", alt: "Oceanside Property Photo 14" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe8d89f650d4342538134aaee1bc94c39?format=webp&width=800", alt: "Oceanside Property Photo 15" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc95fceab0cf545a09b81711fa419bf1b?format=webp&width=800", alt: "Oceanside Property Photo 16" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a869c72d72745a9913bd863de003832?format=webp&width=800", alt: "Oceanside Property Photo 17" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F500b298f578f407f991fe09b17563c5b?format=webp&width=800", alt: "Oceanside Property Photo 18" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F532da2a889c744d696e50e500a004da6?format=webp&width=800", alt: "Oceanside Property Photo 19" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Faf879962418145a6a2dd95dc0029cc9c?format=webp&width=800", alt: "Oceanside Property Photo 20" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb18cc3320bff4092b82e78fd2c5131a0?format=webp&width=800", alt: "Oceanside Property Photo 21" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0208fa94b1f4427089953e3d6b56454a?format=webp&width=800", alt: "Oceanside Property Photo 22" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe99a1897b904401b926ffea0f86e2715?format=webp&width=800", alt: "Oceanside Property Photo 23" },
-    { src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F63f3e9ffecc24e2198fb40e18b625874?format=webp&width=800", alt: "Oceanside Property Photo 24" },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffd967d8db433476e9da2662709b98ee0?format=webp&width=800",
+      alt: "Oceanside Property Photo 1",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ffa40aa04d20942828963f9879cdb6239?format=webp&width=800",
+      alt: "Oceanside Property Photo 2",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F4b27242d10b74967a266537a53a319ce?format=webp&width=800",
+      alt: "Oceanside Property Photo 3",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb2e64a453dc04401a050250d01cd9eb5?format=webp&width=800",
+      alt: "Oceanside Property Photo 4",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F12113bbd9b1a4d17b37483d92ed5dcd1?format=webp&width=800",
+      alt: "Oceanside Property Photo 5",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F58917eca56c24a79b2b01a03e676d5ef?format=webp&width=800",
+      alt: "Oceanside Property Photo 6",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5417095c189b435f91184d9a115a586f?format=webp&width=800",
+      alt: "Oceanside Property Photo 7",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1e9d75367f49449a9a8ecb1a760f0fca?format=webp&width=800",
+      alt: "Oceanside Property Photo 8",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa6b7bafbd20c4d47a265878f366a9531?format=webp&width=800",
+      alt: "Oceanside Property Photo 9",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F60372f828b3e44479256b84149545805?format=webp&width=800",
+      alt: "Oceanside Property Photo 10",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F44165155746643c6983881db7dc49247?format=webp&width=800",
+      alt: "Oceanside Property Photo 11",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb28b9ca38e574a75baa5df1b71bd3cf1?format=webp&width=800",
+      alt: "Oceanside Property Photo 12",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2d9f03bcb9df44fc956877329645cec8?format=webp&width=800",
+      alt: "Oceanside Property Photo 13",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc89ced8bfa48404996dca794ba7c6116?format=webp&width=800",
+      alt: "Oceanside Property Photo 14",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe8d89f650d4342538134aaee1bc94c39?format=webp&width=800",
+      alt: "Oceanside Property Photo 15",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc95fceab0cf545a09b81711fa419bf1b?format=webp&width=800",
+      alt: "Oceanside Property Photo 16",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F6a869c72d72745a9913bd863de003832?format=webp&width=800",
+      alt: "Oceanside Property Photo 17",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F500b298f578f407f991fe09b17563c5b?format=webp&width=800",
+      alt: "Oceanside Property Photo 18",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F532da2a889c744d696e50e500a004da6?format=webp&width=800",
+      alt: "Oceanside Property Photo 19",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Faf879962418145a6a2dd95dc0029cc9c?format=webp&width=800",
+      alt: "Oceanside Property Photo 20",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb18cc3320bff4092b82e78fd2c5131a0?format=webp&width=800",
+      alt: "Oceanside Property Photo 21",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0208fa94b1f4427089953e3d6b56454a?format=webp&width=800",
+      alt: "Oceanside Property Photo 22",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe99a1897b904401b926ffea0f86e2715?format=webp&width=800",
+      alt: "Oceanside Property Photo 23",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F63f3e9ffecc24e2198fb40e18b625874?format=webp&width=800",
+      alt: "Oceanside Property Photo 24",
+    },
   ];
 
   // Auto-advance carousel every 5 seconds

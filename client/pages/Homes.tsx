@@ -18,7 +18,8 @@ export default function Homes() {
       name: "Oceanside",
       sqft: "1,691 Sq. Ft.",
       details: "4 Bed, 2 1/2 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       link: "/homes/home-1691-a",
     },
     {
@@ -26,7 +27,8 @@ export default function Homes() {
       name: "Oceanside II",
       sqft: "1,746 Sq. Ft.",
       details: "4 Bed, 2 1/2 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       link: "/homes/oceanside-ii",
     },
     {
@@ -34,7 +36,8 @@ export default function Homes() {
       name: "Skyview",
       sqft: "1,724 Sq. Ft.",
       details: "4 Bed, 2 1/2 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       link: "/homes/skyview",
     },
     {
@@ -42,7 +45,8 @@ export default function Homes() {
       name: "Skyview II",
       sqft: "1,824 Sq. Ft.",
       details: "4 Bed, 2 1/2 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       link: "/homes/skyview-ii",
     },
     {
@@ -50,7 +54,8 @@ export default function Homes() {
       name: "Windridge",
       sqft: "1,791 Sq. Ft.",
       details: "5 Bed, 2 1/2 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f",
       link: "/homes/windridge",
     },
     {
@@ -58,7 +63,8 @@ export default function Homes() {
       name: "Mountain Top",
       sqft: "1,874 Sq. Ft.",
       details: "5 Bed, 3 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       link: "/homes/mountain-top",
     },
     {
@@ -66,7 +72,8 @@ export default function Homes() {
       name: "Mountain Top II",
       sqft: "1,890 Sq. Ft.",
       details: "5 Bed, 3 Bath",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       link: "/homes/mountain-top-ii",
     },
   ];
@@ -101,9 +108,10 @@ export default function Homes() {
               Discover Your Perfect Home
             </h2>
             <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed max-w-[800px] mx-auto">
-              Explore our collection of thoughtfully designed floor plans, each crafted to provide 
-              the perfect balance of comfort, functionality, and modern living. From cozy family homes 
-              to spacious layouts with room to grow, find the plan that fits your lifestyle.
+              Explore our collection of thoughtfully designed floor plans, each
+              crafted to provide the perfect balance of comfort, functionality,
+              and modern living. From cozy family homes to spacious layouts with
+              room to grow, find the plan that fits your lifestyle.
             </p>
           </div>
         </div>
@@ -114,7 +122,10 @@ export default function Homes() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {floorPlans.map((plan) => (
-              <div key={plan.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div
+                key={plan.id}
+                className="bg-white rounded-lg overflow-hidden shadow-lg"
+              >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={plan.image}
@@ -129,9 +140,13 @@ export default function Homes() {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="flex items-center gap-1">
                       <Square className="w-4 h-4 text-brand-medium-blue" />
-                      <span className="text-[14px] text-brand-medium-blue">{plan.sqft}</span>
+                      <span className="text-[14px] text-brand-medium-blue">
+                        {plan.sqft}
+                      </span>
                     </div>
-                    <span className="text-[14px] text-brand-medium-blue">{plan.details}</span>
+                    <span className="text-[14px] text-brand-medium-blue">
+                      {plan.details}
+                    </span>
                   </div>
                   <Link
                     to={plan.link}
@@ -153,8 +168,8 @@ export default function Homes() {
             Ready to See More?
           </h2>
           <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed mb-8">
-            Schedule a tour to see our model homes or contact our sales team to learn more about 
-            customization options, pricing, and availability.
+            Schedule a tour to see our model homes or contact our sales team to
+            learn more about customization options, pricing, and availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

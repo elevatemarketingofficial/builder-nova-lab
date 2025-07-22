@@ -20,10 +20,11 @@ const OceansideII = () => {
           <div
             className="absolute inset-0 bg-black/30"
             style={{
-              backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78)",
+              backgroundImage:
+                "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78)",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              backgroundSize: "cover"
+              backgroundSize: "cover",
             }}
           >
             {/* Additional dark overlay */}
