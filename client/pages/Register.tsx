@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Register() {
   const [selectedModel, setSelectedModel] = useState<string>("");
