@@ -155,8 +155,10 @@ export default function Windridge() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-lg relative z-50">
+      <Header />
+
+      {/* Remove this duplicate header section - keeping only for hero content below */}
+      <div style={{display: 'none'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -299,7 +301,7 @@ export default function Windridge() {
             </Link>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Hero Section */}
       <section className="bg-gray-200 py-20">
@@ -663,7 +665,7 @@ export default function Windridge() {
                 <br />
                 <span>Tuesday – Saturday 10am – 5pm</span>
                 <br />
-                <span>Sunday – 11am – 4pm</span>
+                <span>Sunday – 11am �� 4pm</span>
               </p>
             </div>
 
