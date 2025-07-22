@@ -211,7 +211,7 @@ export default function Homes() {
           </Link>
 
           {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <Link
