@@ -414,9 +414,12 @@ export default function Index() {
                 your personal style by allowing you to choose your custom
                 touches to upgrade your home to perfection.
               </p>
-              <button className="bg-brand-gold text-white px-6 py-3 text-[15px] font-normal rounded-sm hover:bg-opacity-90 transition-colors">
+              <Link
+                to="/about"
+                className="bg-brand-gold text-white px-6 py-3 text-[15px] font-normal rounded-sm hover:bg-opacity-90 transition-colors inline-block"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>
