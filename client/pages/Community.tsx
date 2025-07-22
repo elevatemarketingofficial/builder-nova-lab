@@ -4,7 +4,7 @@ import {
   Home,
   Phone,
   MessageSquare,
-  ExternalLink,
+  Instagram,
   X,
   ZoomIn,
 } from "lucide-react";
@@ -407,7 +407,7 @@ export default function Community() {
                 href="#"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 
