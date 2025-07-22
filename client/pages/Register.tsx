@@ -131,17 +131,8 @@ export default function Register() {
           background: "url('https://api.builder.io/api/v1/image/assets/TEMP/d049e63e73a48af629ef169e2bbcb6e822121891?width=3840') lightgray 0% 0% / 75px 75px repeat"
         }}
       >
-        {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            opacity: 0.91
-          }}
-        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
