@@ -342,7 +342,7 @@ export default function MountainTop() {
             </Link>
 
             {/* Navigation */}
-            <Navigation />
+            <Header />
 
             {/* View Listings Button */}
             <Link
