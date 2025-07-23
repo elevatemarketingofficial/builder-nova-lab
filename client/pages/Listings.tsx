@@ -22,7 +22,7 @@ export default function Listings() {
     bathrooms: "",
     homeType: "",
   });
-  
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -33,12 +33,13 @@ export default function Listings() {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value, type } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 

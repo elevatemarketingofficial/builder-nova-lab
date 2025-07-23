@@ -43,7 +43,9 @@ export default function Register() {
   ];
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -94,7 +96,7 @@ export default function Register() {
                 What model are you interested in?{" "}
                 <span className="text-red-500">*</span>
               </label>
-              
+
               {/* Model Options Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {models.map((model) => (
@@ -151,7 +153,7 @@ export default function Register() {
                   className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
                   Last Name <span className="text-red-500">*</span>
@@ -255,11 +257,11 @@ export default function Register() {
             <h3 className="text-[#3A4F66] text-[24px] lg:text-[30px] leading-tight px-4">
               Building communities throughout the Central Valley
             </h3>
-            
+
             <p className="text-[#3A4F66] text-[16px]">
               For More Information about PASEO, Please Call or Text
             </p>
-            
+
             <div className="space-y-4">
               <div className="text-[#3A4F66] text-[16px] lg:text-[18px]">
                 <div className="font-bold">Stephanie Stine</div>
@@ -267,7 +269,7 @@ export default function Register() {
                 <div>209-308-9000</div>
                 <div>DRE# 02189834</div>
               </div>
-              
+
               <div className="text-[#3A4F66] text-[16px]">
                 <div className="font-bold">Hours</div>
                 <div>Monday – Closed</div>
@@ -275,13 +277,18 @@ export default function Register() {
                 <div>Sunday – 11am – 4pm</div>
               </div>
             </div>
-            
+
             <p className="text-[#3A4F66] text-[16px]">
               154 Montage Drive, Merced, CA 95348
             </p>
 
             <div className="flex justify-center mb-8">
-              <a href="https://www.instagram.com/choicevalleyhomes/?hl=en" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white">
+              <a
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white"
+              >
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
