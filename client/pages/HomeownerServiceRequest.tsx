@@ -90,9 +90,14 @@ export default function HomeownerServiceRequest() {
 
             {/* CTA Button */}
             <div className="mt-8 lg:mt-12">
-              <button className="bg-brand-dark-blue text-white px-6 py-3 rounded-sm text-[15px] font-normal hover:bg-opacity-90 transition-colors">
+              <a
+                href="https://rbgcorporation.com/warranty-request"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brand-dark-blue text-white px-6 py-3 rounded-sm text-[15px] font-normal hover:bg-opacity-90 transition-colors"
+              >
                 Click Here to Fill Out Our Warranty and Repair Form
-              </button>
+              </a>
             </div>
           </div>
         </div>
