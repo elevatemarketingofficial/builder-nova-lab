@@ -35,10 +35,7 @@ export default function Homes() {
                     width="359"
                     height="53"
                   >
-                    <path
-                      d="M358.77 0H0.000396729V53H358.77V0Z"
-                      fill="white"
-                    />
+                    <path d="M358.77 0H0.000396729V53H358.77V0Z" fill="white" />
                   </mask>
                   <g mask="url(#mask0_1_176)">
                     <path
@@ -440,10 +437,7 @@ export default function Homes() {
                 Accept Terms of Contacting
               </label>
               <div className="flex items-start gap-3 mt-4">
-                <input
-                  type="checkbox"
-                  className="w-3 h-3 mt-1 bg-blue-600"
-                />
+                <input type="checkbox" className="w-3 h-3 mt-1 bg-blue-600" />
                 <div className="text-[15px] leading-[25px] text-brand-medium-blue">
                   <p>
                     By pressing the Submit button, I agree to Choice Valley
@@ -454,8 +448,8 @@ export default function Homes() {
                     opportunities. I also understand that any
                   </p>
                   <p>
-                    information I've shared in this form is subject to
-                    Choice Valley Homes' Privacy Policy.
+                    information I've shared in this form is subject to Choice
+                    Valley Homes' Privacy Policy.
                   </p>
                 </div>
               </div>

@@ -66,7 +66,9 @@ export default function Community() {
               />
               <div className="flex items-center gap-2 mt-3">
                 <ZoomIn className="w-4 h-4 text-brand-medium-blue" />
-                <span className="text-[16px] text-brand-medium-blue">Click to enlarge</span>
+                <span className="text-[16px] text-brand-medium-blue">
+                  Click to enlarge
+                </span>
               </div>
             </div>
           </div>
@@ -104,15 +106,12 @@ export default function Community() {
                   UC Merced
                 </h2>
                 <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
-                  UC Merced is the first American research
-                  university established in the 21st century. UC
-                  Merced has upheld their legacy for
-                  innovative, interdisciplinary research. From
-                  Quantitative and Systems Biology to
-                  Mechanical Engineering, Dynamic
-                  curriculums and commitment to diversity, and
-                  leadership programs are bounded by student
-                  success.
+                  UC Merced is the first American research university
+                  established in the 21st century. UC Merced has upheld their
+                  legacy for innovative, interdisciplinary research. From
+                  Quantitative and Systems Biology to Mechanical Engineering,
+                  Dynamic curriculums and commitment to diversity, and
+                  leadership programs are bounded by student success.
                 </p>
               </div>
               <div className="flex-1">
@@ -142,13 +141,12 @@ export default function Community() {
                   Outdoor
                 </h2>
                 <p className="text-[16px] text-brand-medium-blue leading-[26.4px] mb-6">
-                  Explore the most popular biking paths, hiking
-                  trails, walking paths, Parks and other attractions
-                  surrounding Merced  
+                  Explore the most popular biking paths, hiking trails, walking
+                  paths, Parks and other attractions surrounding Merced
                 </p>
                 <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
-                  Merced is well known for the beautiful Yosemite
-                  Lake & Merced River.
+                  Merced is well known for the beautiful Yosemite Lake & Merced
+                  River.
                 </p>
               </div>
             </div>
@@ -161,20 +159,15 @@ export default function Community() {
             <div className="flex items-start gap-5">
               <div className="w-[456px] bg-white p-10">
                 <h2 className="text-[35px] font-bold text-brand-dark-blue leading-[35px] mb-5">
-                  Explore and enjoy
-                  these must-visit
-                  locations
+                  Explore and enjoy these must-visit locations
                 </h2>
                 <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
-                  The popular & historic majesty of Yosemite
-                  National Park's landscape living within our
-                  community puts numerous scenic escapes
-                  within driving distance. The Merced County
-                  Courthouse Museum gives an appreciation of
-                  our community's rich history, while the
-                  Merced National Wildlife Refuge and
-                  Applegate Zoo house some wonderful and
-                  exotic species.
+                  The popular & historic majesty of Yosemite National Park's
+                  landscape living within our community puts numerous scenic
+                  escapes within driving distance. The Merced County Courthouse
+                  Museum gives an appreciation of our community's rich history,
+                  while the Merced National Wildlife Refuge and Applegate Zoo
+                  house some wonderful and exotic species.
                 </p>
               </div>
               <div className="flex-1">
@@ -286,13 +279,16 @@ export default function Community() {
                   />
                   <div className="text-[15px] text-brand-medium-blue leading-[25px]">
                     <p>
-                      By pressing the Submit button, I agree to Choice Valley contacting me by email and/or phone
+                      By pressing the Submit button, I agree to Choice Valley
+                      contacting me by email and/or phone
                     </p>
                     <p>
-                      to share home availability information or related opportunities. I also understand that any
+                      to share home availability information or related
+                      opportunities. I also understand that any
                     </p>
                     <p>
-                      information I've shared in this form is subject to Choice Valley Homes' Privacy Policy.
+                      information I've shared in this form is subject to Choice
+                      Valley Homes' Privacy Policy.
                     </p>
                   </div>
                 </div>
